@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import GlobalStyle from "./Helpers/GlobalStyle";
 import Content from "./components/Content";
 import Loader from "./components/UI/Loader";
@@ -8,6 +8,7 @@ import useScrollPosition from "./Helpers/Hooks/useScrollPosition";
 
 function App() {
   const dispatch = useDispatch();
+  const [timeLeft, setTimeLeft] = useState(0);
 
   const scrollPosition = useScrollPosition();
 
@@ -19,11 +20,19 @@ function App() {
     }
   }, [scrollPosition,dispatch]);
 
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTimeLeft((t) => t - 1);
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <Fragment>
       <GlobalStyle />
       <Content />
-      {/* <Loader /> */}
+      {timeLeft > 0 && <Loader />}
     </Fragment>
   );
 }

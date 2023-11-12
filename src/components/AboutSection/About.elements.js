@@ -3,7 +3,6 @@ import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 
 export const Container = styled.section`
-  padding-top: 2rem;
   width: 100%;
   height: fit-content;
   background-position: top left;
@@ -14,18 +13,18 @@ export const Container = styled.section`
   align-items: center;
   gap: 3rem;
 
-  padding: 0rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
 
   @media ${devices.mobileL} {
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
   }
 
   @media ${devices.tablet} {
-    padding: 0.5rem 2rem 0rem 2rem;
+    padding: 6rem 2rem 0rem 2rem;
   }
 
   @media ${devices.laptop} {
-    padding: 0.5rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 0rem 3rem;
   }
 `;
 
@@ -73,17 +72,20 @@ export const SectionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+  padding-bottom: 2rem;
 
   @media ${devices.tablet} {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 3rem;
   }
 
   @media ${devices.laptop} {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 5rem;
   }
 `;
 

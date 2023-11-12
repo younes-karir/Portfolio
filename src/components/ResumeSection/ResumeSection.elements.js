@@ -20,15 +20,15 @@ export const Container = styled.section`
   /* gap: 6rem; */
 
   @media ${devices.mobileL} {
-    padding: 0.5rem 0.5rem 3rem 0.5rem;
+    padding: 2rem 0.5rem 3rem 0.5rem;
   }
 
   @media ${devices.tablet} {
-    padding: 0.5rem 2rem 3rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
   }
 
   @media ${devices.laptop} {
-    padding: 4rem 3rem 3rem 3rem;
+    padding: 7rem 3rem 3rem 3rem;
   }
 `;
 
@@ -174,4 +174,8 @@ export const CodingSkillsTitle = styled.h3`
   color: ${(props) => props.theme.colors.text};
 `;
 
-export const DesignSkills = styled.div``;
+export const DesignSkills = styled.div`
+ background-color: ${(props) => props.theme.colors.header};
+  width: 100%;
+  padding: 3rem 2rem;
+`;

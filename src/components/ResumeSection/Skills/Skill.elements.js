@@ -64,7 +64,7 @@ export const PorsWrapper = styled.div`
 
 export const PorsLabel = styled.div`
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   left: calc(${props => props.$value} - 32px);
   top: -50px;
   font-size: 12px;

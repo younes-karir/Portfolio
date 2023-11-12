@@ -17,6 +17,7 @@ import {
 import ArowIcon from "../../Helpers/Icons/ArowIcon";
 import Modal from "./Modals";
 import Skill from "./Skills";
+import DSkills from "./DSkills";
 
 const Education = {
   name: "ed",
@@ -182,7 +183,13 @@ function ResumeSection(props) {
               {SkillsList.map((item) => <Skill key={item.id} item={item}/>)}
             </CodingSkillsWrapper>
           </CodingSkills>
-          <DesignSkills></DesignSkills>
+          <DesignSkills>
+          <CodingSkillsTitle>Design Skills</CodingSkillsTitle>
+
+            <DSkills  />
+            <DSkills  />
+            <DSkills  />
+          </DesignSkills>
         </SkillsConatiner>
       </ResumeWrapper>
     </Container>
