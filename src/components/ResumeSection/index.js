@@ -188,11 +188,12 @@ function ResumeSection(props) {
 
             <DSkills  />
             <DSkills  />
-            <DSkills  />
+            <DSkills  />  
           </DesignSkills>
         </SkillsConatiner>
       </ResumeWrapper>
     </Container>
+    
   );
 }
 
