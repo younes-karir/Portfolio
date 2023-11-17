@@ -9,7 +9,11 @@ import {
   RoutLink,
   RouterWrapper,
   RoutersContainer,
+  SkillIcon,
+  SkillItem,
+  SkillTitle,
   SkillsConatiner,
+  SkillsWrapper,
   Sub,
   Title,
   TitleContainer,
@@ -18,6 +22,13 @@ import ArowIcon from "../../Helpers/Icons/ArowIcon";
 import Modal from "./Modals";
 import Skill from "./Skills";
 import DSkills from "./DSkills";
+import ReactIcon from "../../Helpers/Icons/ReactIcon";
+import JavascriptIcon from "../../Helpers/Icons/JavascriptIcon";
+import ReduxIcon from "../../Helpers/Icons/ReduxIcon";
+import ExpressIcon from "../../Helpers/Icons/ExpressIcon";
+import HtmlIcon from "../../Helpers/Icons/HtmlIcon";
+import CssIcon from "../../Helpers/Icons/CssIcon";
+import GitIcon from "../../Helpers/Icons/GitIcon";
 
 const Education = {
   name: "ed",
@@ -46,14 +57,6 @@ const Education = {
       details:
         "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
     },
-    {
-      id: 4,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
   ],
 };
 
@@ -76,14 +79,6 @@ const Experience = {
       details:
         "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
     },
-    {
-      id: 3,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
   ],
 };
 
@@ -100,14 +95,6 @@ const Awards = {
     },
     {
       id: 2,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-    {
-      id: 3,
       year: "2020 - 2021",
       title: "Graphic Design",
       sub: "Springlean Graphic University",
@@ -179,21 +166,66 @@ function ResumeSection(props) {
         <SkillsConatiner>
           <CodingSkills>
             <CodingSkillsTitle>Coding Skills</CodingSkillsTitle>
-            <CodingSkillsWrapper>
-              {SkillsList.map((item) => <Skill key={item.id} item={item}/>)}
-            </CodingSkillsWrapper>
+            <SkillsWrapper>
+              <SkillItem>
+                <HtmlIcon />
+                <SkillTitle>Html</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <CssIcon />
+                <SkillTitle>Css</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <JavascriptIcon />
+                <SkillTitle>javascript</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ReactIcon />
+                <SkillTitle>React.js</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ReduxIcon />
+                <SkillTitle>Redux.js</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ExpressIcon />
+                <SkillTitle>Express.js</SkillTitle>
+              </SkillItem>
+            </SkillsWrapper>
           </CodingSkills>
-          <DesignSkills>
-          <CodingSkillsTitle>Design Skills</CodingSkillsTitle>
-
-            <DSkills  />
-            <DSkills  />
-            <DSkills  />  
-          </DesignSkills>
+          <CodingSkills>
+            <CodingSkillsTitle>Tools</CodingSkillsTitle>
+            <SkillsWrapper>
+              <SkillItem>
+                <GitIcon />
+                <SkillTitle>Git</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <CssIcon />
+                <SkillTitle>Css</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <JavascriptIcon />
+                <SkillTitle>javascript</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ReactIcon />
+                <SkillTitle>React.js</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ReduxIcon />
+                <SkillTitle>Redux.js</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <ExpressIcon />
+                <SkillTitle>Express.js</SkillTitle>
+              </SkillItem>
+       
+            </SkillsWrapper>
+          </CodingSkills>
         </SkillsConatiner>
       </ResumeWrapper>
     </Container>
-    
   );
 }
 

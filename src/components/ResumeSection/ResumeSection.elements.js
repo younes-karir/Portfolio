@@ -81,7 +81,7 @@ export const ResumeWrapper = styled.div`
     grid-template-columns: 1fr 4fr;
   } */
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 4.5fr 2fr;
     gap: 1rem;
   }
 `;
@@ -159,7 +159,11 @@ export const SkillsConatiner = styled.div`
 export const CodingSkills = styled.div`
   background-color: ${(props) => props.theme.colors.header};
   width: 100%;
-  padding: 3rem 2rem;
+  /* height: 100%; */
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 `;
 export const CodingSkillsWrapper = styled.div`
   width: 100%;
@@ -168,10 +172,26 @@ export const CodingSkillsWrapper = styled.div`
   gap:4rem;
 `;
 export const CodingSkillsTitle = styled.h3`
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
   font-size: 1.4rem;
   line-height: 2.25rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
   color: ${(props) => props.theme.colors.text};
+
+  
+  &::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    background-color: #4d63dd;
+    content: "";
+    width: 50px;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 `;
 
 export const DesignSkills = styled.div`
@@ -179,3 +199,32 @@ export const DesignSkills = styled.div`
   width: 100%;
   padding: 3rem 2rem;
 `;
+
+
+export  const SkillsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  row-gap: 40px;
+   column-gap: 10px;
+
+`;
+export const SkillItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  
+`;
+export const SkillTitle = styled.h3`
+  color: ${props => props.theme.colors.text};
+  opacity: .8;
+  font-size: .7em;
+  font-weight: 600;
+  text-transform: capitalize;
+
+`;
+
+
+
+
