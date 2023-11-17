@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import {
   CodingSkills,
   CodingSkillsTitle,
-  CodingSkillsWrapper,
   Container,
-  DesignSkills,
   ResumeWrapper,
   RoutLink,
   RouterWrapper,
   RoutersContainer,
-  SkillIcon,
   SkillItem,
   SkillTitle,
   SkillsConatiner,
@@ -20,8 +17,6 @@ import {
 } from "./ResumeSection.elements";
 import ArowIcon from "../../Helpers/Icons/ArowIcon";
 import Modal from "./Modals";
-import Skill from "./Skills";
-import DSkills from "./DSkills";
 import ReactIcon from "../../Helpers/Icons/ReactIcon";
 import JavascriptIcon from "../../Helpers/Icons/JavascriptIcon";
 import ReduxIcon from "../../Helpers/Icons/ReduxIcon";
@@ -29,6 +24,10 @@ import ExpressIcon from "../../Helpers/Icons/ExpressIcon";
 import HtmlIcon from "../../Helpers/Icons/HtmlIcon";
 import CssIcon from "../../Helpers/Icons/CssIcon";
 import GitIcon from "../../Helpers/Icons/GitIcon";
+import StyledIcon from "../../Helpers/Icons/StyledIcon";
+import MuiIcon from "../../Helpers/Icons/MuiIcon";
+import MongoIcon from "../../Helpers/Icons/MongoIcon";
+import MoreModal from "./MoreModal";
 
 const Education = {
   name: "ed",
@@ -106,12 +105,12 @@ const Awards = {
 
 // skills
 
-const SkillsList = [
-  { id: 1, title: "html & css", pers: 90 },
-  { id: 2, title: "javascript", pers: 90 },
-  { id: 3, title: "react.js", pers: 80 },
-  { id: 4, title: "java", pers: 70 },
-];
+// const SkillsList = [
+//   { id: 1, title: "html & css", pers: 90 },
+//   { id: 2, title: "javascript", pers: 90 },
+//   { id: 3, title: "react.js", pers: 80 },
+//   { id: 4, title: "java", pers: 70 },
+// ];
 
 function ResumeSection(props) {
   const [DataList, setDataList] = useState(Education);
@@ -155,13 +154,14 @@ function ResumeSection(props) {
             onClick={() => AwSwitch()}
           >
             <ArowIcon selected={DataList.name === "aw"} />
-            Awards
+            Certification
           </RoutLink>
         </RoutersContainer>
         <RouterWrapper>
           {DataList.content.map((item) => (
             <Modal key={item.id} item={item} />
           ))}
+          <MoreModal />
         </RouterWrapper>
         <SkillsConatiner>
           <CodingSkills>
@@ -191,6 +191,14 @@ function ResumeSection(props) {
                 <ExpressIcon />
                 <SkillTitle>Express.js</SkillTitle>
               </SkillItem>
+              <SkillItem>
+                <StyledIcon />
+                <SkillTitle>Styled</SkillTitle>
+              </SkillItem>
+              <SkillItem>
+                <MuiIcon />
+                <SkillTitle>Mui</SkillTitle>
+              </SkillItem>
             </SkillsWrapper>
           </CodingSkills>
           <CodingSkills>
@@ -201,25 +209,10 @@ function ResumeSection(props) {
                 <SkillTitle>Git</SkillTitle>
               </SkillItem>
               <SkillItem>
-                <CssIcon />
-                <SkillTitle>Css</SkillTitle>
+                <MongoIcon />
+                <SkillTitle>Mongodb</SkillTitle>
               </SkillItem>
-              <SkillItem>
-                <JavascriptIcon />
-                <SkillTitle>javascript</SkillTitle>
-              </SkillItem>
-              <SkillItem>
-                <ReactIcon />
-                <SkillTitle>React.js</SkillTitle>
-              </SkillItem>
-              <SkillItem>
-                <ReduxIcon />
-                <SkillTitle>Redux.js</SkillTitle>
-              </SkillItem>
-              <SkillItem>
-                <ExpressIcon />
-                <SkillTitle>Express.js</SkillTitle>
-              </SkillItem>
+
        
             </SkillsWrapper>
           </CodingSkills>

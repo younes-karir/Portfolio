@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 
-import { IoMdArrowDropright } from "react-icons/io";
 
 export const Container = styled.section`
   width: 100%;
@@ -127,20 +126,21 @@ export const RouterWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 
   @media ${devices.tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   @media ${devices.laptop} {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1.5rem;
+    /* row-gap: 1.5rem; */
   }
 `;
 
@@ -219,12 +219,17 @@ export const SkillItem = styled.div`
 export const SkillTitle = styled.h3`
   color: ${props => props.theme.colors.text};
   opacity: .8;
-  font-size: .7em;
+  font-size: .6em;
   font-weight: 600;
-  text-transform: capitalize;
+  text-transform: uppercase;
 
 `;
 
 
 
 
+
+
+
+
+// icons
