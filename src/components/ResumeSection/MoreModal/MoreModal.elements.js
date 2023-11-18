@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   height: 100%;
+  color: ${props => props.theme.colors.text};
   width: fit-content;
   display: flex;
   align-items: center;
@@ -34,7 +35,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const MoreIcon = styled(FiMoreHorizontal)`
+export const MoreIcon = styled(MdOutlineExpandMore)`
   font-size: 1.5rem;
   visibility: hidden;
 `;

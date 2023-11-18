@@ -161,7 +161,7 @@ function ResumeSection(props) {
           {DataList.content.map((item) => (
             <Modal key={item.id} item={item} />
           ))}
-          <MoreModal />
+          {/* <MoreModal /> */}
         </RouterWrapper>
         <SkillsConatiner>
           <CodingSkills>

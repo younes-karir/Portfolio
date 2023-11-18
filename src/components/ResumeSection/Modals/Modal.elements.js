@@ -13,6 +13,10 @@ export const Container = styled.div`
   gap: 1rem;
   padding: 1rem;
 
+/* 
+  &:not(:first-child){
+    margin-top: 1rem;
+  } */
 
   @media ${devices.tablet} {
     width: 100%;

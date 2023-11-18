@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 
-
 export const Container = styled.section`
   width: 100%;
   height: fit-content;
@@ -124,32 +123,34 @@ export const RoutLink = styled.div`
 
 export const RouterWrapper = styled.div`
   width: 100%;
+  height: 45rem;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
-  /* gap: 1.5rem; */
+  gap: 1.5rem;
 
   @media ${devices.tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 1rem; */
+    gap: 1rem;
   }
 
   @media ${devices.laptop} {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* row-gap: 1.5rem; */
+    gap: 1.5rem;
   }
 `;
 
 export const SkillsConatiner = styled.div`
   width: 100%;
-  height: 30rem;
+  height: 45rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+
+  justify-content: space-between;
 
   @media ${devices.laptop} {
     height: 100%;
@@ -160,7 +161,7 @@ export const CodingSkills = styled.div`
   background-color: ${(props) => props.theme.colors.header};
   width: 100%;
   /* height: 100%; */
-  padding: 3rem 1rem;
+  padding: 2.8rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -169,7 +170,7 @@ export const CodingSkillsWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap:4rem;
+  gap: 4rem;
 `;
 export const CodingSkillsTitle = styled.h3`
   /* margin-bottom: 2.5rem; */
@@ -180,7 +181,6 @@ export const CodingSkillsTitle = styled.h3`
   padding-bottom: 10px;
   color: ${(props) => props.theme.colors.text};
 
-  
   &::before {
     position: absolute;
     left: 50%;
@@ -195,18 +195,16 @@ export const CodingSkillsTitle = styled.h3`
 `;
 
 export const DesignSkills = styled.div`
- background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.header};
   width: 100%;
   padding: 3rem 2rem;
 `;
 
-
-export  const SkillsWrapper = styled.div`
+export const SkillsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
-   column-gap: 10px;
-
+  column-gap: 10px;
 `;
 export const SkillItem = styled.div`
   display: flex;
@@ -214,22 +212,13 @@ export const SkillItem = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  
 `;
 export const SkillTitle = styled.h3`
-  color: ${props => props.theme.colors.text};
-  opacity: .8;
-  font-size: .6em;
+  color: ${(props) => props.theme.colors.text};
+  opacity: 0.8;
+  font-size: 0.6em;
   font-weight: 600;
   text-transform: uppercase;
-
 `;
-
-
-
-
-
-
-
 
 // icons
