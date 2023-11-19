@@ -12,6 +12,8 @@ export const Container = styled.div`
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
+    
+
   @media ${devices.laptop} {
     max-width: 25rem;
   }
@@ -20,7 +22,7 @@ export const Container = styled.div`
 export const PortfolioImgWrapper = styled.div`
   width: 100%;
   height: 70%;
-  background-color: #d6d6d6;
+  background-color: #88b6f2;
 `;
 
 export const Holder = styled.img``;

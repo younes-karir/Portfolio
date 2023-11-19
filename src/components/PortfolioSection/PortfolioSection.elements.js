@@ -67,14 +67,15 @@ export const Sub = styled.p`
 
 export const ProjectsWrapper = styled.div`
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 4rem;
   display: grid;
-
+  row-gap: 2rem;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   @media ${devices.laptop} {
