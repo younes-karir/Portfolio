@@ -2,28 +2,18 @@ import styled from "styled-components";
 import devices from "../../../Helpers/Devices";
 
 export const Container = styled.div`
-  width: 90%;
+   width: 100%;
   max-width: 100%;
   min-height: 10rem;
   background-color: ${(props) => props.theme.colors.header};
-  box-shadow: 0px 20px 60px 0px rgba(0, 11, 40, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
 
-/* 
-  &:not(:first-child){
-    margin-top: 1rem;
-  } */
 
-  @media ${devices.tablet} {
-    width: 100%;
-  }
-
-  @media ${devices.laptop} {
-  }
 `;
 
 export const YearContainer = styled.div`

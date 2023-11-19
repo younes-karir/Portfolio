@@ -13,6 +13,7 @@ export const Container = styled.section`
   align-items: center;
   gap: 3rem;
 
+
   padding: 2rem 1rem 0rem 1rem;
 
   @media ${devices.mobileL} {

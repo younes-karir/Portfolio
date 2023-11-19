@@ -26,7 +26,7 @@ export const Container = styled.section`
   }
 
   @media ${devices.laptop} {
-    padding: 7rem 3rem 3rem 3rem;
+    padding: 7rem 3rem 5rem 3rem;
   }
 `;
 
@@ -87,21 +87,25 @@ export const RoutersContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
 
   @media ${devices.tablet} {
     flex-direction: row;
+    align-items: center;
+
   }
 
   @media ${devices.laptop} {
     flex-direction: column;
+    align-items: center;
+
   }
 `;
 export const RoutLink = styled.div`
-  width: 90%;
+  width: 97%;
   height: 5rem;
   color: ${(props) => (!props.selected ? props.theme.colors.text : "#fff")};
+  box-shadow : ${(props) => (!props.selected ? ' rgba(0, 0, 0, 0.05) 0px 0px 0px 1px' : 'none')};
   background-color: ${(props) =>
     props.selected ? props.theme.colors.primary : props.theme.colors.header};
   position: relative;
@@ -116,6 +120,7 @@ export const RoutLink = styled.div`
     cursor: pointer;
   }
   @media ${devices.laptop} {
+    
     height: 6rem;
     max-width: 10rem;
   }
@@ -123,7 +128,6 @@ export const RoutLink = styled.div`
 
 export const RouterWrapper = styled.div`
   width: 100%;
-  height: 45rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -137,6 +141,8 @@ export const RouterWrapper = styled.div`
   }
 
   @media ${devices.laptop} {
+  height: 45rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,20 +152,20 @@ export const RouterWrapper = styled.div`
 
 export const SkillsConatiner = styled.div`
   width: 100%;
-  height: 45rem;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-
-  justify-content: space-between;
-
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: ${(props) => props.theme.colors.header};
   @media ${devices.laptop} {
-    height: 100%;
-  }
+    height: 100%; 
+    }
 `;
 
 export const CodingSkills = styled.div`
   background-color: ${(props) => props.theme.colors.header};
   width: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
   /* height: 100%; */
   padding: 2.8rem 1rem;
   display: flex;
@@ -205,6 +211,14 @@ export const SkillsWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 10px;
+
+
+  @media ${devices.tablet} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media ${devices.laptop} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
 export const SkillItem = styled.div`
   display: flex;
