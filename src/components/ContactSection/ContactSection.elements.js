@@ -14,7 +14,7 @@ export const Container = styled.section`
   padding: 0.5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   /* gap: 6rem; */
 
   @media ${devices.mobileL} {
