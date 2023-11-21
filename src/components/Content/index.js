@@ -1,5 +1,6 @@
 
 import AboutSection from "../AboutSection";
+import ContactSection from "../ContactSection";
 import Header from "../Header";
 import MenuBar from "../Header/MenuBar";
 import Home from "../Home";
@@ -21,6 +22,7 @@ const Content = () => {
       <AboutSection />
       <ResumeSection />    
       <PortfolioSection />
+      <ContactSection />
       <MenuBar />
       <ScrollToTop />
     </BaseFrame>

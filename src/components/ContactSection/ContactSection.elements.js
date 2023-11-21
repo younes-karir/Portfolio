@@ -1,29 +1,32 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 
-
 export const Container = styled.section`
   width: 100%;
   height: fit-content;
+  background-color: ${(props) => props.theme.colors.background};
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  /* gap: 6rem; */
 
   @media ${devices.mobileL} {
-    padding: 2rem 0.5rem 0rem 0.5rem;
+    padding: 2rem 0.5rem 3rem 0.5rem;
   }
 
   @media ${devices.tablet} {
-    padding: 6rem 2rem 0rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
   }
 
   @media ${devices.laptop} {
-    padding: 7rem 3rem 6rem 3rem;
+    padding: 7rem 3rem 5rem 3rem;
   }
 `;
 
@@ -65,22 +68,55 @@ export const Sub = styled.p`
   color: ${(props) => props.theme.colors.text};
 `;
 
-export const ProjectsWrapper = styled.div`
+export const ConatctWrapper = styled.div`
   width: 100%;
-  padding-top: 4rem;
+  padding-top: 3rem;
   display: grid;
-  row-gap: 2rem;
   grid-template-columns: 1fr;
-  
+
+  gap: 2rem;
 
   @media ${devices.tablet} {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
-
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 3fr 2fr;
   }
 `;
 
+export const FormContainer = styled.div`
+  /* background-color: red; */
+  width: 100%;
+  /* height: 20rem; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  @media ${devices.tablet} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+  }
+  @media ${devices.laptop} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+  }
+`;
+export const InfosContainer = styled.div`
+  background-color: green;
+  width: 100%;
+`;
+export const FormWrapper = styled.form``;
+export const Eelement = styled.div`
+  width: 100%;
+  height: 5rem;
+  background-color: red;
+
+  ${(props) => {
+    if (props.$fit)
+      return " grid-column-start: 1; grid-column-end:3; height: 100%; ";
+
+    if (props.$btn)
+      return " grid-column-start: 1; grid-column-end:3; ";
+  }}
+`;
