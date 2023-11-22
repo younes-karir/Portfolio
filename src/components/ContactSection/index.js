@@ -7,6 +7,9 @@ import {
   FormWrapper,
   InfosContainer,
   Sub,
+  Submit,
+  TexteArea,
+  TexteField,
   Title,
   TitleContainer,
 } from "./ContactSection.elements";
@@ -20,11 +23,30 @@ const ContactSection = () => {
       </TitleContainer>
       <ConatctWrapper>
         <FormContainer>
-            <Eelement></Eelement>
-            <Eelement></Eelement>
-            <Eelement $fit={true}></Eelement>
-            <Eelement  $btn={true}></Eelement>
-
+          <Eelement>
+            <TexteField
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Object"
+            />
+          </Eelement>
+          <Eelement>
+            <TexteField
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Type Email Here"
+            />
+          </Eelement>
+          <Eelement $fit={true}>
+            <TexteArea placeholder="Message" name="message" id="message" />
+          </Eelement>
+          <Eelement $btn={true}>
+          <Submit>
+              <span>+ Mesage Me</span>
+            </Submit>
+          </Eelement>
         </FormContainer>
         <InfosContainer></InfosContainer>
       </ConatctWrapper>

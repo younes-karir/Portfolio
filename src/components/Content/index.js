@@ -24,7 +24,7 @@ const Content = () => {
       <ResumeSection />    
       <PortfolioSection />
       <ContactSection />
-      <FooterSection />
+      {/* <FooterSection /> */}
       <MenuBar />
       <ScrollToTop />
     </BaseFrame>

@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
+import bck from "../../Helpers/Images/hero_bg_element.png";
 
 export const Container = styled.section`
+  background-image: url(${bck});
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   background-color: ${(props) => props.theme.colors.background};
   background-position: top left;
   background-repeat: no-repeat;
+  /* background-size: cover; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -27,6 +30,7 @@ export const Container = styled.section`
 
   @media ${devices.laptop} {
     padding: 7rem 3rem 5rem 3rem;
+    background-position: 80% -75%;
   }
 `;
 
@@ -74,24 +78,24 @@ export const ConatctWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  gap: 2rem;
+  gap: 6rem;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
   }
 `;
 
 export const FormContainer = styled.div`
   /* background-color: red; */
   width: 100%;
-  /* height: 20rem; */
+  height: 28rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -103,20 +107,98 @@ export const FormContainer = styled.div`
   }
 `;
 export const InfosContainer = styled.div`
-  background-color: green;
+  background-color: #999;
   width: 100%;
 `;
 export const FormWrapper = styled.form``;
 export const Eelement = styled.div`
   width: 100%;
-  height: 5rem;
-  background-color: red;
+  height: 60px;
 
   ${(props) => {
     if (props.$fit)
       return " grid-column-start: 1; grid-column-end:3; height: 100%; ";
 
-    if (props.$btn)
-      return " grid-column-start: 1; grid-column-end:3; ";
+    if (props.$btn) return " grid-column-start: 1; grid-column-end:3; ";
   }}
 `;
+
+export const TexteField = styled.input`
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  height: 60px;
+  padding: 0px 20px;
+  background: ${(props) => props.theme.colors.header};
+  color: ${(props) => props.theme.colors.text};
+  width: 100%;
+  line-height: 1;
+  box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
+`;
+
+export const TexteArea = styled.textarea`
+  font-size: 1rem;
+  font-family: inherit;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 1rem;
+  line-height: 1.3;
+  border: none;
+  background: ${(props) => props.theme.colors.header};
+  color: ${(props) => props.theme.colors.text};
+  box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
+`;
+
+
+export const Submit = styled.button`
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.9rem 1rem;
+  border-radius: 3px;
+  background-color: ${(props) => props.theme.colors.primary};
+  /* color: ${(props) => props.theme.colors.text}; */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  overflow: hidden;
+
+  transition: all 0.3s;
+
+  & span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: ${(props) => props.theme.colors.text};
+    transition: all 0.3s;
+    z-index: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+`;
+
