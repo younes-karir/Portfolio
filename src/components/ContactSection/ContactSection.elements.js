@@ -77,50 +77,53 @@ export const ConatctWrapper = styled.div`
   padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
-
-  gap: 6rem;
+  gap: 4rem;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   @media ${devices.laptop} {
     grid-template-columns: 4fr 3fr;
+    gap: 4rem;
   }
 `;
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
   /* background-color: red; */
   width: 100%;
   height: 28rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 1.5rem;
 
   @media ${devices.tablet} {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 1.5rem;
   }
   @media ${devices.laptop} {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr;
+    gap: 1.5rem;
   }
 `;
-export const InfosContainer = styled.div`
-  background-color: #999;
-  width: 100%;
-`;
-export const FormWrapper = styled.form``;
+
 export const Eelement = styled.div`
   width: 100%;
-  height: 60px;
+  height: fit-content;
 
   ${(props) => {
     if (props.$fit)
-      return " grid-column-start: 1; grid-column-end:3; height: 100%; ";
-
-    if (props.$btn) return " grid-column-start: 1; grid-column-end:3; ";
+      return `@media  ${devices.laptop} , ${devices.tablet} { grid-column-start: 1; grid-column-end:3; height: 100% }  `;
   }}
+
+  ${(props) => {
+    if (props.$btn) return " grid-column-start: 1; grid-column-end:3; ";
+  }};
 `;
 
 export const TexteField = styled.input`
@@ -139,7 +142,7 @@ export const TexteField = styled.input`
 export const TexteArea = styled.textarea`
   font-size: 1rem;
   font-family: inherit;
-  height: 100%;
+  height: 10rem;
   width: 100%;
   max-width: 100%;
   min-width: 100%;
@@ -149,8 +152,14 @@ export const TexteArea = styled.textarea`
   background: ${(props) => props.theme.colors.header};
   color: ${(props) => props.theme.colors.text};
   box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
-`;
 
+  @media ${devices.laptop}, ${devices.tablet} {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+`;
 
 export const Submit = styled.button`
   position: relative;
@@ -202,3 +211,35 @@ export const Submit = styled.button`
   }
 `;
 
+export const InfosContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media ${devices.laptop} {
+    padding-left: 2rem;
+  }
+`;
+
+export const InfoWrapper = styled.div`
+  width: 100%;
+  padding: 2rem;
+  background-color: ${(props) => props.theme.colors.header};
+  box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+`;
+export const InfoTitle = styled.h4`
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: ${(props) => props.theme.colors.text};
+`;
+export const InfoContent = styled.span`
+  font-weight: 300;
+  line-height: 1.88rem;
+  color: ${(props) => props.theme.colors.text};
+  opacity: 0.7;
+`;

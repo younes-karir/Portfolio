@@ -67,6 +67,8 @@ export const Sub = styled.p`
 
 export const ProjectsWrapper = styled.div`
   width: 100%;
+  height: fit-content;
+  padding-bottom: 4rem;
   padding-top: 4rem;
   display: grid;
   row-gap: 2rem;

@@ -5,6 +5,9 @@ import {
   Eelement,
   FormContainer,
   FormWrapper,
+  InfoContent,
+  InfoTitle,
+  InfoWrapper,
   InfosContainer,
   Sub,
   Submit,
@@ -48,7 +51,20 @@ const ContactSection = () => {
             </Submit>
           </Eelement>
         </FormContainer>
-        <InfosContainer></InfosContainer>
+        <InfosContainer>
+          <InfoWrapper>
+            <InfoTitle>eMail :</InfoTitle>
+            <InfoContent>example@email.com</InfoContent>
+          </InfoWrapper>
+          <InfoWrapper>
+            <InfoTitle>Phone :</InfoTitle>
+            <InfoContent>+888- 1234- 5678- 00</InfoContent>
+          </InfoWrapper>
+          <InfoWrapper>
+            <InfoTitle>Address :</InfoTitle>
+            <InfoContent>201 House Road, Torento Canada</InfoContent>
+          </InfoWrapper>
+        </InfosContainer>
       </ConatctWrapper>
     </Container>
   );
