@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import bck from "../../Helpers/Images/hero_bg_element.png";
 import devices from "../../Helpers/Devices";
 import { RiMenuLine } from "react-icons/ri";
+import { LuMenu } from "react-icons/lu";
 import { IoCaretBackSharp } from "react-icons/io5";
 import { BiPlus } from "react-icons/bi";
 import { Link } from "react-scroll";
@@ -226,11 +227,12 @@ export const MobileMenu = styled.div`
   }
 `;
 
-export const Menu = styled(RiMenuLine)`
+export const Menu = styled(LuMenu)`
   height: 3rem;
   width: 3rem;
-  stroke-width: 0.4;
+  stroke-width: 2;
 `;
+
 
 // content
 

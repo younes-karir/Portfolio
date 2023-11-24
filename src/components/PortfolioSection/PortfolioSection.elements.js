@@ -12,7 +12,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 6rem 1rem 2rem 1rem;
 
   @media ${devices.mobileL} {
     padding: 2rem 0.5rem 0rem 0.5rem;

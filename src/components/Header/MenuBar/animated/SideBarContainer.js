@@ -26,8 +26,8 @@ const Box = styled(animated.div)`
   display: block;
   position: fixed;
   height: 100%;
-  width: 18rem;
-  max-width: 20rem;
+  width: 80%;
+  max-width: 25rem;
   right: 0;
   background-color: ${(props) => props.theme.colors.background};
   z-index: 15;

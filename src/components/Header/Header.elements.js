@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 import { RiMenuLine } from "react-icons/ri";
+import { LuMenu } from "react-icons/lu";
 
 import {Link} from 'react-scroll';
 
@@ -178,8 +179,8 @@ export const MobileMenu = styled.div`
   }
 `;
 
-export const Menu = styled(RiMenuLine)`
+export const Menu = styled(LuMenu)`
   height: 3rem;
   width: 3rem;
-  stroke-width: 0.4;
+  stroke-width: 2;
 `;
