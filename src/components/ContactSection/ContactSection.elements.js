@@ -92,7 +92,7 @@ export const ConatctWrapper = styled.div`
 export const FormContainer = styled.form`
   /* background-color: red; */
   width: 100%;
-  height: 28rem;
+  height: 35rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -105,6 +105,7 @@ export const FormContainer = styled.form`
     gap: 1.5rem;
   }
   @media ${devices.laptop} {
+    height: 28rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr;
@@ -114,16 +115,17 @@ export const FormContainer = styled.form`
 
 export const Eelement = styled.div`
   width: 100%;
-  height: fit-content;
 
   ${(props) => {
     if (props.$fit)
       return `@media  ${devices.laptop} , ${devices.tablet} { grid-column-start: 1; grid-column-end:3; height: 100% }  `;
-  }}
+    }}
 
   ${(props) => {
     if (props.$btn) return " grid-column-start: 1; grid-column-end:3; ";
   }};
+
+
 `;
 
 export const TexteField = styled.input`
@@ -142,7 +144,8 @@ export const TexteField = styled.input`
 export const TexteArea = styled.textarea`
   font-size: 1rem;
   font-family: inherit;
-  height: 10rem;
+  
+  height: 327px;
   width: 100%;
   max-width: 100%;
   min-width: 100%;
