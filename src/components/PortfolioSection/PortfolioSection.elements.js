@@ -4,6 +4,7 @@ import devices from "../../Helpers/Devices";
 
 export const Container = styled.section`
   width: 100%;
+  background-color: ${props  => props.theme.colors.background.middle};
   height: fit-content;
   background-position: top left;
   background-repeat: no-repeat;

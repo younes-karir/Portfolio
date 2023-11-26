@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: fit-content;
   padding: 4px 8px;
   border-radius: 15px;
-  background-color: ${(props) => props.theme.colors.profileCard};
+  background-color: ${(props) => props.theme.colors.background.base};
   color: ${(props) => props.theme.colors.primary};
 `;
 

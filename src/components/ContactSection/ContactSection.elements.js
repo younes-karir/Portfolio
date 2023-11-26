@@ -132,7 +132,7 @@ export const TexteField = styled.input`
   border: none;
   height: 60px;
   padding: 0px 20px;
-  background: ${(props) => props.theme.colors.header};
+  background: ${(props) => props.theme.colors.background.upper};
   color: ${(props) => props.theme.colors.text};
   width: 100%;
   line-height: 1;
@@ -149,7 +149,7 @@ export const TexteArea = styled.textarea`
   padding: 1rem;
   line-height: 1.3;
   border: none;
-  background: ${(props) => props.theme.colors.header};
+  background: ${(props) => props.theme.colors.background.upper};
   color: ${(props) => props.theme.colors.text};
   box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
 
@@ -225,7 +225,7 @@ export const InfosContainer = styled.div`
 export const InfoWrapper = styled.div`
   width: 100%;
   padding: 2rem;
-  background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.background.upper};
   box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;

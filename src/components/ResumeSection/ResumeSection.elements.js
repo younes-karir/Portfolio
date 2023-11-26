@@ -4,7 +4,7 @@ import devices from "../../Helpers/Devices";
 export const Container = styled.section`
   width: 100%;
   height: fit-content;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.background.base};
   background-position: top left;
   background-repeat: no-repeat;
   position: relative;
@@ -107,7 +107,7 @@ export const RoutLink = styled.div`
   color: ${(props) => (!props.selected ? props.theme.colors.text : "#fff")};
   box-shadow : ${(props) => (!props.selected ? ' rgba(0, 0, 0, 0.05) 0px 0px 0px 1px' : 'none')};
   background-color: ${(props) =>
-    props.selected ? props.theme.colors.primary : props.theme.colors.header};
+    props.selected ? props.theme.colors.primary : props.theme.colors.background.upper};
   position: relative;
 
   text-transform: uppercase;
@@ -156,14 +156,14 @@ export const SkillsConatiner = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.background.upper};
   @media ${devices.laptop} {
     height: 100%; 
     }
 `;
 
 export const CodingSkills = styled.div`
-  background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.background.upper};
   width: 100%;
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
   /* height: 100%; */
@@ -201,7 +201,7 @@ export const CodingSkillsTitle = styled.h3`
 `;
 
 export const DesignSkills = styled.div`
-  background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.background.upper};
   width: 100%;
   padding: 3rem 2rem;
 `;

@@ -2,11 +2,13 @@ import { Fragment, useEffect, useState } from "react";
 import GlobalStyle from "./Helpers/GlobalStyle";
 import Content from "./components/Content";
 import Loader from "./components/UI/Loader";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { HeaderOff, HeaderOn } from "./Store/actions/UI-Actions";
 import useScrollPosition from "./Helpers/Hooks/useScrollPosition";
 
 function App() {
+  const thiming = useSelector((state) => state.theme.Theme);
+
   const dispatch = useDispatch();
   const [timeLeft, setTimeLeft] = useState(0);
 
@@ -18,7 +20,7 @@ function App() {
     } else {
       dispatch(HeaderOn());
     }
-  }, [scrollPosition,dispatch]);
+  }, [scrollPosition,thiming,dispatch]);
 
 
   useEffect(() => {

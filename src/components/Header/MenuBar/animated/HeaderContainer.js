@@ -27,14 +27,16 @@ const Box = styled(animated.div)`
   height: 4rem;
   width: 100%;
   top: 0;
-  background-color: ${(props) => props.theme.colors.header};
+  background-color: ${(props) => props.theme.colors.background.header};
   z-index: 5;
   display: flex;
   align-items: center;
   padding: 0.5rem;
 
-  box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-  @media ${devices.tablet} {
+  box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,0px 3px 5px rgba(0, 0, 0, 0.04) ;
+
+  
+    @media ${devices.tablet} {
     height: 4.5rem;
     padding: 1rem 2rem;
   }

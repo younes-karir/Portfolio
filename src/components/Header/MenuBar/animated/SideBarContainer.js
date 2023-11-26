@@ -29,7 +29,7 @@ const Box = styled(animated.div)`
   width: 80%;
   max-width: 25rem;
   right: 0;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.background.base};
   z-index: 15;
   @media ${devices.laptop} {
     display: none;
