@@ -2,6 +2,14 @@ import styled from "styled-components";
 import {Link} from 'react-scroll';
 
 
+import { FaFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { FaRegCopyright } from "react-icons/fa6";
+
+
 export const Container = styled.footer`
   height: 5rem;
   width: 100%;
