@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
 
+    /* transition: color,background-color 500ms ease-in-out; */
+
   }
 
   

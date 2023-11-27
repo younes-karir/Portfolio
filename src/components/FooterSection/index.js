@@ -3,11 +3,17 @@ import {
   Container,
   CopyRightsLabel,
   CopyRightsWrapper,
+  FacebookICon,
+  GithubIcon,
+  InstagramIcon,
   InternalLinks,
+  LinkedICon,
   LinksWrapper,
   LogoLabel,
   SLink,
+  SocialLink,
   SocialLinks,
+  TwitterIcon,
 } from "./FooterSection.elements";
 
 const FooterSection = () => {
@@ -57,13 +63,16 @@ const FooterSection = () => {
           </SLink>
         </InternalLinks>
         <SocialLinks>
-            {/* <SocialLink><Facebook /></SocialLink> */}
-
+            <SocialLink><FacebookICon /></SocialLink>
+            <SocialLink><LinkedICon /></SocialLink>
+            <SocialLink><GithubIcon /></SocialLink>
+            <SocialLink><InstagramIcon /></SocialLink>
+            <SocialLink><TwitterIcon /></SocialLink>
         </SocialLinks>
       </LinksWrapper>
       <CopyRightsWrapper>
-        <CopyRightsLabel></CopyRightsLabel>
-        <LogoLabel></LogoLabel>
+        <CopyRightsLabel>Copyright © 2023 KARIR</CopyRightsLabel>
+        <LogoLabel>KARIR</LogoLabel>
       </CopyRightsWrapper>
     </Container>
   );

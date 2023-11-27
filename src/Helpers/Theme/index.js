@@ -37,6 +37,8 @@ export const dark = {
   },
 };
 
+
+
 const Theme = ({ children }) => {
   const thiming = useSelector((state) => state.theme.Theme);
   return <ThemeProvider theme={thiming}>{children}</ThemeProvider>;
