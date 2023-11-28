@@ -14,37 +14,42 @@ export const Container = styled.footer`
   width: 100%;
   background-color: none;
   background-color: ${(props) => props.theme.colors.header};
-  padding: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 0rem 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     0px 3px 5px rgba(0, 0, 0, 0.04);
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-
   @media ${devices.mobileL} {
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   @media ${devices.tablet} {
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+
+  @media ${devices.tablet} {
+    padding: 1rem 3rem 0rem 3rem;
   }
 
   @media ${devices.laptop} {
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 1rem 5rem 0rem 3rem;
   }
 `;
 
 export const LinksWrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 2rem 0rem 1rem 0rem;
+  padding: .5rem 0rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
 
-  @media ${devices.mobileL} {
+  @media ${devices.tablet} {
+    
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0rem;
@@ -78,7 +83,7 @@ export const SocialLinks = styled.div`
   align-items: center;
   gap: 1rem;
 
-  @media ${devices.mobileL} {
+  @media ${devices.tablet} {
     justify-content: flex-end;
   }
 `;
@@ -118,13 +123,13 @@ export const CopyRightsWrapper = styled.div`
   border-top: solid 1px ${(porps) => porps.theme.colors.text};
   width: 100%;
   height: 100%;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: .5rem 0rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
 
-  @media ${devices.mobileL} {
+  @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0rem;
@@ -146,7 +151,7 @@ export const LogoLabel = styled.h2`
   font-weight: bold;
   font-size: 1.5em;
 
-  @media ${devices.mobileL} {
+  @media ${devices.tablet} {
     text-align: right;
   }
 `;

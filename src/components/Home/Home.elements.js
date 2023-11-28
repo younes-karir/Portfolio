@@ -389,7 +389,7 @@ export const ResumeHome = styled.button`
   padding: 0.9rem 2rem;
   border: none;
   background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.background};
+  color: #fff;
   border-radius: 5px;
   font-size: 1rem;
   transition: transform 0.1s;
