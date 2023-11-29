@@ -16,20 +16,20 @@ export const Container = styled.section`
 
   padding: 0.5rem;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   /* margin-bottom: 3rem; */
   /* gap: 6rem; */
 
   @media ${devices.mobileL} {
-    padding: 2rem 0.5rem 3rem 0.5rem;
+    padding: 2rem 0.5rem 5rem 0.5rem;
   }
 
   @media ${devices.tablet} {
-    padding: 6rem 2rem 3rem 2rem;
+    padding: 6rem 2rem 6rem 2rem;
   }
 
   @media ${devices.laptop} {
-    padding: 7rem 3rem 5rem 3rem;
+    padding: 7rem 3rem 7.5rem 3rem;
     background-position: 80% -75%;
   }
 `;

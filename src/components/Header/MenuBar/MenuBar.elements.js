@@ -31,10 +31,14 @@ export const LinksHolder = styled.div`
   background-color: ${(props) => props.theme.colors.header};
   height: 80%;
   width: 100%;
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 3px;
+  padding-left: 1rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  max-height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const LinkWrapper = styled.div`
@@ -43,8 +47,6 @@ export const LinkWrapper = styled.div`
   height: fit-content;
   display: flex;
   gap: 20px;
-  
- 
 `;
 
 export const MLink = styled(Link)`
@@ -77,4 +79,28 @@ export const Download = styled.div`
   align-items: center;
 `;
 
-export const Resume = styled.button``;
+export const Resume = styled.button`
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.9rem 1rem;
+  background-color: ${(props) => props.theme.colors.primary};
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+
+  & span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover {
+    cursor: pointer;
+    /* transition: transform 0.1s; */
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+`;

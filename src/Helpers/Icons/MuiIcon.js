@@ -18,7 +18,7 @@ const MuiIcon = () => {
     >
       <path
         d="m0,0v10.39l3,1.73v-6.93l6,3.46,6-3.47v3.47l-6,3.46v3.46l6,3.46,9-5.19v-6.93l-3,1.73v3.46l-6,3.46-3-1.73,6-3.47V0l-9,5.2L0,0ZM24,0l-3,1.73v3.47l3-1.73V0h0Z"
-        stroke-width="0"
+        strokeWidth="0"
         fill={thiming.colors.text}
       />
     </svg>

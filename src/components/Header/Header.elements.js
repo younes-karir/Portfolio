@@ -35,7 +35,7 @@ export const Logo = styled.h2`
   color: ${(props) => props.theme.colors.primary};
   font-weight: bold;
   line-height: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 `;
 export const LinksContainer = styled.div`
   width: fit-content;

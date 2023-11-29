@@ -15,6 +15,7 @@ import {
 import Theming from "../UI/Theming";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuOpen } from "../../Store/actions/UI-Actions";
+import LogoIcon from "../../Helpers/Icons/Logo";
 
 const Data = (props) => {
   const theming = useSelector((state) => state.theme.Theme);
@@ -33,7 +34,7 @@ const Data = (props) => {
     <HeaderContainer>
       <HeaderWrapper>
         <LogoContainer>
-          <Logo>KARIR</Logo>
+          <LogoIcon />
         </LogoContainer>
         <LinksContainer>
           <Nav>
