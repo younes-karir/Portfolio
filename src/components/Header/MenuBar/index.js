@@ -1,8 +1,6 @@
 import {
   Back,
   BackContainer,
-  Download,
-  Home,
   LinkWrapper,
   LinksContainer,
   LinksHolder,
@@ -12,24 +10,30 @@ import {
 import ReactDOM from "react-dom";
 import SideBarModal from "./animated/SideBarModal";
 import SideBarContainer from "./animated/SideBarContainer";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
+import ArowIconMenu from "../../../Helpers/Icons/ArowIconMenu";
 
 const Data = () => {
+  const [Selected, setSelected] = useState('home');
   const dispatch = useDispatch();
   const theming = useSelector((state) => state.theme.Theme);
-
 
   const CloseMenuHAndler = () => {
     dispatch(SildeMenuClose());
   };
 
   const activeStyle = {
-    color : theming.colors.primary,
-    fontWeight : '500', 
+    color: '#fff',
+    backgroundColor: theming.colors.primary,
+  };
+
+  const selectedHandler =(selected) =>{
+    setSelected(selected);
   }
 
+  
 
   return (
     <Fragment>
@@ -51,8 +55,10 @@ const Data = () => {
                 duration={500}
                 onClick={CloseMenuHAndler}
                 activeStyle={activeStyle}
+                onSetActive={selectedHandler}
               >
                 Home
+                {Selected === 'home'  && <ArowIconMenu selected={true} />}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -66,7 +72,10 @@ const Data = () => {
                 duration={500}
                 onClick={CloseMenuHAndler}
                 activeStyle={activeStyle}
+                onSetActive={selectedHandler}
+
               >
+                {Selected === 'about'  && <ArowIconMenu selected={true} />}
                 about me
               </MLink>
             </LinkWrapper>
@@ -80,9 +89,11 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-
                 activeStyle={activeStyle}
+                onSetActive={selectedHandler}
+
               >
+                {Selected === 'resume'  && <ArowIconMenu selected={true} />}
                 resume
               </MLink>
             </LinkWrapper>
@@ -96,9 +107,11 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-
                 activeStyle={activeStyle}
+                onSetActive={selectedHandler}
+
               >
+                {Selected === 'portfolio'  && <ArowIconMenu selected={true} />}
                 Portfolio
               </MLink>
             </LinkWrapper>
@@ -112,9 +125,11 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-
                 activeStyle={activeStyle}
+                onSetActive={selectedHandler}
+
               >
+                {Selected === 'contact'  && <ArowIconMenu selected={true} />}
                 contact
               </MLink>
             </LinkWrapper>

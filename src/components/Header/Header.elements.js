@@ -14,7 +14,6 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
   position: relative;
   @media ${devices.tablet} {
     padding: 1rem 0rem;
@@ -165,7 +164,7 @@ export const MobileMenu = styled.div`
   width: fit-content;
   display: flex;
   align-items: center;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.text};
   
   @media ${devices.mobileL} {
   }

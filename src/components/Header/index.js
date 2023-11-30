@@ -27,16 +27,16 @@ const Data = (props) => {
   };
 
   const activeStyle = {
-    color : theming.colors.primary,
-    fontWeight : '500', 
-  }
+    color: theming.colors.primary,
+    fontWeight: "500",
+  };
 
   return (
     <HeaderContainer>
       <HeaderWrapper>
         <LogoContainer>
-          {/* <LogoIcon /> */}
-          <LogoMobileIcon />
+          <LogoIcon $size='2.4rem' $color={theming.colors.text} />
+          {/* <LogoMobileIcon /> */}
 
           {/* <Logo>KARIR</Logo> */}
         </LogoContainer>
@@ -73,7 +73,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-             Resume
+              Resume
             </SLink>
             <SLink
               id="4"

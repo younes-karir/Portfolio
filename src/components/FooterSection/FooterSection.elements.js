@@ -13,8 +13,8 @@ export const Container = styled.footer`
   height: fit-content;
   width: 100%;
   background-color: none;
-  background-color: ${(props) => props.theme.colors.header};
-  padding: 1rem 0.5rem 0rem 0.5rem;
+  background-color: ${(props) => props.theme.colors.background.middle};
+  padding: 1rem 0.5rem 0rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     0px 3px 5px rgba(0, 0, 0, 0.04);
 

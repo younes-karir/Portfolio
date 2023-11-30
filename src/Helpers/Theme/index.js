@@ -23,10 +23,10 @@ export const dark = {
   title: "dark",
   colors: {
     background: {
-      base: "#0f141f",
-      middle: "#192336",
+      base: "#181d28",
+      middle: "#1d2330ed",
       upper: "#192336",
-      header: "#223049"
+      header: "#131924"
     },
     text: "#f8f9fe",
     primary: "#4d63dd",

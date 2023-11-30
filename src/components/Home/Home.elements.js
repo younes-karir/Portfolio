@@ -68,6 +68,7 @@ export const Header = styled.div`
   align-items: center;
   padding: 0.5rem;
   position: relative;
+  
   @media ${devices.tablet} {
     padding: 1rem 0rem;
   }

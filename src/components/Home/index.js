@@ -61,7 +61,7 @@ const Home = () => {
       <Header>
         <LogoContainer>
           {/* <Logo>KARIR</Logo> */}
-          <LogoIcon />
+          <LogoIcon $size='2.5rem' $color={theming.colors.primary}/>
 
         </LogoContainer>
         <LinksContainer>

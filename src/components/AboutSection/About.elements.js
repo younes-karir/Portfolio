@@ -12,7 +12,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
 
 
   padding: 6rem 1rem 0rem 1rem;
@@ -103,7 +103,7 @@ export const ProfileWrapper = styled.div`
   }
 
   @media ${devices.laptop} {
-    width: 40%;
+    width: 27%;
     padding: 2rem;
   }
 `;
@@ -161,7 +161,7 @@ export const Details = styled.p`
 `;
 
 export const ContactContainer = styled.div`
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   width: 100%;
   max-width: 40rem;
   height: fit-content;
@@ -178,7 +178,7 @@ export const ContactContainer = styled.div`
   }
 
   @media ${devices.laptop} {
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 
 `;
