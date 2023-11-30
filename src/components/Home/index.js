@@ -33,6 +33,7 @@ import { SildeMenuOpen } from "../../Store/actions/UI-Actions";
 import Theming from "../UI/Theming";
 
 import defaultImg from "../../Helpers/Images/profile.png";
+import LogoIcon from "../../Helpers/Icons/Logo";
 
 // import reactIcon from "../../Helpers/Icons/react.svg";
 // import reduxIcon from "../../Helpers/Icons/redux.svg";
@@ -59,7 +60,9 @@ const Home = () => {
     <Container id="home">
       <Header>
         <LogoContainer>
-          <Logo>KARIR</Logo>
+          {/* <Logo>KARIR</Logo> */}
+          <LogoIcon />
+
         </LogoContainer>
         <LinksContainer>
           <Nav>
