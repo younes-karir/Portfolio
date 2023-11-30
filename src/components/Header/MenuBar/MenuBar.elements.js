@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IoChevronBack } from "react-icons/io5";
 import { Link } from "react-scroll";
 import { RiHome5Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
@@ -10,7 +9,6 @@ export const BackContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  /* padding-right: 1rem; */
 `;
 export const Back = styled(IoClose)`
   font-size: 2.5rem;
@@ -25,18 +23,14 @@ export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  padding-left:1rem;
-  padding-right:.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 `;
 
 export const LinksHolder = styled.div`
-  /* background-color: ${(props) => props.theme.colors.header}; */
   height: 80%;
   width: 100%;
   border-radius: 3px;
-  /* padding-left: 1rem; */
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
   max-height: 35rem;
   display: flex;
   flex-direction: column;
@@ -45,7 +39,6 @@ export const LinksHolder = styled.div`
 
 export const LinkWrapper = styled.div`
   width: 100%;
-  /* padding: 1rem 0rem; */
   height: fit-content;
   display: flex;
   gap: 20px;
@@ -58,14 +51,15 @@ export const MLink = styled(Link)`
   display: flex;
   align-items: center;
   height: 4rem;
-  padding-left:2rem;
-  background-color: ${(props) => props.theme.colors.background.upper} ;
+  padding-left: 2rem;
+  background-color: ${(props) => props.theme.colors.background.upper};
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,0px 3px 3px rgba(18, 18, 18, 0.04);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    0px 3px 3px rgba(18, 18, 18, 0.04);
 
   &:hover {
     cursor: pointer;
@@ -106,7 +100,6 @@ export const Resume = styled.button`
 
   &:hover {
     cursor: pointer;
-    /* transition: transform 0.1s; */
   }
 
   &:active {

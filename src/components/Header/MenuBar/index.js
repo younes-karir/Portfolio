@@ -45,7 +45,6 @@ const Data = () => {
         <LinksContainer>
           <LinksHolder>
             <LinkWrapper>
-              {/* <Home /> */}
               <MLink
                 id="1"
                 to="home"
@@ -62,7 +61,6 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              {/* <Home /> */}
               <MLink
                 id="1"
                 to="about"
@@ -80,7 +78,6 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              {/* <Home /> */}
               <MLink
                 id="2"
                 to="resume"
@@ -98,7 +95,6 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              {/* <Home /> */}
               <MLink
                 id="3"
                 to="portfolio"
@@ -116,7 +112,6 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              {/* <Home /> */}
               <MLink
                 id="4"
                 to="contact"
