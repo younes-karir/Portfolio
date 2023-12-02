@@ -83,6 +83,10 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.9;
+  padding: 0rem .5rem;
+
+
 `;
 export const Logo = styled.h2`
   color: ${(props) => props.theme.colors.primary};

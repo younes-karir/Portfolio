@@ -4,6 +4,7 @@ import ContactSection from "../ContactSection";
 import FooterSection from "../FooterSection";
 import Header from "../Header";
 import MenuBar from "../Header/MenuBar";
+import MobileMenu from "../Header/MobileMenu";
 import Home from "../Home";
 import PortfolioSection from "../PortfolioSection";
 
@@ -25,7 +26,8 @@ const Content = () => {
       <PortfolioSection />
       <ContactSection />
       <FooterSection />
-      <MenuBar />
+      {/* <MenuBar /> */}
+      <MobileMenu />
       <ScrollToTop />
     </BaseFrame>
   );

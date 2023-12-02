@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 import { RiMenuLine } from "react-icons/ri";
+import { CgMenuGridO } from "react-icons/cg";
 import { LuMenu } from "react-icons/lu";
 
 import {Link} from 'react-scroll';
@@ -16,11 +17,11 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   position: relative;
   @media ${devices.tablet} {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
   }
 
   @media ${devices.laptop} {
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
   }
 `;
 
@@ -29,6 +30,7 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 `;
 export const Logo = styled.h2`
   color: ${(props) => props.theme.colors.primary};
@@ -165,6 +167,7 @@ export const MobileMenu = styled.div`
   display: flex;
   align-items: center;
   color: ${(props) => props.theme.colors.text};
+  background-color: green;  
   
   @media ${devices.mobileL} {
   }
@@ -178,8 +181,7 @@ export const MobileMenu = styled.div`
   }
 `;
 
-export const Menu = styled(LuMenu)`
-  height: 3rem;
-  width: 3rem;
-  stroke-width: 2;
+export const Menu = styled(CgMenuGridO)`
+  height: 2.5rem;
+  width: 2.5rem;
 `;

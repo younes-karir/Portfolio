@@ -5,7 +5,6 @@ import {
   Download,
   Header,
   LinksContainer,
-  Logo,
   LogoContainer,
   Nav,
   Resume,

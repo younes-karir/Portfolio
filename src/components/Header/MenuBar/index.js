@@ -16,7 +16,9 @@ import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
 import ArowIconMenu from "../../../Helpers/Icons/ArowIconMenu";
 
 const Data = () => {
-  const [Selected, setSelected] = useState('home');
+  // const [Selected, setSelected] = useState('home');
+  const [Selected, setSelected] = useState();
+
   const dispatch = useDispatch();
   const theming = useSelector((state) => state.theme.Theme);
 
@@ -30,7 +32,7 @@ const Data = () => {
   };
 
   const selectedHandler =(selected) =>{
-    setSelected(selected);
+    // setSelected(selected);
   }
 
   

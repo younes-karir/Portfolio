@@ -28,21 +28,21 @@ const Box = styled(animated.div)`
   width: 100%;
   top: 0;
   background-color: ${(props) => props.theme.colors.background.header};
-  z-index: 5;
+  z-index: 150;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0rem 1rem;
 
   box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,0px 3px 5px rgba(0, 0, 0, 0.04) ;
 
   /* border-bottom: solid 1px #0f141f; */
     @media ${devices.tablet} {
     height: 4.5rem;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
   }
 
   @media ${devices.laptop} {
     height: 5rem;
-    padding: 2rem 3rem;
+    padding: 0rem 3rem;
   }
 `;

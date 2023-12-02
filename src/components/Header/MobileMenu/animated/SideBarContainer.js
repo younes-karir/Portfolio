@@ -6,12 +6,12 @@ import { useSelector } from "react-redux";
 const SideBarContainer = ({ children }) => {
   const showMenu = useSelector((state) => state.UI.sideMenu);
 
-  const BoxTransition = useTransition(false, {
-    from: { x: 400 },
-    enter: { x: 0 },
-    leave: { x: 400 },
+  const BoxTransition = useTransition(showMenu, {
+    from: {  height :' 10%' },
+    enter: {  height :' 100%'},
+    leave: {  with :' 10%'},
     config: {
-      duration: 300,
+      duration: 800,
     },
   });
 
@@ -25,11 +25,11 @@ export default SideBarContainer;
 const Box = styled(animated.div)`
   display: block;
   position: fixed;
-  height: 100%;
+  height: 100vh;
   width: 80%;
   max-width: 25rem;
   right: 0;
-  background-color: ${(props) => props.theme.colors.background.base};
+  background-color: ${(props) => props.theme.colors.background.upper};
   z-index: 15;
   @media ${devices.laptop} {
     display: none;

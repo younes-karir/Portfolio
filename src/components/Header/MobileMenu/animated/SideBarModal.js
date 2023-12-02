@@ -8,20 +8,20 @@ const SideBarModal = ({ children }) => {
   const showBox = useSelector((state) => state.UI.sideMenu);
 
 
-  // useEffect(() => {
-  //   if(showBox){
-  //     document.body.style.overflowY = "hidden";
-  //   }else{
-  //     document.body.style.overflowY = "scroll";
-  //   }
-  //   return () => {
-  //     document.body.style.overflowY = "scroll";
-  //   };
-  // }, [showBox]);
+  useEffect(() => {
+    if(showBox){
+      document.body.style.overflowY = "hidden";
+    }else{
+      document.body.style.overflowY = "scroll";
+    }
+    return () => {
+      document.body.style.overflowY = "scroll";
+    };
+  }, [showBox]);
 
 
 
-  const BoxTransition = useTransition(false, {
+  const BoxTransition = useTransition(showBox, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
@@ -40,7 +40,7 @@ const Box = styled(animated.div)`
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   z-index: 15;
 
   @media ${devices.laptop} {
