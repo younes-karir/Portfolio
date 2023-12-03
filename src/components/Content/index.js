@@ -26,8 +26,8 @@ const Content = () => {
       <PortfolioSection />
       <ContactSection />
       <FooterSection />
-      {/* <MenuBar /> */}
-      <MobileMenu />
+      <MenuBar />
+      {/* <MobileMenu /> */}
       <ScrollToTop />
     </BaseFrame>
   );

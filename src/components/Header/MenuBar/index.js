@@ -1,11 +1,14 @@
 import {
   Back,
   BackContainer,
+  DownloadIcon,
+  ElementTitle,
   LinkWrapper,
   LinksContainer,
   LinksHolder,
   MLink,
-  Resume,
+
+  ThemeWrapper,
 } from "./MenuBar.elements";
 import ReactDOM from "react-dom";
 import SideBarModal from "./animated/SideBarModal";
@@ -14,6 +17,7 @@ import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
 import ArowIconMenu from "../../../Helpers/Icons/ArowIconMenu";
+import Theming from "../../UI/Theming";
 
 const Data = () => {
   // const [Selected, setSelected] = useState('home');
@@ -55,7 +59,7 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                activeStyle={activeStyle}
+                // activeStyle={activeStyle}
                 onSetActive={selectedHandler}
               >
                 Home
@@ -71,7 +75,7 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                activeStyle={activeStyle}
+                // activeStyle={activeStyle}
                 onSetActive={selectedHandler}
 
               >
@@ -88,7 +92,7 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                activeStyle={activeStyle}
+                // activeStyle={activeStyle}
                 onSetActive={selectedHandler}
 
               >
@@ -105,7 +109,7 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                activeStyle={activeStyle}
+                // activeStyle={activeStyle}
                 onSetActive={selectedHandler}
 
               >
@@ -122,7 +126,7 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                activeStyle={activeStyle}
+                // activeStyle={activeStyle}
                 onSetActive={selectedHandler}
 
               >
@@ -131,10 +135,13 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              <Resume>
-                <span>+ Download CV</span>
-              </Resume>
+              <ElementTitle>Resume</ElementTitle>
+              <DownloadIcon/>
             </LinkWrapper>
+            <ThemeWrapper>
+              <ElementTitle>Theme</ElementTitle>
+              <Theming  size = {'1.7rem'}/>
+            </ThemeWrapper>
           </LinksHolder>
         </LinksContainer>
       </SideBarContainer>

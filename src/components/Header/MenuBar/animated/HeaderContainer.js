@@ -28,7 +28,7 @@ const Box = styled(animated.div)`
   width: 100%;
   top: 0;
   background-color: ${(props) => props.theme.colors.background.header};
-  z-index: 150;
+  z-index:15;
   display: flex;
   align-items: center;
   padding: 0rem 1rem;

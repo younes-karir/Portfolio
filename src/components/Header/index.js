@@ -4,7 +4,6 @@ import {
   Download,
   HeaderWrapper,
   LinksContainer,
-  Logo,
   LogoContainer,
   Menu,
   MobileMenu,
@@ -98,7 +97,7 @@ const Data = (props) => {
               Contact
             </SLink>
           </Nav>
-          <Theming />
+          <Theming size={'1.4rem'} />
           <Download>
             <Resume>
               <span>+ Download CV</span>

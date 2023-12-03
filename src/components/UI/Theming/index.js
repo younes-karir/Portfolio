@@ -5,7 +5,7 @@ import {
   ThemeToggleLight,
 } from "../../../Store/actions/UI-Actions";
 
-const Theming = () => {
+const Theming = (props) => {
   const thiming = useSelector((state) => state.theme.Theme);
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const Theming = () => {
 
   return (
     <Container>
-      <Toggle onClick={thiming.title === "dark" ? LightHandler : DarkHandler} />
+      <Toggle $size={props.size} onClick={thiming.title === "dark" ? LightHandler : DarkHandler} />
     </Container>
   );
 };

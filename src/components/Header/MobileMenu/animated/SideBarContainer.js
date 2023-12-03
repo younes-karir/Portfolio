@@ -7,11 +7,11 @@ const SideBarContainer = ({ children }) => {
   const showMenu = useSelector((state) => state.UI.sideMenu);
 
   const BoxTransition = useTransition(showMenu, {
-    from: {  height :' 10%' },
+    from: {  height :' 60%' },
     enter: {  height :' 100%'},
-    leave: {  with :' 10%'},
+    leave: {  with :' 60%'},
     config: {
-      duration: 800,
+      duration: 150,
     },
   });
 
@@ -30,7 +30,7 @@ const Box = styled(animated.div)`
   max-width: 25rem;
   right: 0;
   background-color: ${(props) => props.theme.colors.background.upper};
-  z-index: 15;
+  z-index: 100 ;
   @media ${devices.laptop} {
     display: none;
   }

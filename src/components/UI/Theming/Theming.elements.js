@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 `;
 export const Toggle = styled(CgDarkMode)`
-    font-size: 1.4rem;
+    font-size: ${props => props.$size};
     color: ${props => props.theme.colors.text};
 
     &:hover{

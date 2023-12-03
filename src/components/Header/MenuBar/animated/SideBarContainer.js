@@ -3,10 +3,13 @@ import { animated, useTransition } from "react-spring";
 import devices from "../../../../Helpers/Devices";
 import { useSelector } from "react-redux";
 
+
+import { PiDownloadSimpleFill } from "react-icons/pi";
+
 const SideBarContainer = ({ children }) => {
   const showMenu = useSelector((state) => state.UI.sideMenu);
 
-  const BoxTransition = useTransition(false, {
+  const BoxTransition = useTransition(showMenu, {
     from: { x: 400 },
     enter: { x: 0 },
     leave: { x: 400 },
@@ -23,14 +26,19 @@ const SideBarContainer = ({ children }) => {
 export default SideBarContainer;
 
 const Box = styled(animated.div)`
-  display: block;
   position: fixed;
   height: 100%;
   width: 80%;
   max-width: 25rem;
   right: 0;
-  background-color: ${(props) => props.theme.colors.background.base};
+  background-color: ${(props) => props.theme.colors.background.upper};
   z-index: 15;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
   @media ${devices.laptop} {
     display: none;
   }

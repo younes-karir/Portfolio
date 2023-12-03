@@ -9,7 +9,8 @@ import {Link} from 'react-scroll';
 
 export const HeaderWrapper = styled.div`
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -166,9 +167,9 @@ export const MobileMenu = styled.div`
   width: fit-content;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: ${(props) => props.theme.colors.text};
-  background-color: green;  
-  
+   
   @media ${devices.mobileL} {
   }
 
@@ -181,7 +182,8 @@ export const MobileMenu = styled.div`
   }
 `;
 
-export const Menu = styled(CgMenuGridO)`
+export const Menu = styled(LuMenu)`
   height: 2.5rem;
   width: 2.5rem;
+  color: inherit;
 `;

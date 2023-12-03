@@ -127,7 +127,7 @@ const Home = () => {
               Contact
             </SLink>
           </Nav>
-          <Theming />
+          <Theming size={'1.4rem'} />
           <Download>
             <Resume>
               <span>+ Download CV</span>

@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import { RiHome5Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 
+import { PiDownloadSimpleFill } from "react-icons/pi";
+
 export const BackContainer = styled.div`
   height: 4rem;
   width: 100%;
@@ -12,54 +14,60 @@ export const BackContainer = styled.div`
 `;
 export const Back = styled(IoClose)`
   font-size: 2.5rem;
-  margin-right: 1.2rem;
+  margin-right: 0.5rem;
   transform: scale(-1, 1);
   color: ${(props) => props.theme.colors.primary};
 `;
 export const LinksContainer = styled.div`
   height: calc(100% - 5rem);
-  background-color: ${(props) => props.theme.colors.background.base};
-  width: 100%;
+  background-color: ${(props) => props.theme.colors.background.upper};
+  width: 90%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
 `;
 
 export const LinksHolder = styled.div`
-  height: 80%;
+  height: fit-content;
   width: 100%;
   border-radius: 3px;
   max-height: 35rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.7rem;
 `;
 
 export const LinkWrapper = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 2rem;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
   gap: 20px;
 `;
 
 export const MLink = styled(Link)`
+  font-family: sans-serif;
   height: fit-content;
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
-  height: 4rem;
-  padding-left: 2rem;
-  background-color: ${(props) => props.theme.colors.background.upper};
-  font-size: 1rem;
-  font-weight: 600;
+  height: 2rem;
+  /* padding-left: 2rem; */
+  /* background-color: ${(props) => props.theme.colors.background.upper}; */
+  font-size: 1.3rem;
+  font-weight: 500;
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-    0px 3px 3px rgba(18, 18, 18, 0.04);
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    0px 3px 3px rgba(18, 18, 18, 0.04); */
 
   &:hover {
     cursor: pointer;
@@ -71,10 +79,6 @@ export const Home = styled(RiHome5Line)`
   font-size: 2rem;
   color: ${(props) => props.theme.colors.text};
 `;
-export const About = styled(RiHome5Line)``;
-export const ResumeIcon = styled(RiHome5Line)``;
-export const Portfolio = styled(RiHome5Line)``;
-export const Contact = styled(RiHome5Line)``;
 
 export const Download = styled.div`
   height: 100%;
@@ -85,7 +89,7 @@ export const Download = styled.div`
 export const Resume = styled.button`
   position: relative;
   height: fit-content;
-  width: fit-content;
+  width: 100%;
   padding: 0.9rem 1rem;
   background-color: ${(props) => props.theme.colors.primary};
   border: none;
@@ -106,3 +110,26 @@ export const Resume = styled.button`
     transform: translateY(1px);
   }
 `;
+
+export const ThemeWrapper = styled.div`
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+`;
+export const ElementTitle = styled.h4`
+  color: ${(props) => props.theme.colors.text};
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: sans-serif;
+`;
+
+export const DownloadIcon = styled(PiDownloadSimpleFill)`
+  color: ${(props) => props.theme.colors.text};
+  font-size: 1.8rem;
+`;
+
+

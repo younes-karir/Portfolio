@@ -26,7 +26,7 @@ const SideBarModal = ({ children }) => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: {
-      duration: 300,
+      duration: 150,
     },
   });
 
@@ -40,7 +40,7 @@ const Box = styled(animated.div)`
   position: fixed;
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 15;
 
   @media ${devices.laptop} {
