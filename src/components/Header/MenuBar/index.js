@@ -1,13 +1,18 @@
 import {
+  AboutIcon,
   Back,
   BackContainer,
+  ContactIcon,
   DownloadIcon,
   ElementTitle,
+  HomeIcon,
   LinkWrapper,
   LinksContainer,
   LinksHolder,
   MLink,
-
+  PortfolioIcon,
+  ResumeIcon,
+  Span,
   ThemeWrapper,
 } from "./MenuBar.elements";
 import ReactDOM from "react-dom";
@@ -20,8 +25,6 @@ import ArowIconMenu from "../../../Helpers/Icons/ArowIconMenu";
 import Theming from "../../UI/Theming";
 
 const Data = () => {
-  // const [Selected, setSelected] = useState('home');
-  const [Selected, setSelected] = useState();
 
   const dispatch = useDispatch();
   const theming = useSelector((state) => state.theme.Theme);
@@ -31,15 +34,10 @@ const Data = () => {
   };
 
   const activeStyle = {
-    color: '#fff',
-    backgroundColor: theming.colors.primary,
+    color: theming.colors.primary,
   };
 
-  const selectedHandler =(selected) =>{
-    // setSelected(selected);
-  }
-
-  
+ 
 
   return (
     <Fragment>
@@ -59,11 +57,10 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                // activeStyle={activeStyle}
-                onSetActive={selectedHandler}
+                activeStyle={activeStyle}
               >
+                <HomeIcon />
                 Home
-                {Selected === 'home'  && <ArowIconMenu selected={true} />}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -75,11 +72,9 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                // activeStyle={activeStyle}
-                onSetActive={selectedHandler}
-
+                activeStyle={activeStyle}
               >
-                {Selected === 'about'  && <ArowIconMenu selected={true} />}
+                <AboutIcon />
                 about me
               </MLink>
             </LinkWrapper>
@@ -92,15 +87,14 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                // activeStyle={activeStyle}
-                onSetActive={selectedHandler}
-
-              >
-                {Selected === 'resume'  && <ArowIconMenu selected={true} />}
+                activeStyle={activeStyle}
+                >
+                <ResumeIcon /> 
                 resume
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
+              
               <MLink
                 id="3"
                 to="portfolio"
@@ -109,15 +103,14 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                // activeStyle={activeStyle}
-                onSetActive={selectedHandler}
-
+                activeStyle={activeStyle}
               >
-                {Selected === 'portfolio'  && <ArowIconMenu selected={true} />}
+                <PortfolioIcon />
                 Portfolio
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
+              
               <MLink
                 id="4"
                 to="contact"
@@ -126,21 +119,20 @@ const Data = () => {
                 offset={0}
                 duration={500}
                 onClick={CloseMenuHAndler}
-                // activeStyle={activeStyle}
-                onSetActive={selectedHandler}
-
+                activeStyle={activeStyle}
               >
-                {Selected === 'contact'  && <ArowIconMenu selected={true} />}
+                <ContactIcon />
                 contact
               </MLink>
             </LinkWrapper>
+            <Span />
             <LinkWrapper>
               <ElementTitle>Resume</ElementTitle>
-              <DownloadIcon/>
+              <DownloadIcon />
             </LinkWrapper>
             <ThemeWrapper>
               <ElementTitle>Theme</ElementTitle>
-              <Theming  size = {'1.7rem'}/>
+              <Theming size={"1.7rem"} />
             </ThemeWrapper>
           </LinksHolder>
         </LinksContainer>

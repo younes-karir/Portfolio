@@ -40,7 +40,7 @@ const Box = styled(animated.div)`
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.206);
   z-index: 15;
 
   @media ${devices.laptop} {

@@ -6,6 +6,16 @@ import { IoIosClose } from "react-icons/io";
 
 import { PiDownloadSimpleFill } from "react-icons/pi";
 
+
+//  links icons 
+
+import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { HiOutlineBriefcase } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
+
+
 export const BackContainer = styled.div`
   height: 4rem;
   width: 100%;
@@ -14,7 +24,8 @@ export const BackContainer = styled.div`
   align-items: center;
   /* margin-bottom: 2rem; */
 
-  padding-right: 1rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
 
 
 `;
@@ -30,7 +41,7 @@ export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
 `;
@@ -42,7 +53,7 @@ export const LinksHolder = styled.div`
   max-height: 35rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.7rem;
 `;
 
 export const LinkWrapper = styled.div`
@@ -57,17 +68,18 @@ export const LinkWrapper = styled.div`
 `;
 
 export const MLink = styled(Link)`
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   height: fit-content;
   position: relative;
   width: 100%;
   display: flex;
+  gap: 20px;
   align-items: center;
   height: 2rem;
   /* padding-left: 2rem; */
   /* background-color: ${(props) => props.theme.colors.background.upper}; */
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
   outline: none;
@@ -127,9 +139,9 @@ export const ThemeWrapper = styled.div`
 `;
 export const ElementTitle = styled.h4`
   color: ${(props) => props.theme.colors.text};
-  font-size: 1.35rem;
-  font-weight: 600;
-  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* font-family: sans-serif; */
 `;
 
 export const DownloadIcon = styled(PiDownloadSimpleFill)`
@@ -138,3 +150,29 @@ export const DownloadIcon = styled(PiDownloadSimpleFill)`
 `;
 
 
+export const Span = styled.span`
+background-color: #4d63dd;
+height: 1px;
+`;
+
+
+export const HomeIcon = styled(HiOutlineHome)`
+  font-size:1.6rem;
+  color:inherit;
+`;
+export const AboutIcon = styled(HiOutlineUserCircle)`
+  font-size:1.6rem;
+  color:inherit;
+`;
+export const ResumeIcon = styled(HiOutlineDocumentText)`
+  font-size:1.6rem;
+  color:inherit;
+`;
+export const PortfolioIcon = styled(HiOutlineBriefcase)`
+  font-size:1.6rem;
+  color:inherit;
+`;
+export const ContactIcon = styled(HiOutlineMail)`
+  font-size:1.6rem;
+  color:inherit;
+`;
