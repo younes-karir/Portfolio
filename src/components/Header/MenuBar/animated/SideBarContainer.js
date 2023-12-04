@@ -37,7 +37,7 @@ const Box = styled(animated.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
 
   @media ${devices.laptop} {
     display: none;

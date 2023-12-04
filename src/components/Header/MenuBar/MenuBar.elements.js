@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { RiHome5Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import { IoIosClose } from "react-icons/io";
 
 import { PiDownloadSimpleFill } from "react-icons/pi";
 
@@ -11,12 +12,16 @@ export const BackContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  /* margin-bottom: 2rem; */
+
+  padding-right: 1rem;
+
+
 `;
-export const Back = styled(IoClose)`
-  font-size: 2.5rem;
-  margin-right: 0.5rem;
-  transform: scale(-1, 1);
-  color: ${(props) => props.theme.colors.primary};
+export const Back = styled(IoIosClose)`
+  font-size: 3rem;
+
+  color: ${(props) => props.theme.colors.text};
 `;
 export const LinksContainer = styled.div`
   height: calc(100% - 5rem);
@@ -37,7 +42,7 @@ export const LinksHolder = styled.div`
   max-height: 35rem;
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
+  gap: 2rem;
 `;
 
 export const LinkWrapper = styled.div`
@@ -46,7 +51,7 @@ export const LinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  
   justify-content: space-between;
   gap: 20px;
 `;
@@ -61,8 +66,8 @@ export const MLink = styled(Link)`
   height: 2rem;
   /* padding-left: 2rem; */
   /* background-color: ${(props) => props.theme.colors.background.upper}; */
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.35rem;
+  font-weight: 600;
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
   outline: none;
@@ -122,8 +127,8 @@ export const ThemeWrapper = styled.div`
 `;
 export const ElementTitle = styled.h4`
   color: ${(props) => props.theme.colors.text};
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.35rem;
+  font-weight: 600;
   font-family: sans-serif;
 `;
 
