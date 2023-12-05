@@ -24,9 +24,7 @@ export const BackContainer = styled.div`
   align-items: center;
   /* margin-bottom: 2rem; */
 
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
-
+  padding-right: 0.5rem;
 
 `;
 export const Back = styled(IoIosClose)`
