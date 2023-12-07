@@ -18,14 +18,14 @@ import {
 import ReactDOM from "react-dom";
 import SideBarModal from "./animated/SideBarModal";
 import SideBarContainer from "./animated/SideBarContainer";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
-import ArowIconMenu from "../../../Helpers/Icons/ArowIconMenu";
 import Theming from "../../UI/Theming";
+import { useTranslation } from "react-i18next";
 
 const Data = () => {
-
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const theming = useSelector((state) => state.theme.Theme);
 
@@ -60,7 +60,7 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <HomeIcon />
-                Home
+                {t('home')}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -75,7 +75,7 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <AboutIcon />
-                about me
+                {t('about')}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -90,7 +90,8 @@ const Data = () => {
                 activeStyle={activeStyle}
                 >
                 <ResumeIcon /> 
-                resume
+                {t('resume')}
+
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -106,7 +107,8 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <PortfolioIcon />
-                Portfolio
+                {t('portfolio')}
+
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -122,16 +124,16 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <ContactIcon />
-                contact
+                {t('contact')}
               </MLink>
             </LinkWrapper>
             <Span />
             <LinkWrapper>
-              <ElementTitle>Resume</ElementTitle>
+              <ElementTitle>{t('resume')}</ElementTitle>
               <DownloadIcon />
             </LinkWrapper>
             <ThemeWrapper>
-              <ElementTitle>Theme</ElementTitle>
+              <ElementTitle>{t('Theme')}</ElementTitle>
               <Theming size={"1.7rem"} />
             </ThemeWrapper>
           </LinksHolder>

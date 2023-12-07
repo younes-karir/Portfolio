@@ -15,9 +15,10 @@ import Theming from "../UI/Theming";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuOpen } from "../../Store/actions/UI-Actions";
 import LogoIcon from "../../Helpers/Icons/Logo";
-import LogoMobileIcon from "../../Helpers/Icons";
+import { useTranslation } from "react-i18next";
 
 const Data = (props) => {
+  const { t } = useTranslation();
   const theming = useSelector((state) => state.theme.Theme);
 
   const dispatch = useDispatch();
@@ -50,7 +51,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              Home
+             {t('home')}
             </SLink>
             <SLink
               id="2"
@@ -61,7 +62,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              About
+              {t('about')}
             </SLink>
             <SLink
               id="3"
@@ -72,7 +73,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              Resume
+              {t('resume')}
             </SLink>
             <SLink
               id="4"
@@ -83,7 +84,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              Portfolio
+              {t('portfolio')}
             </SLink>
             <SLink
               id="5"
@@ -94,13 +95,13 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              Contact
+              {t('contact')}
             </SLink>
           </Nav>
           <Theming size={'1.4rem'} />
           <Download>
             <Resume>
-              <span>+ Download CV</span>
+              <span>+ {t('downloadCv')}</span>
             </Resume>
           </Download>
         </LinksContainer>

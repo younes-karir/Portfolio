@@ -33,15 +33,11 @@ import Theming from "../UI/Theming";
 
 import defaultImg from "../../Helpers/Images/profile.png";
 import LogoIcon from "../../Helpers/Icons/Logo";
+import { useTranslation } from "react-i18next";
 
-// import reactIcon from "../../Helpers/Icons/react.svg";
-// import reduxIcon from "../../Helpers/Icons/redux.svg";
-// import ExpressIcon from "../../Helpers/Icons/express.svg";
-// import MongodbIcon from "../../Helpers/Icons/mongodb.svg";
-// import SCIcon from "../../Helpers/Icons/styled-components.svg";
-// import jsIcon from "../../Helpers/Icons/js.svg";
 
 const Home = () => {
+  const {t} = useTranslation();
   const theming = useSelector((state) => state.theme.Theme);
 
   const dispatch = useDispatch();
@@ -76,7 +72,7 @@ const Home = () => {
 
 
             >
-              Home
+              {t('home')}
             </SLink>
             <SLink
               id="2"
@@ -88,7 +84,7 @@ const Home = () => {
               activeStyle={activeStyle}
 
             >
-              About
+              {t('about')}
             </SLink>
             <SLink
               id="3"
@@ -100,7 +96,7 @@ const Home = () => {
               activeStyle={activeStyle}
 
             >
-              Resume
+              {t('resume')}
             </SLink>
             <SLink
               id="4"
@@ -112,7 +108,7 @@ const Home = () => {
               activeStyle={activeStyle}
 
             >
-              Portfolio
+              {t('portfolio')}
             </SLink>
             <SLink
               id="5"
@@ -124,13 +120,13 @@ const Home = () => {
               activeStyle={activeStyle}
 
             >
-              Contact
+              {t('contact')}
             </SLink>
           </Nav>
           <Theming size={'1.4rem'} />
           <Download>
             <Resume>
-              <span>+ Download CV</span>
+              <span>+ {t('downloadCv')}</span>
             </Resume>
           </Download>
         </LinksContainer>
@@ -143,22 +139,21 @@ const Home = () => {
         <Infos>
           <HiContainer>
             <HiButton>
-              Hi! There
+              {t('hiThere')}
               <Row />
             </HiButton>
           </HiContainer>
           <InformationContainer>
             <NameContainer>younes karir</NameContainer>
             <StatuContainer>
-              <span>I'm a Web Developper :)</span>
+              <span>{t('status')}</span>
               {/* <span>|</span> */}
             </StatuContainer>
             <BioContainer>
-              Maborisum ipsum dolor seat ameat consecteturetel seat more be
-              elite. Maborisum ipsum dolor seat ameat.
+            {t('bio_1')}
             </BioContainer>
             <DownloadHome>
-              <ResumeHome>+ Download CV</ResumeHome>
+              <ResumeHome>+ {t('downloadCv')}</ResumeHome>
             </DownloadHome>
             <SocialContainer>
               <SocialWrapper>
@@ -180,42 +175,6 @@ const Home = () => {
           <Holder src={defaultImg} />
         </Profile>
       </Content>
-      {/* <SkillsContainer>
-        <SkillsWrapper>
-        <Skill>
-            <IconHolder src={jsIcon} />
-            <TitleIcon>Javascript</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={reactIcon} />
-            <TitleIcon>React js</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={SCIcon}  />
-            <TitleIcon>Styled-componenets</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={reduxIcon} />
-            <TitleIcon>Redux js</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={ExpressIcon} />
-            <TitleIcon>Express js</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={MongodbIcon} />
-            <TitleIcon>Mongodb</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={MongodbIcon} />
-            <TitleIcon>Mongodb</TitleIcon>
-          </Skill>
-          <Skill>
-            <IconHolder src={MongodbIcon} />
-            <TitleIcon>Mongodb</TitleIcon>
-          </Skill>
-        </SkillsWrapper>
-      </SkillsContainer> */}
     </Container>
   );
 };

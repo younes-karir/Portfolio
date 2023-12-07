@@ -3,6 +3,7 @@ import App from "./App";
 // import Theme from "./Helpers/Theme/index.js";
 import StoreProvider from './Store/StoreProvider';
 import Theme from "./Helpers/Theme";
+import "./Helpers/i18next/i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
