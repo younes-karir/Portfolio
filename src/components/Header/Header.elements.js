@@ -187,3 +187,13 @@ export const Menu = styled(LuMenu)`
   width: 2.5rem;
   color: inherit;
 `;
+
+
+export const ThemingContainer = styled.div`
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+`;

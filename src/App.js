@@ -7,7 +7,7 @@ import { HeaderOff, HeaderOn } from "./Store/actions/UI-Actions";
 import useScrollPosition from "./Helpers/Hooks/useScrollPosition";
 
 function App() {
-  const thiming = useSelector((state) => state.theme.Theme);
+  const headerShow = useSelector((state) => state.UI.headerShow);
 
   const dispatch = useDispatch();
   const [timeLeft, setTimeLeft] = useState(0);
@@ -15,13 +15,12 @@ function App() {
   const scrollPosition = useScrollPosition();
 
   useEffect(() => {
-    if (scrollPosition < 40) {
-      dispatch(HeaderOff());
+    if (!headerShow) {
+      if (scrollPosition > 40) dispatch(HeaderOn());
     } else {
-      dispatch(HeaderOn());
+      if (scrollPosition < 40) dispatch(HeaderOff());
     }
-  }, [scrollPosition,thiming,dispatch]);
-
+  }, [scrollPosition, headerShow, dispatch]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {

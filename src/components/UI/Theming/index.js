@@ -1,25 +1,11 @@
-import { useDispatch, useSelector } from "react-redux";
-import { Container, Toggle } from "./Theming.elements";
-import {
-  ThemeToggleDark,
-  ThemeToggleLight,
-} from "../../../Store/actions/UI-Actions";
+import { Container } from "./Theming.elements";
+
+import AnimatedIcon from "./AnnimatedIcon";
 
 const Theming = (props) => {
-  const thiming = useSelector((state) => state.theme.Theme);
-  const dispatch = useDispatch();
-
-  const LightHandler = () => {
-    dispatch(ThemeToggleLight());
-  };
-
-  const DarkHandler = () => {
-    dispatch(ThemeToggleDark());
-  };
-
   return (
     <Container>
-      <Toggle $size={props.size} onClick={thiming.title === "dark" ? LightHandler : DarkHandler} />
+      <AnimatedIcon size={props.size} />
     </Container>
   );
 };

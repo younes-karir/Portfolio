@@ -27,6 +27,7 @@ import {
   Plus,
   Holder,
   SLink,
+  SmileIcon,
 } from "./Home.elements";
 import { SildeMenuOpen } from "../../Store/actions/UI-Actions";
 import Theming from "../UI/Theming";
@@ -146,8 +147,8 @@ const Home = () => {
           <InformationContainer>
             <NameContainer>younes karir</NameContainer>
             <StatuContainer>
-              <span>{t('status')}</span>
-              {/* <span>|</span> */}
+              <span>{t('status')} </span>
+              {/* <SmileIcon /> */}
             </StatuContainer>
             <BioContainer>
             {t('bio_1')}

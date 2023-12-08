@@ -17,14 +17,15 @@ import {
 } from "./About.elements";
 
 import ProfileImg from "../../Helpers/Images/main_profile.png";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
-
+  const {t} = useTranslation();
   return (
     <Container  id="about" >
       <TitleContainer>
-        <Title>About me</Title>
-        <Sub>Freelance Graphic & Web Designer</Sub>
+        <Title>{t('aboutTitle')}</Title>
+        <Sub>{t('aboutQ_1')}</Sub>
       </TitleContainer>
       <SectionContainer>
         <ProfileWrapper>
@@ -32,28 +33,23 @@ const AboutSection = () => {
         </ProfileWrapper>
         <InfosWrapper>
           <AboutText>
-            Hello! I,m Spruce Springlane Graphic &amp; Web Design and Web
-            Developer.
+           { t('aboutSub')}
           </AboutText>
-          <ExperienceText>Have 6 Years Experienced</ExperienceText>
+          <ExperienceText>{t('aboutExp')}</ExperienceText>
           <Details>
-            Maborisum ipsum dolor seat ameconsecteturers seat more be elite
-            consecteture. ContrarpopulabelLoreIpsum is notili more consecteture
-            elite Maborisum ipsum dolor seat ameconsecteturers seat more be
-            elite consecteture. ContrarpopulabelLoreIpsum is notili more
-            consecteture elite.
-          </Details>
+           {t('bio_2')}
+          </Details>  
           <ContactContainer>
             <ContactWrapper>
-              <ContactTitle>Phone :</ContactTitle>
+              <ContactTitle>{t('phoneTitle')} :</ContactTitle>
               <ContactContent>+212660895757</ContactContent>
             </ContactWrapper>
             <ContactWrapper>
-              <ContactTitle>E-Mail :</ContactTitle>
+              <ContactTitle>{t('emailTitle')} :</ContactTitle>
               <ContactContent>youneskarir@gmail.com</ContactContent>
             </ContactWrapper>
             <ContactWrapper>
-              <ContactTitle>Adresse :</ContactTitle>
+              <ContactTitle>{t('adressTitle')} :</ContactTitle>
               <ContactContent>Beni Mellal, Morroco.</ContactContent>
             </ContactWrapper>
             {/* <ContactWrapper>

@@ -10,12 +10,14 @@ import {
   Nav,
   Resume,
   SLink,
+  ThemingContainer,
 } from "./Header.elements";
 import Theming from "../UI/Theming";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuOpen } from "../../Store/actions/UI-Actions";
 import LogoIcon from "../../Helpers/Icons/Logo";
 import { useTranslation } from "react-i18next";
+import DropList from "../UI/DropList";
 
 const Data = (props) => {
   const { t } = useTranslation();
@@ -35,7 +37,7 @@ const Data = (props) => {
     <HeaderContainer>
       <HeaderWrapper>
         <LogoContainer>
-          <LogoIcon $size='2rem' $color={theming.colors.text} />
+          <LogoIcon $size="2rem" $color={theming.colors.text} />
           {/* <LogoMobileIcon /> */}
 
           {/* <Logo>KARIR</Logo> */}
@@ -51,7 +53,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-             {t('home')}
+              {t("home")}
             </SLink>
             <SLink
               id="2"
@@ -62,7 +64,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              {t('about')}
+              {t("about")}
             </SLink>
             <SLink
               id="3"
@@ -73,7 +75,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              {t('resume')}
+              {t("resume")}
             </SLink>
             <SLink
               id="4"
@@ -84,7 +86,7 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              {t('portfolio')}
+              {t("portfolio")}
             </SLink>
             <SLink
               id="5"
@@ -95,13 +97,16 @@ const Data = (props) => {
               duration={500}
               activeStyle={activeStyle}
             >
-              {t('contact')}
+              {t("contact")}
             </SLink>
           </Nav>
-          <Theming size={'1.4rem'} />
+          <ThemingContainer>
+            <Theming size={"1.4rem"} />
+            {/* <DropList /> */}
+          </ThemingContainer>
           <Download>
             <Resume>
-              <span>+ {t('downloadCv')}</span>
+              <span>+ {t("downloadCv")}</span>
             </Resume>
           </Download>
         </LinksContainer>

@@ -28,7 +28,7 @@ const UIReducer = function (state = initialState, action) {
           headerShow : false,
         };
     default:
-      return initialState;
+      return state;
   }
 };
 

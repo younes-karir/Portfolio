@@ -8,6 +8,8 @@ import { IoCaretBackSharp } from "react-icons/io5";
 import { BiPlus } from "react-icons/bi";
 import { Link } from "react-scroll";
 
+import { PiSmileyDuotone } from "react-icons/pi";
+
 const fadeInLeft = keyframes`
 0% {
     opacity: 0;
@@ -346,19 +348,21 @@ export const StatuContainer = styled.span`
   line-height: 2.25rem;
   font-weight: 700;
   color: ${(props) => props.theme.colors.primary};
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
   animation-duration: 1.5s;
   animation-delay: 0.8s;
   animation-name: ${fadeInLeft};
   animation-fill-mode: backwards;
 `;
 export const BioContainer = styled.span`
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.9rem;
   color: ${(props) => props.theme.colors.text};
-  opacity: 0.9;
-  text-align: center;
-  font-weight: 300;
+  opacity: 0.8;
+  text-align: justify;
+  font-weight: 400;
   padding: 0rem 0.5rem;
   max-width: 30rem;
 
@@ -368,7 +372,6 @@ export const BioContainer = styled.span`
   animation-fill-mode: backwards;
 
   @media ${devices.laptop} {
-    text-align: left;
     padding-left: 0rem;
     max-width: 100%;
   }
@@ -574,4 +577,10 @@ export const TitleIcon = styled.span`
   font-size: 0.6rem;
   font-weight: 600;
   color: #888;
+`;
+
+
+export const SmileIcon = styled(PiSmileyDuotone)`
+
+
 `;

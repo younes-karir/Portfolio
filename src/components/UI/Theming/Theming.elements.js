@@ -6,6 +6,8 @@ export const Container = styled.div`
     width: fit-content;
     display: flex;
     align-items: center;
+    /* opacity: 0.8; */
+    position: relative;
 
 `;
 export const Toggle = styled(CgDarkMode)`

@@ -134,7 +134,7 @@ const Data = () => {
             </LinkWrapper>
             <ThemeWrapper>
               <ElementTitle>{t('Theme')}</ElementTitle>
-              <Theming size={"1.7rem"} />
+              {/* <Theming size={"1.7rem"} /> */}
             </ThemeWrapper>
           </LinksHolder>
         </LinksContainer>

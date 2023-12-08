@@ -150,10 +150,11 @@ export const ExperienceText = styled.h3`
 
 export const Details = styled.p`
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.88rem;
+  text-align: justify;
   color: ${(props) => props.theme.colors.text};
-  opacity: 0.9;
+  opacity: 0.8;
 
   @media ${devices.laptop} {
     max-width: 50rem;
