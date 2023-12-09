@@ -192,8 +192,14 @@ export const Menu = styled(LuMenu)`
 export const ThemingContainer = styled.div`
   height: fit-content;
   width: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: none;
+
   gap: 1rem;
+
+  @media ${devices.tablet} {
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  }
+
 `;

@@ -20,11 +20,13 @@ import { useTranslation } from "react-i18next";
 import DropList from "../UI/DropList";
 
 const Data = (props) => {
+  
   const { t } = useTranslation();
   const theming = useSelector((state) => state.theme.Theme);
 
   const dispatch = useDispatch();
   const ShowSideMenu = () => {
+   
     dispatch(SildeMenuOpen());
   };
 
@@ -32,6 +34,7 @@ const Data = (props) => {
     color: theming.colors.primary,
     fontWeight: "500",
   };
+
 
   return (
     <HeaderContainer>
@@ -101,7 +104,7 @@ const Data = (props) => {
             </SLink>
           </Nav>
           <ThemingContainer>
-            <Theming size={"1.4rem"} />
+            {window.innerWidth > 768 && <Theming size={"1.4rem"} />}
             {/* <DropList /> */}
           </ThemingContainer>
           <Download>

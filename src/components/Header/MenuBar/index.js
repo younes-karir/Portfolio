@@ -23,9 +23,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
 import Theming from "../../UI/Theming";
 import { useTranslation } from "react-i18next";
+import useScreenSize from "../../../Helpers/Hooks/useScreenSize";
 
 const Data = () => {
   const { t } = useTranslation();
+  // const screenSize = useScreenSize();
   const dispatch = useDispatch();
   const theming = useSelector((state) => state.theme.Theme);
 
@@ -36,6 +38,7 @@ const Data = () => {
   const activeStyle = {
     color: theming.colors.primary,
   };
+
 
  
 
@@ -134,7 +137,7 @@ const Data = () => {
             </LinkWrapper>
             <ThemeWrapper>
               <ElementTitle>{t('Theme')}</ElementTitle>
-              {/* <Theming size={"1.7rem"} /> */}
+              <Theming size={"1.7rem"} />
             </ThemeWrapper>
           </LinksHolder>
         </LinksContainer>
