@@ -14,8 +14,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 
     /* transition: color,background-color 250ms ease-in-out; */
-
   }
+
+
 
   
 `;

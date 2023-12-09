@@ -7,6 +7,7 @@ export const En = {
     contact: "Contact",
     downloadCv: "Download CV",
     theme: "Theme",
+    language: "language",
     hiThere : "Hi! There",
     status : "I'm a Web Developper :)",
     bio_1 : "M.E.R.N full-stack web developer seeking a position in an innovative company. With hands-on experience, I am ready to contribute innovative solutions for project success.",

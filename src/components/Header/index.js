@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom";
+
 import HeaderContainer from "./MenuBar/animated/HeaderContainer";
 import {
   Download,
@@ -20,13 +21,11 @@ import { useTranslation } from "react-i18next";
 import DropList from "../UI/DropList";
 
 const Data = (props) => {
-  
   const { t } = useTranslation();
   const theming = useSelector((state) => state.theme.Theme);
 
   const dispatch = useDispatch();
   const ShowSideMenu = () => {
-   
     dispatch(SildeMenuOpen());
   };
 
@@ -34,7 +33,6 @@ const Data = (props) => {
     color: theming.colors.primary,
     fontWeight: "500",
   };
-
 
   return (
     <HeaderContainer>
@@ -104,8 +102,8 @@ const Data = (props) => {
             </SLink>
           </Nav>
           <ThemingContainer>
-            {window.innerWidth > 768 && <Theming size={"1.4rem"} />}
-            {/* <DropList /> */}
+            <Theming size={"1.4rem"} />
+            <DropList />
           </ThemingContainer>
           <Download>
             <Resume>

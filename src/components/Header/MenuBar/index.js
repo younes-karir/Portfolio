@@ -24,6 +24,8 @@ import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
 import Theming from "../../UI/Theming";
 import { useTranslation } from "react-i18next";
 import useScreenSize from "../../../Helpers/Hooks/useScreenSize";
+import DropList from "../../UI/DropList";
+import ThemingMob from "../../UI/ThemeSwitch";
 
 const Data = () => {
   const { t } = useTranslation();
@@ -137,8 +139,12 @@ const Data = () => {
             </LinkWrapper>
             <ThemeWrapper>
               <ElementTitle>{t('Theme')}</ElementTitle>
-              <Theming size={"1.7rem"} />
+              <ThemingMob />
             </ThemeWrapper>
+            <LinkWrapper>
+            <ElementTitle>{t('language')}</ElementTitle>
+            <DropList />
+            </LinkWrapper>
           </LinksHolder>
         </LinksContainer>
       </SideBarContainer>

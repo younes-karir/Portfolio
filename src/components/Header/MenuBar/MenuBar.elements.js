@@ -39,7 +39,7 @@ export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
 `;
@@ -51,12 +51,12 @@ export const LinksHolder = styled.div`
   max-height: 35rem;
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
+  gap: 1.5rem;
 `;
 
 export const LinkWrapper = styled.div`
   width: 100%;
-  height: 2rem;
+  height: 2.1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -137,7 +137,7 @@ export const ThemeWrapper = styled.div`
 `;
 export const ElementTitle = styled.h4`
   color: ${(props) => props.theme.colors.text};
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   /* font-family: sans-serif; */
 `;
