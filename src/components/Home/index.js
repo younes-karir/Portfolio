@@ -35,6 +35,8 @@ import Theming from "../UI/Theming";
 import defaultImg from "../../Helpers/Images/profile.png";
 import LogoIcon from "../../Helpers/Icons/Logo";
 import { useTranslation } from "react-i18next";
+import { ThemingContainer } from "../Header/Header.elements";
+import DropList from "../UI/DropList";
 
 
 const Home = () => {
@@ -124,7 +126,10 @@ const Home = () => {
               {t('contact')}
             </SLink>
           </Nav>
-          <Theming size={'1.4rem'} />
+          <ThemingContainer>
+            <Theming size={"1.2rem"} />
+            <DropList />
+          </ThemingContainer>
           <Download>
             <Resume>
               <span>+ {t('downloadCv')}</span>

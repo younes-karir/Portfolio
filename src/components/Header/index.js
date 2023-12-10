@@ -102,7 +102,7 @@ const Data = (props) => {
             </SLink>
           </Nav>
           <ThemingContainer>
-            <Theming size={"1.4rem"} />
+            <Theming size={"1.2rem"} />
             <DropList />
           </ThemingContainer>
           <Download>

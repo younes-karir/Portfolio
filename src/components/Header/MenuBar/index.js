@@ -41,9 +41,6 @@ const Data = () => {
     color: theming.colors.primary,
   };
 
-
- 
-
   return (
     <Fragment>
       <SideBarModal />
@@ -65,7 +62,7 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <HomeIcon />
-                {t('home')}
+                {t("home")}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -80,7 +77,7 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <AboutIcon />
-                {t('about')}
+                {t("about")}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
@@ -93,14 +90,12 @@ const Data = () => {
                 duration={500}
                 onClick={CloseMenuHAndler}
                 activeStyle={activeStyle}
-                >
-                <ResumeIcon /> 
-                {t('resume')}
-
+              >
+                <ResumeIcon />
+                {t("resume")}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              
               <MLink
                 id="3"
                 to="portfolio"
@@ -112,12 +107,10 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <PortfolioIcon />
-                {t('portfolio')}
-
+                {t("portfolio")}
               </MLink>
             </LinkWrapper>
             <LinkWrapper>
-              
               <MLink
                 id="4"
                 to="contact"
@@ -129,21 +122,21 @@ const Data = () => {
                 activeStyle={activeStyle}
               >
                 <ContactIcon />
-                {t('contact')}
+                {t("contact")}
               </MLink>
             </LinkWrapper>
             <Span />
             <LinkWrapper>
-              <ElementTitle>{t('resume')}</ElementTitle>
+              <ElementTitle>{t("resume")}</ElementTitle>
               <DownloadIcon />
             </LinkWrapper>
             <ThemeWrapper>
-              <ElementTitle>{t('Theme')}</ElementTitle>
+              <ElementTitle>{t("Theme")}</ElementTitle>
               <ThemingMob />
             </ThemeWrapper>
             <LinkWrapper>
-            <ElementTitle>{t('language')}</ElementTitle>
-            <DropList />
+              <ElementTitle>{t("language")}</ElementTitle>
+              {/* <DropList /> */}
             </LinkWrapper>
           </LinksHolder>
         </LinksContainer>

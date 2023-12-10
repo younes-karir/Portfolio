@@ -194,7 +194,7 @@ export const ThemingContainer = styled.div`
   width: fit-content;
   display: none;
 
-  gap: 1rem;
+  gap: 10px;
 
   @media ${devices.tablet} {
     display: flex;
