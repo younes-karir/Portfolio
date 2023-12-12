@@ -22,3 +22,4 @@ export const CLOSE_SIDE_MENU = 'CLOSE_SIDE_MENU';
 
 export const HEADER_ON = 'HEADER_ON';
 export const HEADER_OFF = 'HEADER_OFF';
+

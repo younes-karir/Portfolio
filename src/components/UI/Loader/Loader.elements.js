@@ -35,7 +35,7 @@ export const Container = styled.div`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 10;
+  z-index: 200;
   background-color: ${(props) => props.theme.colors.background.base};
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ export const Eclips = styled.div`
   width: 0;
   height: 0;
   opacity: 0;
-  animation: ${ldsRipple} 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: ${ldsRipple} 1300ms cubic-bezier(0, 0.2, 0.8, 1) infinite;
 
   &:nth-child(2) {
     animation-delay: -0.5s;

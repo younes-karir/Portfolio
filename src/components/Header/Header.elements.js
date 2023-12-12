@@ -66,11 +66,11 @@ export const Nav = styled.ul`
   gap: 10px;
 
   @media ${devices.tablet} {
-    gap: 30px;
+    gap: 25px;
   }
 
   @media ${devices.laptop} {
-    gap: 50px;
+    gap: 35px;
   }
 `;
 export const SLink = styled(Link)`

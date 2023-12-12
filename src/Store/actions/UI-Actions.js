@@ -1,4 +1,4 @@
-import { CLOSE_SIDE_MENU, HEADER_OFF, HEADER_ON, OPEN_SIDE_MENU, SWITCH_DARK, SWITCH_LIGHT } from "./types";
+import { CHANGE_TO_DE, CHANGE_TO_EN, CHANGE_TO_FR, CLOSE_SIDE_MENU, HEADER_OFF, HEADER_ON, OPEN_SIDE_MENU, SWITCH_DARK, SWITCH_LIGHT } from "./types";
 
 export const ThemeToggleLight = () => (dispatch) => {
   dispatch({
@@ -37,6 +37,5 @@ export const HeaderOff = () => (dispatch) => {
     type: HEADER_OFF,
   });
 };
-
 
 
