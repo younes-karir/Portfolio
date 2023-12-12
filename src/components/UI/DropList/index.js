@@ -4,20 +4,22 @@ import {
   Container,
   Elements,
   Item,
+  LanguageIcon,
   Row,
   Selected,
   SelectedItem,
 } from "./DropList.elements";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import i18n from "../../../Helpers/i18next/i18n";
 import Loader from "../Loader";
+import { ChangeLanguage } from "../../../Store/actions/UI-Actions";
 
 export default function DropList() {
   const dispatch = useDispatch();
   const [Drop, setDrop] = useState(false);
-  const [SelectedLanguage, setSelectedLanguage] = useState("en");
   const [timeLeft, setTimeLeft] = useState(0);
+  const acteul = useSelector(state => state.language.acteul);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -38,17 +40,18 @@ export default function DropList() {
   const ChangeHandler = (value) => {
     setDrop(false);
     setTimeLeft(2)
-    setSelectedLanguage(value);
+    // setSelectedLanguage(value);
     i18n.changeLanguage(value);
-
+    dispatch(ChangeLanguage(value));
   };
 
   return (
     <Container>
       {timeLeft > 0 && <Loader />}
       <Selected onClick={DropTggle}>
-        <SelectedItem>{SelectedLanguage}</SelectedItem>
-        <Row $flip={!Drop} />
+        {/* <SelectedItem>{acteul}</SelectedItem> */}
+        <LanguageIcon />
+        {/* <Row $flip={!Drop} /> */}
       </Selected>
       {Drop && (
         <Elements onMouseLeave={handleMouseOut}>

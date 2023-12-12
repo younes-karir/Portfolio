@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { MdOutlineLanguage } from "react-icons/md";
+
 export const Container = styled.div`
   position: relative;
   height: fit-content;
   width: fit-content;
-  border-radius:4px;
+  border-radius: 4px;
   padding: 3px 5px;
 
-  &:hover{
+  &:hover {
     background-color: ${(props) => props.theme.colors.profileCard};
   }
 `;
@@ -40,10 +42,10 @@ export const SelectedItem = styled.span`
 
 export const Elements = styled.div`
   position: absolute;
-  padding:.5rem 0rem;
+  padding: 0.5rem 0rem;
   width: 6rem;
   height: fit-content;
-  border-radius:4px;
+  border-radius: 4px;
   top: 130%;
   right: 0;
   /* left: calc(50% - 2.5rem ); */
@@ -57,8 +59,8 @@ export const Elements = styled.div`
 
 export const Item = styled.span`
   width: 100%;
-  padding: .4rem .8rem;
-  font-size: .9rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};
 
@@ -69,6 +71,7 @@ export const Item = styled.span`
   }
 `;
 
-// export const Item = styled.img`
-// width: 1.5rem;
-// `;
+export const LanguageIcon = styled(MdOutlineLanguage)`
+  font-size: 1.4rem;
+  color: ${(props) => props.theme.colors.text};
+`;

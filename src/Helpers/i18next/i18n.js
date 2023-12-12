@@ -5,6 +5,11 @@ import { Fr } from "./Data/Fr";
 import { De } from "./Data/De";
 import { En } from "./Data/Eng";
 
+
+import Store from "../../Store/Store";
+
+
+
 const resources = {
   en: En,
   fr: Fr,
@@ -16,7 +21,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
+    lng: Store.getState().language.acteul,
     fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
