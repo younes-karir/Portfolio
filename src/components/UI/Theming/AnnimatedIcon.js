@@ -31,7 +31,7 @@ const AnimatedIcon = (props) => {
   const [isDarkMode, setDarkMode] = useState(false );
 
   const { r, transform, cx, cy, opacity } =
-    properties[!isDarkMode ? "dark" : "light"];
+    properties[isDarkMode ? "dark" : "light"];
 
   const svgContainerProps = useSpring({
     transform,

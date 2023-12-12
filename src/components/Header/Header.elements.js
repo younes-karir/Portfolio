@@ -84,7 +84,10 @@ export const SLink = styled(Link)`
   outline: none;
   &:hover {
     cursor: pointer;
-    color: ${(props) => props.theme.colors.primary};
+    opacity: .8;
+
+    /* color: ${(props) => props.theme.colors.primary}; */
+
   }
 
 `;

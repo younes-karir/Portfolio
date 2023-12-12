@@ -6,8 +6,8 @@ export const Container = styled.div`
   position: relative;
   height: fit-content;
   width: fit-content;
-  border-radius: 4px;
-  padding: 3px 5px;
+  border-radius: 50%;
+  padding: 5px;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.profileCard};
@@ -42,7 +42,7 @@ export const SelectedItem = styled.span`
 
 export const Elements = styled.div`
   position: absolute;
-  padding: 0.5rem 0rem;
+  padding: 0.7rem ;
   width: 6rem;
   height: fit-content;
   border-radius: 4px;
@@ -51,6 +51,7 @@ export const Elements = styled.div`
   /* left: calc(50% - 2.5rem ); */
   display: flex;
   flex-direction: column;
+  gap: 7px;
   background-color: ${(props) => props.theme.colors.background.upper};
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
@@ -59,7 +60,6 @@ export const Elements = styled.div`
 
 export const Item = styled.span`
   width: 100%;
-  padding: 0.4rem 0.8rem;
   font-size: 0.9rem;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};

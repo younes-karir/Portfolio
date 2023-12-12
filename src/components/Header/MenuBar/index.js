@@ -21,11 +21,9 @@ import SideBarContainer from "./animated/SideBarContainer";
 import { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SildeMenuClose } from "../../../Store/actions/UI-Actions";
-import Theming from "../../UI/Theming";
 import { useTranslation } from "react-i18next";
-import useScreenSize from "../../../Helpers/Hooks/useScreenSize";
-import DropList from "../../UI/DropList";
 import ThemingMob from "../../UI/ThemeSwitch";
+import MobDropList from "../../UI/MobDropList";
 
 const Data = () => {
   const { t } = useTranslation();
@@ -135,8 +133,7 @@ const Data = () => {
               <ThemingMob />
             </ThemeWrapper>
             <LinkWrapper>
-              <ElementTitle>{t("language")}</ElementTitle>
-              {/* <DropList /> */}
+              <MobDropList />
             </LinkWrapper>
           </LinksHolder>
         </LinksContainer>

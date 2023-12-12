@@ -141,7 +141,8 @@ export const SLink = styled(Link)`
   outline: none;
   &:hover {
     cursor: pointer;
-    color: ${(props) => props.theme.colors.primary};
+    opacity: .8;
+    /* color: ${(props) => props.theme.colors.primary}; */
   }
 
 `;
@@ -362,7 +363,7 @@ export const BioContainer = styled.span`
   color: ${(props) => props.theme.colors.text};
   opacity: 0.8;
   text-align: justify;
-  font-weight: 400;
+  font-weight: 300;
   padding: 0rem 0.5rem;
   max-width: 30rem;
 

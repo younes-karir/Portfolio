@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { HiLocationMarker } from "react-icons/hi";
+
 import devices from "../../Helpers/Devices";
 
 export const Container = styled.section`
@@ -148,13 +150,13 @@ export const ExperienceText = styled.h3`
   color: ${(props) => props.theme.colors.primary};
 `;
 
-export const Details = styled.p`
+export const Details = styled.span`
   font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.88rem;
-  text-align: justify;
+  line-height: 1.9rem;
   color: ${(props) => props.theme.colors.text};
   opacity: 0.8;
+  text-align: justify;
+  font-weight: 300;
 
   @media ${devices.laptop} {
     max-width: 50rem;
@@ -171,6 +173,7 @@ export const ContactContainer = styled.div`
   grid-template-rows: auto;
   justify-items: center;
   column-gap: 1rem;
+  row-gap: .6rem;
 
 
   @media ${devices.tablet} {
@@ -191,6 +194,10 @@ export const ContactWrapper = styled.div`
   flex-direction:column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 5px;
+  @media ${devices.laptop} {
+    gap: 6px;
+  }
 `;
 export const ContactTitle = styled.h4`
   font-size: 1.25rem;
@@ -201,7 +208,21 @@ export const ContactTitle = styled.h4`
 export const ContactContent = styled.p`
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.88rem;
+  /* line-height: 1.88rem; */
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+`;
+
+
+export const LocationIcon = styled(HiLocationMarker)`
+  font-size: 1.3rem;
+  padding-bottom: 3px;
+  color: ${props => props.theme.colors.text};
+
 `;

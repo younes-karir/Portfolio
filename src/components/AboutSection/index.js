@@ -9,6 +9,7 @@ import {
   ExperienceText,
   Holder,
   InfosWrapper,
+  LocationIcon,
   ProfileWrapper,
   SectionContainer,
   Sub,
@@ -50,12 +51,8 @@ const AboutSection = () => {
             </ContactWrapper>
             <ContactWrapper>
               <ContactTitle>{t('adressTitle')} :</ContactTitle>
-              <ContactContent>Beni Mellal, Morroco.</ContactContent>
+              <ContactContent>{/*<LocationIcon/>*/}{t('adressData')}</ContactContent>
             </ContactWrapper>
-            {/* <ContactWrapper>
-                <ContactTitle>Phone :</ContactTitle>
-                <ContactContent>+00000000</ContactContent>
-              </ContactWrapper> */}
           </ContactContainer>
         </InfosWrapper>
       </SectionContainer>
