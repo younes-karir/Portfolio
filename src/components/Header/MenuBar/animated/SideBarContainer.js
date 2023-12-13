@@ -32,8 +32,8 @@ const Box = styled(animated.div)`
   max-width: 25rem;
   right: 0;
   background-color: ${(props) => props.theme.colors.background.upper};
-  z-index: 15;
-
+  z-index: 15;  
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

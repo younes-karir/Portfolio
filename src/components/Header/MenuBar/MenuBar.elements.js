@@ -33,13 +33,14 @@ export const Back = styled(IoIosClose)`
   color: ${(props) => props.theme.colors.text};
 `;
 export const LinksContainer = styled.div`
-  height: calc(100% - 5rem);
+  /* height: calc(100% - 5rem); */
+  height: fit-content;
   background-color: ${(props) => props.theme.colors.background.upper};
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-left: 1rem;
   padding-right: 0.5rem;
 `;
@@ -48,7 +49,7 @@ export const LinksHolder = styled.div`
   height: fit-content;
   width: 100%;
   border-radius: 3px;
-  max-height: 35rem;
+  /* max-height: 35rem; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -56,7 +57,7 @@ export const LinksHolder = styled.div`
 
 export const LinkWrapper = styled.div`
   width: 100%;
-  height: 2.1rem;
+  height: ${p => p.$expend ? 'fit-content' : '2.1rem'};
   display: flex;
   flex-direction: row;
   align-items: center;

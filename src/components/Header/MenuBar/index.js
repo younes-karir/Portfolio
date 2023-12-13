@@ -132,7 +132,7 @@ const Data = () => {
               <ElementTitle>{t("Theme")}</ElementTitle>
               <ThemingMob />
             </ThemeWrapper>
-            <LinkWrapper>
+            <LinkWrapper $expend={true}>
               <MobDropList />
             </LinkWrapper>
           </LinksHolder>
