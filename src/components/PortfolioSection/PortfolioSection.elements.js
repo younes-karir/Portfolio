@@ -2,6 +2,10 @@ import styled from "styled-components";
 import devices from "../../Helpers/Devices";
 
 
+import { FaChevronRight } from "react-icons/fa6";
+import { HiExternalLink } from "react-icons/hi";
+
+
 export const Container = styled.section`
   width: 100%;
   background-color: ${props  => props.theme.colors.background.middle};
@@ -87,3 +91,33 @@ export const ProjectsWrapper = styled.div`
   }
 `;
 
+
+export const MoreWrapper = styled.a`
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  gap: 5px;
+  color: ${props => props.theme.colors.text};
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 80%;
+
+  &:hover{
+    text-decoration: underline;
+    opacity: 1;
+    /* font-weight: 500; */
+
+  }
+
+
+`;
+export const MoreLink = styled.span`
+  font-size: .85rem;
+  color: inherit;
+  font-weight: inherit;
+
+`;
+export const LinkRow = styled(HiExternalLink)`
+  color: inherit;
+  font-size: 1rem;
+`;

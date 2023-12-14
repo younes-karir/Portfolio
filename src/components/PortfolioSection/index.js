@@ -1,6 +1,9 @@
 import React from "react";
 import {
   Container,
+  LinkRow,
+  MoreLink,
+  MoreWrapper,
   ProjectsWrapper,
   Sub,
   Title,
@@ -23,6 +26,10 @@ const PortfolioSection = () => {
           <PortfolioItem />
           <PortfolioItem />
       </ProjectsWrapper>
+      <MoreWrapper href="#">
+        <MoreLink >Visite my repositories</MoreLink>
+        <LinkRow/>
+      </MoreWrapper>
     </Container>
   );
 };
