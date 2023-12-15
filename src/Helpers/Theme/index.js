@@ -16,6 +16,7 @@ export const light = {
     header: "#ffffff",
     profile: "#f8f9fe",
     profileCard: "#e8ebff",
+    BoderCard :'rgba(0, 0, 0, 0.05)'
   },
 };
 
@@ -34,6 +35,7 @@ export const dark = {
     header: "#1b2942",
     profile: "#2b3e5e",
     profileCard: "#273c60",
+    BoderCard :'#4d63ddb6'
   },
 };
 
