@@ -99,13 +99,14 @@ export const RoutersContainer = styled.div`
     flex-direction: column;
     align-items: center;
 
+
   }
 `;
 export const RoutLink = styled.div`
   width: 97%;
   height: 5rem;
   color: ${(props) => (!props.selected ? props.theme.colors.text : "#fff")};
-  box-shadow : ${(props) => (!props.selected ? ' rgba(0, 0, 0, 0.05) 0px 0px 0px 1px' : 'none')};
+  box-shadow : ${(props) => (!props.selected ?  `${props.theme.colors.BoderCard } 0px 0px 0px 1px` : 'none')};
   background-color: ${(props) =>
     props.selected ? props.theme.colors.primary : props.theme.colors.background.upper};
   position: relative;
@@ -155,7 +156,7 @@ export const SkillsConatiner = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: ${(props) => props.theme.colors.BoderCard}  0px 0px 0px 1px;
   background-color: ${(props) => props.theme.colors.background.upper};
   @media ${devices.laptop} {
     height: 100%; 

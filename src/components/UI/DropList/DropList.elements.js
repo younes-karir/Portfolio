@@ -10,7 +10,7 @@ export const Container = styled.div`
   padding: 5px;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.profileCard};
+    background-color: ${(props) => props.theme.colors.BoderCard};
   }
 `;
 
@@ -18,8 +18,6 @@ export const Row = styled(TiArrowSortedDown)`
   font-size: 1.1rem;
   transform: ${(props) => (props.$flip ? "rotate(180deg)" : "rotate(0)")};
   color: ${(props) => props.theme.colors.text};
-
-  /* transition: transform 250ms ease-in-out; */
 `;
 
 export const Selected = styled.div`
@@ -42,32 +40,36 @@ export const SelectedItem = styled.span`
 
 export const Elements = styled.div`
   position: absolute;
-  padding: 0.7rem ;
-  width: 6rem;
+  padding: .75rem 0.5rem;
+  width: fit-content;
   height: fit-content;
   border-radius: 4px;
   top: 130%;
   right: 0;
-  /* left: calc(50% - 2.5rem ); */
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
   background-color: ${(props) => props.theme.colors.background.upper};
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+  box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px,
     0px 3px 5px rgba(0, 0, 0, 0.04);
 `;
 
-export const Item = styled.span`
+export const Item = styled.div`
+  padding: 5px 5px;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text};
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
 
   &:hover {
     cursor: pointer;
-    /* background-color: ${(porps) => porps.theme.colors.text}; */
-    color: ${(porps) => porps.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.BoderCard};
   }
 `;
 
@@ -75,3 +77,8 @@ export const LanguageIcon = styled(MdOutlineLanguage)`
   font-size: 1.4rem;
   color: ${(props) => props.theme.colors.text};
 `;
+
+export const ImgHolder = styled.img`
+  height: 1.3rem;
+`;
+export const Text = styled.span``;

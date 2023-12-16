@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import devices from "../../../Helpers/Devices";
 
 export const Container = styled.div`
    width: 100%;
   max-width: 100%;
   min-height: 10rem;
   background-color: ${(props) => props.theme.colors.background.upper};
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+  box-shadow:  ${(props) => props.theme.colors.BoderCard}  0px 0px 0px 1px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;

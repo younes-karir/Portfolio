@@ -28,7 +28,7 @@ export default SideBarContainer;
 const Box = styled(animated.div)`
   position: fixed;
   height: 100%;
-  width: 82.5%;
+  width: 90%;
   max-width: 25rem;
   right: 0;
   background-color: ${(props) => props.theme.colors.background.upper};

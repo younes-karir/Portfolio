@@ -124,7 +124,7 @@ const Data = () => {
               </MLink>
             </LinkWrapper>
             <Span />
-            <LinkWrapper>
+            <LinkWrapper $paddingRight={true}>
               <ElementTitle>{t("resume")}</ElementTitle>
               <DownloadIcon />
             </LinkWrapper>

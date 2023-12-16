@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from "react";
-import uk from "../../../Helpers/Images/uk.svg";
+import en from "../../../Helpers/Images/uk.svg";
+import fr from "../../../Helpers/Images/fr.svg";
+import de from "../../../Helpers/Images/de.svg";
+
 import {
   Container,
   Elements,
+  ImgHolder,
   Item,
   LanguageIcon,
   Row,
   Selected,
   SelectedItem,
+  Text,
 } from "./DropList.elements";
 import { useDispatch, useSelector } from "react-redux";
 
 import i18n from "../../../Helpers/i18next/i18n";
 import Loader from "../Loader";
 import { ChangeLanguage } from "../../../Store/actions/UI-Actions";
+import En from "../../../Helpers/Icons/En";
+import Fr from "../../../Helpers/Icons/Fr";
+import De from "../../../Helpers/Icons/De";
 
 export default function DropList() {
   const dispatch = useDispatch();
@@ -55,9 +63,9 @@ export default function DropList() {
       </Selected>
       {Drop && (
         <Elements onMouseLeave={handleMouseOut}>
-          <Item onClick={() => ChangeHandler("en")}>English</Item>
-          <Item onClick={() => ChangeHandler("fr")}>Francais</Item>
-          <Item onClick={() => ChangeHandler("de")}>Deutsch</Item>
+          <Item onClick={() => ChangeHandler("en")}><En size={'1.2rem'}/><Text>English</Text></Item>
+          <Item onClick={() => ChangeHandler("fr")}><Fr size={'1.2rem'}/><Text>Francais</Text></Item>
+          <Item onClick={() => ChangeHandler("de")}><De size={'1.2rem'}/><Text>Deutsch</Text></Item>
         </Elements>
       )}
     </Container>

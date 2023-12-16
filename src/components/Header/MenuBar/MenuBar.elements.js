@@ -6,15 +6,13 @@ import { IoIosClose } from "react-icons/io";
 
 import { PiDownloadSimpleFill } from "react-icons/pi";
 
-
-//  links icons 
+//  links icons
 
 import { HiOutlineHome } from "react-icons/hi";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { HiOutlineBriefcase } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
-
 
 export const BackContainer = styled.div`
   height: 4rem;
@@ -25,7 +23,6 @@ export const BackContainer = styled.div`
   /* margin-bottom: 2rem; */
 
   padding-right: 0.5rem;
-
 `;
 export const Back = styled(IoIosClose)`
   font-size: 3rem;
@@ -52,18 +49,19 @@ export const LinksHolder = styled.div`
   /* max-height: 35rem; */
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 `;
 
 export const LinkWrapper = styled.div`
   width: 100%;
-  height: ${p => p.$expend ? 'fit-content' : '2.1rem'};
+  height: ${(p) => (p.$expend ? "fit-content" : "2.1rem")};
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+  padding-left: ${(props) => (!props.$expend ? ".5rem" : "0")};
   justify-content: space-between;
   gap: 20px;
+  padding-right: ${props => props.$paddingRight? '.5rem' : '0' };
 `;
 
 export const MLink = styled(Link)`
@@ -134,6 +132,8 @@ export const ThemeWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   gap: 20px;
 `;
 export const ElementTitle = styled.h4`
@@ -148,30 +148,28 @@ export const DownloadIcon = styled(PiDownloadSimpleFill)`
   font-size: 1.8rem;
 `;
 
-
 export const Span = styled.span`
-background-color: #4d63dd;
-height: 1px;
+  background-color: #4d63dd;
+  height: 1px;
 `;
-
 
 export const HomeIcon = styled(HiOutlineHome)`
-  font-size:1.6rem;
-  color:inherit;
+  font-size: 1.6rem;
+  color: inherit;
 `;
 export const AboutIcon = styled(HiOutlineUserCircle)`
-  font-size:1.6rem;
-  color:inherit;
+  font-size: 1.6rem;
+  color: inherit;
 `;
 export const ResumeIcon = styled(HiOutlineDocumentText)`
-  font-size:1.6rem;
-  color:inherit;
+  font-size: 1.6rem;
+  color: inherit;
 `;
 export const PortfolioIcon = styled(HiOutlineBriefcase)`
-  font-size:1.6rem;
-  color:inherit;
+  font-size: 1.6rem;
+  color: inherit;
 `;
 export const ContactIcon = styled(HiOutlineMail)`
-  font-size:1.6rem;
-  color:inherit;
+  font-size: 1.6rem;
+  color: inherit;
 `;

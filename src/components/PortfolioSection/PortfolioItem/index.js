@@ -5,7 +5,6 @@ import {
   Link,
   LinkIcon,
   LinkWrapper,
-  MoreICon,
   PortfolioDetails,
   PortfolioImgWrapper,
   Title,

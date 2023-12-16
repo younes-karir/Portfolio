@@ -35,7 +35,7 @@ export const dark = {
     header: "#1b2942",
     profile: "#2b3e5e",
     profileCard: "#273c60",
-    BoderCard :'#4d63ddb6'
+    BoderCard :'#4d63dd93'
   },
 };
 
