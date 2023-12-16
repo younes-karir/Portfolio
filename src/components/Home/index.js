@@ -50,7 +50,6 @@ const Home = () => {
 
   const activeStyle = {
     color : theming.colors.primary,
-    fontWeight : '500',
   }
 
 

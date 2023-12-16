@@ -27,7 +27,7 @@ export default function DropList() {
   const dispatch = useDispatch();
   const [Drop, setDrop] = useState(false);
   const [timeLeft, setTimeLeft] = useState(0);
-  const acteul = useSelector(state => state.language.acteul);
+  const acteul = useSelector((state) => state.language.acteul);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -35,7 +35,6 @@ export default function DropList() {
     }, 1000);
     return () => clearInterval(intervalId);
   }, []);
-
 
   const DropTggle = () => {
     setDrop(!Drop);
@@ -47,8 +46,7 @@ export default function DropList() {
 
   const ChangeHandler = (value) => {
     setDrop(false);
-    setTimeLeft(2)
-    // setSelectedLanguage(value);
+    setTimeLeft(2);
     i18n.changeLanguage(value);
     dispatch(ChangeLanguage(value));
   };
@@ -57,15 +55,44 @@ export default function DropList() {
     <Container>
       {timeLeft > 0 && <Loader />}
       <Selected onClick={DropTggle}>
-        {/* <SelectedItem>{acteul}</SelectedItem> */}
-        <LanguageIcon />
-        {/* <Row $flip={!Drop} /> */}
+        {acteul === "en" ? (
+          <En size={"1.4rem"} />
+        ) : acteul === "fr" ? (
+          <Fr size={"1.4rem"} />
+        ) : (
+          <De size={"1.4rem"} />
+        )}
+        {/* <Row $flip={Drop} /> */}
       </Selected>
       {Drop && (
         <Elements onMouseLeave={handleMouseOut}>
-          <Item onClick={() => ChangeHandler("en")}><En size={'1.2rem'}/><Text>English</Text></Item>
-          <Item onClick={() => ChangeHandler("fr")}><Fr size={'1.2rem'}/><Text>Francais</Text></Item>
-          <Item onClick={() => ChangeHandler("de")}><De size={'1.2rem'}/><Text>Deutsch</Text></Item>
+          <Item
+            onClick={() => {
+              if (acteul !== "en") ChangeHandler("en");
+            }}
+            $selected={acteul === "en"}
+          >
+            <En size={"1.2rem"} />
+            <Text>English</Text>
+          </Item>
+          <Item
+            onClick={() => {
+              if (acteul !== "fr") ChangeHandler("fr");
+            }}
+            $selected={acteul === "fr"}
+          >
+            <Fr size={"1.2rem"} />
+            <Text>Francais</Text>
+          </Item>
+          <Item
+            onClick={() => {
+              if (acteul !== "de") ChangeHandler("de");
+            }}
+            $selected={acteul === "de"}
+          >
+            <De size={"1.2rem"} />
+            <Text>Deutsch</Text>
+          </Item>
         </Elements>
       )}
     </Container>

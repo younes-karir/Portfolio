@@ -6,13 +6,13 @@ export const Container = styled.div`
   position: relative;
   height: fit-content;
   width: fit-content;
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 3px;
+  padding: 3px 6px;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.BoderCard};
   }
-`;
+`;  
 
 export const Row = styled(TiArrowSortedDown)`
   font-size: 1.1rem;
@@ -21,11 +21,10 @@ export const Row = styled(TiArrowSortedDown)`
 `;
 
 export const Selected = styled.div`
-  gap: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   &:hover {
     cursor: pointer;
   }
@@ -66,10 +65,16 @@ export const Item = styled.div`
   align-items: center;
   gap: 10px;
   border-radius: 4px;
+  opacity: ${p => p.$selected ? 0.5 : 1} ;
+  cursor: ${props => props.$selected ? 'default' : 'pointer'};
+  /* background-color: ${props => props.$selected ? props.theme.colors.BoderCard: ' '}; */
+
 
   &:hover {
-    cursor: pointer;
-    background-color: ${(props) => props.theme.colors.BoderCard};
+    /* cursor: pointer;  */
+    /* background-color: ${(props) => props.theme.colors.BoderCard}; */
+    background-color: ${props => !props.$selected ? props.theme.colors.BoderCard: ' '};
+
   }
 `;
 

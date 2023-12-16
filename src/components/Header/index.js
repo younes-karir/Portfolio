@@ -31,7 +31,6 @@ const Data = (props) => {
 
   const activeStyle = {
     color: theming.colors.primary,
-    fontWeight: "500",
   };
 
   return (

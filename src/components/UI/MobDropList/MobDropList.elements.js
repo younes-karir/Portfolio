@@ -66,11 +66,9 @@ export const Item = styled.span`
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-
-  &:hover {
-    cursor: pointer;
-    background-color: ${(props) => props.theme.colors.BoderCard};
-  }
+  opacity: ${p => p.$selected ? 0.5 : 1} ;
+  cursor: ${props => props.$selected ? 'default' : 'pointer'};
+ 
 `;
 
 export const Text = styled.span`

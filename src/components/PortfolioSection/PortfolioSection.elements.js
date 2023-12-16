@@ -104,6 +104,7 @@ export const MoreWrapper = styled.a`
 
   &:hover{
     text-decoration: underline;
+    /* text-decoration-color:${props => props.theme.colors.UnderLine} ; */
     opacity: 1;
     /* font-weight: 500; */
 
