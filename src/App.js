@@ -5,6 +5,7 @@ import Loader from "./components/UI/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { HeaderOff, HeaderOn } from "./Store/actions/UI-Actions";
 import useScrollPosition from "./Helpers/Hooks/useScrollPosition";
+import DocViewer from "./components/UI/DocViewer";
 
 function App() {
   const headerShow = useSelector((state) => state.UI.headerShow);
@@ -33,6 +34,7 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <Content />
+      <DocViewer/>
       {timeLeft > 0 && <Loader />}
     </Fragment>
   );
