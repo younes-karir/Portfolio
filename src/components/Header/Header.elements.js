@@ -101,12 +101,13 @@ export const Download = styled.div`
   align-items: center;
 `;
 
-export const Resume = styled.button`
+export const Resume = styled.a`
   position: relative;
   height: fit-content;
   width: fit-content;
-  padding: 0.9rem 1rem;
+  padding: 0.8rem .5rem;
   border-radius: 3px;
+  text-decoration: none;
   background-color: transparent;
   border-width: 1.5px;
   border-color: ${(props) => props.theme.colors.primary};

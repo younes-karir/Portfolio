@@ -34,7 +34,7 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <Content />
-      <DocViewer/>
+      {/* <DocViewer/> */}
       {timeLeft > 0 && <Loader />}
     </Fragment>
   );

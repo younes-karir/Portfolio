@@ -83,12 +83,13 @@ export const SectionContainer = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 3rem;
+    
   }
 
   @media ${devices.laptop} {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    align-items: flex-start;
     padding-bottom: 5rem;
   }
 `;

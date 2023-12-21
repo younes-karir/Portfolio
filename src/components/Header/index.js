@@ -20,6 +20,8 @@ import LogoIcon from "../../Helpers/Icons/Logo";
 import { useTranslation } from "react-i18next";
 import DropList from "../UI/DropList";
 
+import DocResume from "../../Helpers/Documents/resume.pdf";
+
 const Data = (props) => {
   const { t } = useTranslation();
   const theming = useSelector((state) => state.theme.Theme);
@@ -105,6 +107,7 @@ const Data = (props) => {
             <DropList />
           </ThemingContainer>
           <Download>
+            {/* <Resume href={DocResume} target="_blank" rel="noreferrer"> */}
             <Resume>
               <span>+ {t("downloadCv")}</span>
             </Resume>

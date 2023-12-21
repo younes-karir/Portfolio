@@ -36,9 +36,12 @@ const AboutSection = () => {
           <AboutText>
            { t('aboutSub')}
           </AboutText>
-          <ExperienceText>{t('aboutExp')}</ExperienceText>
+          {/* <ExperienceText>{t('aboutExp')}</ExperienceText> */}
           <Details>
-           {t('bio_2')}
+           {t('bio_2_1')}
+          </Details>  
+          <Details>
+           {t('bio_2_2')}
           </Details>  
           <ContactContainer>
             <ContactWrapper>

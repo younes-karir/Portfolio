@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Modal = ({ children }) => {
 //   const showBox = useSelector((state) => state.UI.sideMenu);
-const showBox = false;
+const showBox = true;
 
   useEffect(() => {
     if(showBox){
@@ -42,7 +42,7 @@ const Box = styled(animated.div)`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.206);
   z-index: 200;
-
+  padding-top:2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
