@@ -27,92 +27,10 @@ import GitIcon from "../../Helpers/Icons/GitIcon";
 import StyledIcon from "../../Helpers/Icons/StyledIcon";
 import MuiIcon from "../../Helpers/Icons/MuiIcon";
 import MongoIcon from "../../Helpers/Icons/MongoIcon";
-import MoreModal from "./MoreModal";
+import MobileDesign from "./MobileDesign";
+import { Awards, Education, Experience } from "./Data";
 
-const Education = {
-  name: "ed",
-  content: [
-    {
-      id: 1,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-    {
-      id: 2,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-    {
-      id: 3,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-  ],
-};
-
-const Experience = {
-  name: "ex",
-  content: [
-    {
-      id: 1,
-      year: "2020",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-    {
-      id: 2,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-  ],
-};
-
-const Awards = {
-  name: "aw",
-  content: [
-    {
-      id: 1,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-    {
-      id: 2,
-      year: "2020 - 2021",
-      title: "Graphic Design",
-      sub: "Springlean Graphic University",
-      details:
-        "Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.",
-    },
-  ],
-};
-
-// skills
-
-// const SkillsList = [
-//   { id: 1, title: "html & css", pers: 90 },
-//   { id: 2, title: "javascript", pers: 90 },
-//   { id: 3, title: "react.js", pers: 80 },
-//   { id: 4, title: "java", pers: 70 },
-// ];
-
-function ResumeSection(props) {
+function ResumeSection() {
   const [DataList, setDataList] = useState(Education);
 
   const ExSwitch = () => {
@@ -133,6 +51,7 @@ function ResumeSection(props) {
         <Title>my resume</Title>
         <Sub>High Skilled Provide High Quality</Sub>
       </TitleContainer>
+      <MobileDesign />
       <ResumeWrapper>
         <RoutersContainer>
           <RoutLink
@@ -212,8 +131,6 @@ function ResumeSection(props) {
                 <MongoIcon />
                 <SkillTitle>Mongodb</SkillTitle>
               </SkillItem>
-
-       
             </SkillsWrapper>
           </CodingSkills>
         </SkillsConatiner>

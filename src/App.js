@@ -17,9 +17,9 @@ function App() {
 
   useEffect(() => {
     if (!headerShow) {
-      if (scrollPosition > 40) dispatch(HeaderOn());
+      if (scrollPosition > 100) dispatch(HeaderOn());
     } else {
-      if (scrollPosition < 40) dispatch(HeaderOff());
+      if (scrollPosition < 100) dispatch(HeaderOff());
     }
   }, [scrollPosition, headerShow, dispatch]);
 

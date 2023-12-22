@@ -9,9 +9,9 @@ const HeaderContainer = ({ children }) => {
   const BoxTransition = useTransition(showHeader, {
     from: { y: -100 },
     enter: { y: 0 },
-    leave: { y: -100},
+    leave: {  y: -100},
     config: {
-      duration: 350,
+      duration: 300,
     },
   });
 

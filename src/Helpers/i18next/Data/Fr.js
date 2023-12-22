@@ -9,17 +9,19 @@ export const Fr =  {
       theme: "Thème",
       language: "langue",
       hiThere : "Salut! Là",
-      status : "Je suis développeur Web :)",
-      bio_1 : "Développeur web full-stack M.E.R.N (MongoDB, Express.js, React.js, Node.js) à la recherche d'un poste au sein d'une entreprise innovante. Fort d'une expérience pratique, je suis prêt à apporter des solutions novatrices pour le succès des projets.",
+      status : "Je suis un développeur MERN stack",
+      bio_1 : "Avec une passion qui a grandi au fil des années, venez explorer mon espace numérique où la créativité se mêle à la praticité, et l'innovation se combine harmonieusement au design.",
       aboutTitle :"À propos de moi",
-      aboutQ_1 : "Compétence élevée, fournissant une qualité élevée",
-      aboutSub : "Bonjour ! Je suis Younes KARIR, développeur web Full-stack avec une expertise dans la stack MERN.",
-      aboutExp : "Avoir 2 ans d'expérience",
-      bio_2: "Développeur web full-stack MERN, diplômé en développement des systèmes d'informations et de communications, avec plus de 2 ans d'expérience chez RirackTech. Animé par la volonté de mettre à profit mes compétences MERN au sein d'une entreprise innovante tournée vers l'avenir, je recherche un environnement où je pourrais exploiter mon expertise dans la création d'applications web dynamiques et orientées utilisateur pour contribuer au succès de projets stimulants.",
+      aboutQ_1 : "Les individus hautement qualifiés fournissent une haute qualité",
+      aboutSub : "Qui suis-je ?",
+      aboutExp : "Qui suis-je ?",
+      bio_2_1: "Je suis Younes Karir, un développeur MERN de 25 ans résidant dans le magnifique pays du Maroc. Fort d'une licence en informatique, j'apporte plus d'un an d'expérience dédiée au monde du développement web. Mon parcours inclut la maîtrise de MongoDB, Express.js, React.js et Node.js, me permettant de concevoir des solutions numériques innovantes et efficaces. Au-delà de mes compétences techniques, je m'engage à apprendre en continu et à rester à la pointe des tendances de l'industrie.",
+      bio_2_2: "Dans mon parcours professionnel, j'ai réussi à développer divers sites web, témoignant de ma passion pour la création d'expériences numériques non seulement fonctionnelles, mais aussi captivantes. Je suis enthousiaste à l'idée de relever de nouveaux défis et de collaborer, ce qui me permet de fusionner la créativité avec la fonctionnalité.",
       phoneTitle : "Téléphone",
       emailTitle :"E-Mail",
-      adressTitle: "Adresse", 
-      adressData: "Beni Mellal, Maroc.",
+      adressTitle: "Adresse",
+      adressData: "Beni Mellal, Morroco.",
+
  
 
 

@@ -26,7 +26,7 @@ const SideBarModal = ({ children }) => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: {
-      duration: 300,
+      duration: 250,
     },
   });
 

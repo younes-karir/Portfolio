@@ -14,7 +14,7 @@ const SideBarContainer = ({ children }) => {
     enter: { x: 0 },
     leave: { x: 400 },
     config: {
-      duration: 300,
+      duration: 250,
     },
   });
 

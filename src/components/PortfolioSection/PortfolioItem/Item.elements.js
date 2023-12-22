@@ -10,9 +10,9 @@ import { RiLinksLine } from "react-icons/ri";
 export const Container = styled.div`
   height: 25rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-     ${(props) => props.theme.colors.BoderCard}  0px 0px 0px 1px;
+    ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
 
-    background-color: ${props => props.theme.colors.background.base};
+  background-color: ${(props) => props.theme.colors.background.base};
 
   @media ${devices.laptop} {
     max-width: 25rem;
@@ -22,7 +22,9 @@ export const Container = styled.div`
 export const PortfolioImgWrapper = styled.div`
   width: 100%;
   height: 70%;
-  background-color: ${props => props.theme.colors.background.header};
+  background-color: ${(props) => props.theme.colors.background.header};
+  position: relative;
+
 `;
 
 export const Holder = styled.img``;
@@ -44,9 +46,7 @@ export const LinkWrapper = styled.div`
   align-items: center;
 
   gap: 10px;
-  color: ${porps => porps.theme.colors.text};
-
-
+  color: ${(porps) => porps.theme.colors.text};
 `;
 export const Title = styled.h4`
   font-size: 1rem;
@@ -56,18 +56,16 @@ export const Title = styled.h4`
 export const Link = styled.a`
   text-decoration: none;
   color: inherit;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
-
 `;
 export const LinkIcon = styled(RiLinksLine)`
-color: inherit;
-  font-size:1rem;
+  color: inherit;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
 
 export const InfosWrapper = styled.div`
@@ -80,9 +78,7 @@ export const InfosWrapper = styled.div`
   overflow: hidden;
 `;
 
-
 export const MoreICon = styled(MdMoreHoriz)`
   font-size: 1.4rem;
-  color: ${props => props.theme.colors.primary};
-
+  color: ${(props) => props.theme.colors.primary};
 `;

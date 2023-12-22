@@ -71,13 +71,13 @@ export const Sub = styled.p`
 export const ResumeWrapper = styled.div`
   width: 100%;
   padding-top: 3rem;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  /* @media ${devices.tablet} {
-    grid-template-columns: 1fr 4fr;
-  } */
+  @media ${devices.tablet} {
+    display: grid;
+  }
   @media ${devices.laptop} {
     grid-template-columns: 1fr 4.5fr 2fr;
     gap: 1rem;
@@ -133,7 +133,7 @@ export const RouterWrapper = styled.div`
   flex-direction: column;
   position: relative;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 
   @media ${devices.tablet} {
     display: grid;
@@ -236,4 +236,13 @@ export const SkillTitle = styled.h3`
   text-transform: uppercase;
 `;
 
-// icons
+
+
+
+// Mobile design
+
+
+
+
+
+
