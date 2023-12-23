@@ -10,13 +10,11 @@ import {
   Title,
 } from "./Item.elements";
 import TechItem from "../TechItem";
-// import ProjectImg from "../../../Helpers/Images/man_image.png";
 
 const PortfolioItem = () => {
   return (
     <Container>
       <PortfolioImgWrapper>
-        {/* <Holder  src={ProjectImg} /> */}
       </PortfolioImgWrapper>
       <PortfolioDetails>
         <LinkWrapper>

@@ -22,7 +22,7 @@ const ContactSection = () => {
     <Container id="contact">
       <TitleContainer>
         <Title>contact me</Title>
-        <Sub>Feel Free Message OR Call Me</Sub>
+        <Sub>Feel Free Message OR Call Me</Sub> 
       </TitleContainer>
       <ConatctWrapper>
         <FormContainer>
