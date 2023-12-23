@@ -78,3 +78,6 @@ export const InfoWrapper = styled.div`
     height: 100%;
   }
 `;
+
+
+
