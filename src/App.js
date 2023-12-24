@@ -17,9 +17,9 @@ function App() {
 
   useEffect(() => {
     if (!headerShow) {
-      if (scrollPosition > 100) dispatch(HeaderOn());
+      if (scrollPosition > 80) dispatch(HeaderOn());
     } else {
-      if (scrollPosition < 100) dispatch(HeaderOff());
+      if (scrollPosition < 80) dispatch(HeaderOff());
     }
   }, [scrollPosition, headerShow, dispatch]);
 
@@ -34,7 +34,6 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <Content />
-      {/* <DocViewer/> */}
       {timeLeft > 0 && <Loader />}
     </Fragment>
   );

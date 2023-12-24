@@ -4,6 +4,11 @@ import {
   CardTitle,
   CardTitleContainer,
   Container,
+  Detail,
+  Punkt,
+  PunktWrapper,
+  SchoolIcon,
+  TItem,
   TextContainer,
   Year,
   YearContainer,
@@ -17,9 +22,21 @@ const Modal = (props) => {
       </YearContainer>
       <CardTitleContainer>
         <CardTitle>{props.item.title}</CardTitle>
-        <CardSub>{props.item.sub}</CardSub>
+        <CardSub>
+          <SchoolIcon />
+          {props.item.sub} | {props.item.place}
+        </CardSub>
       </CardTitleContainer>
-      <TextContainer>{props.item.details}</TextContainer>
+      <TextContainer>
+        {props.item.details.map((i) => (
+          <TItem>
+            <PunktWrapper>
+              <Punkt />
+            </PunktWrapper>
+            <Detail>{i}</Detail>
+          </TItem>
+        ))}
+      </TextContainer>
     </Container>
   );
 };

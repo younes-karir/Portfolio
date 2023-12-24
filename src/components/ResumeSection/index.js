@@ -84,7 +84,7 @@ function ResumeSection() {
         </RouterWrapper>
         <SkillsConatiner>
           <CodingSkills>
-            <CodingSkillsTitle>Coding Skills</CodingSkillsTitle>
+            <CodingSkillsTitle>Skills</CodingSkillsTitle>
             <SkillsWrapper>
               <SkillItem>
                 <HtmlIcon />

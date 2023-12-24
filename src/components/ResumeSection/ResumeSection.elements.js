@@ -79,7 +79,7 @@ export const ResumeWrapper = styled.div`
     display: grid;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 4.5fr 2fr;
+    grid-template-columns: 1.5fr 5fr 2fr;
     gap: 1rem;
   }
 `;
@@ -142,12 +142,10 @@ export const RouterWrapper = styled.div`
   }
 
   @media ${devices.laptop} {
-  height: 45rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 `;
 
@@ -156,32 +154,33 @@ export const SkillsConatiner = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
+  /* padding-top: 1rem; */
   box-shadow: ${(props) => props.theme.colors.BoderCard}  0px 0px 0px 1px;
   background-color: ${(props) => props.theme.colors.background.upper};
   @media ${devices.laptop} {
     height: 100%; 
+    
     }
+
 `;
 
 export const CodingSkills = styled.div`
   background-color: ${(props) => props.theme.colors.background.upper};
   width: 100%;
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
-  /* height: 100%; */
-  padding: 2.8rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 `;
 export const CodingSkillsWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 `;
 export const CodingSkillsTitle = styled.h3`
   /* margin-bottom: 2.5rem; */
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 2.25rem;
   text-align: center;
   position: relative;
@@ -209,16 +208,16 @@ export const DesignSkills = styled.div`
 
 export const SkillsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 10px;
 
 
   @media ${devices.tablet} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 `;
 export const SkillItem = styled.div`
