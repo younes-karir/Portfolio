@@ -1,3 +1,11 @@
+import cr001 from '../Certificate/Data/001.jpg';
+
+
+
+
+
+
+
 export const Education = {
   name: "ed",
   content: [
@@ -75,10 +83,48 @@ export const Awards = {
     {
       id: 1,
       year: "2022",
-      title: "Basic Training",
-      sub: "CRMEF",
-      place: "Rabat",
-      details: ["Teacher Qualification Program."],
+      img :cr001,
+      title: "introduction to devops",
+      sub: "IBM",
+      details: [
+        "Teaching various software while adapting to the learners‘ levels.",
+        "Conducting research to assist learners in progressing more quickly.",
+      ],
+    },{
+      id: 2,
+      img :cr001,
+      year: "2022",
+      title: "Express JS - The Complete Guide",
+      sub: "UDEMY",
+
+      details: [
+        "Teaching various software while adapting to the learners‘ levels.",
+        "Conducting research to assist learners in progressing more quickly.",
+      ],
     },
+    {
+      id: 3,
+      img :cr001,
+      year: "2022",
+      title: "Express JS - The Complete Guide",
+      sub: "UDEMY",
+
+      details: [
+        "Teaching various software while adapting to the learners‘ levels.",
+        "Conducting research to assist learners in progressing more quickly.",
+      ],
+    },
+    {
+      id: 4,
+      img :cr001,
+      year: "2022",
+      title: "Express JS - The Complete Guide",
+      sub: "UDEMY",
+
+      details: [
+        "Teaching various software while adapting to the learners‘ levels.",
+        "Conducting research to assist learners in progressing more quickly.",
+      ],
+    }
   ],
 };

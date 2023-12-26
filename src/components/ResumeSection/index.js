@@ -29,9 +29,10 @@ import MuiIcon from "../../Helpers/Icons/MuiIcon";
 import MongoIcon from "../../Helpers/Icons/MongoIcon";
 import MobileDesign from "./MobileDesign";
 import { Awards, Education, Experience } from "./Data";
+import Certificate from "./Certificate";
 
 function ResumeSection() {
-  const [DataList, setDataList] = useState(Education);
+  const [DataList, setDataList] = useState(Experience);
 
   const ExSwitch = () => {
     setDataList(Experience);
@@ -55,18 +56,18 @@ function ResumeSection() {
       <ResumeWrapper>
         <RoutersContainer>
           <RoutLink
-            selected={DataList.name === "ed"}
-            onClick={() => EdSwitch()}
-          >
-            <ArowIcon selected={DataList.name === "ed"} />
-            Education
-          </RoutLink>
-          <RoutLink
             selected={DataList.name === "ex"}
             onClick={() => ExSwitch()}
           >
             <ArowIcon selected={DataList.name === "ex"} />
             Experience
+          </RoutLink>
+          <RoutLink
+            selected={DataList.name === "ed"}
+            onClick={() => EdSwitch()}
+          >
+            <ArowIcon selected={DataList.name === "ed"} />
+            Education
           </RoutLink>
           <RoutLink
             selected={DataList.name === "aw"}
@@ -77,9 +78,13 @@ function ResumeSection() {
           </RoutLink>
         </RoutersContainer>
         <RouterWrapper>
-          {DataList.content.map((item) => (
-            <Modal key={item.id} item={item} />
-          ))}
+          {DataList.name === "aw"
+            ? DataList.content.map((item) => (
+                <Certificate key={item.id} item={item} />
+              ))
+            : DataList.content.map((item) => (
+                <Modal key={item.id} item={item} name={DataList.name} />
+              ))}
           {/* <MoreModal /> */}
         </RouterWrapper>
         <SkillsConatiner>

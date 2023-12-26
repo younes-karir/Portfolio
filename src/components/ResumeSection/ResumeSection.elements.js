@@ -79,8 +79,7 @@ export const ResumeWrapper = styled.div`
     display: grid;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1.5fr 5fr 2fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 4fr 2fr;
   }
 `;
 export const RoutersContainer = styled.div`
