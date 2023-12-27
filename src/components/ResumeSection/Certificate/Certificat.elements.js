@@ -7,20 +7,17 @@ import { TbArrowBadgeRight } from "react-icons/tb";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: ${(props) => props.theme.colors.background.upper};
-  box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
   display: flex;
-  flex-direction: column;
-  padding: .7rem;
-  align-items: center;
-
+  flex-direction: row;
+  gap: 1.5rem;
 `;
 
 
 export const  Holder = styled.img`
-    width: 100%;
-    height: auto;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
 
 `;
 export const DetailsWrapper = styled.div`
@@ -51,10 +48,10 @@ export const CardTitleContainer = styled.div`
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* gap: 1rem; */
 `;
 export const CardTitle = styled.h3`
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;

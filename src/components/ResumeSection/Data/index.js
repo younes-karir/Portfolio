@@ -1,4 +1,4 @@
-import cr001 from '../Certificate/Data/001.jpg';
+import cr001 from './Data/001.jpg';
 
 
 
@@ -101,8 +101,7 @@ export const Awards = {
         "Teaching various software while adapting to the learners‘ levels.",
         "Conducting research to assist learners in progressing more quickly.",
       ],
-    },
-    {
+    },{
       id: 3,
       img :cr001,
       year: "2022",
@@ -113,8 +112,8 @@ export const Awards = {
         "Teaching various software while adapting to the learners‘ levels.",
         "Conducting research to assist learners in progressing more quickly.",
       ],
-    },
-    {
+    }
+    ,{
       id: 4,
       img :cr001,
       year: "2022",

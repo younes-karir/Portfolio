@@ -4,6 +4,7 @@ import {
   CodingSkills,
   CodingSkillsTitle,
   Container,
+  Line,
   ResumeWrapper,
   RoutLink,
   RouterWrapper,
@@ -31,6 +32,7 @@ import MongoIcon from "../../Helpers/Icons/MongoIcon";
 import MobileDesign from "./MobileDesign";
 import { Awards, Education, Experience } from "./Data";
 import Certificate from "./Certificate";
+import MoreModal from "./MoreModal";
 
 function ResumeSection() {
   const [DataList, setDataList] = useState(Experience);
@@ -78,20 +80,23 @@ function ResumeSection() {
             Certification
           </RoutLink>
         </RoutersContainer>
-
-        {DataList.name === "aw" ? (
-          <Certficates>
-            {DataList.content.map((item) => (
-              <Certificate key={item.id} item={item} />
-            ))}
-          </Certficates>
-        ) : (
-          <RouterWrapper>
-            {DataList.content.map((item) => (
+        <RouterWrapper>
+          {DataList.name === "aw" ? (
+            <Certficates>
+              {DataList.content.map((item) => (
+                <>
+                <Certificate key={item.id} item={item} />
+                <Line />
+                </>
+              ))}
+               <MoreModal />
+            </Certficates>
+          ) : (
+            DataList.content.map((item) => (
               <Modal key={item.id} item={item} name={DataList.name} />
-            ))}
-          </RouterWrapper>
-        )}
+            ))
+          )}
+        </RouterWrapper>
         <SkillsConatiner>
           <CodingSkills>
             <CodingSkillsTitle>Skills</CodingSkillsTitle>

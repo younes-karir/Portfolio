@@ -151,20 +151,23 @@ export const RouterWrapper = styled.div`
 
 export const Certficates = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding:.7rem;
+  gap:.7rem;
+  background-color: ${(props) => props.theme.colors.background.upper};
+    border-left: 4px solid ${props => props.theme.colors.primary};
 
-  @media ${devices.tablet} {
-    /*  */
-  }
+  box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
+`;
 
-  @media ${devices.laptop} {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem; */
-  }
+
+export const Line = styled.span`
+  width: 100%;
+  height: fit-content;
+  border: .7px solid ${(props) => props.theme.colors.BoderCard};
+
+
 `;
 
 export const SkillsConatiner = styled.div`

@@ -10,6 +10,7 @@ export const Container = styled.div`
   min-height: 10rem;
   background-color: ${(props) => props.theme.colors.background.upper};
   box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
+  border-left: 4px solid ${props => props.theme.colors.primary};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
