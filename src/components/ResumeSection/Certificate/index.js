@@ -6,10 +6,7 @@ const Certificate = (props) => {
     <Container>
       <Holder  src={props.item.img}/>
       <DetailsWrapper>
-      {/* <YearContainer>
-        <Year>2023</Year>
-      </YearContainer> */}
-      <CardTitleContainer>
+       <CardTitleContainer>
         <CardTitle>{props.item.title}</CardTitle>
         <CardSub>
           {props.item.sub}

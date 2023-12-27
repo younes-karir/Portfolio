@@ -91,23 +91,25 @@ export const RoutersContainer = styled.div`
   @media ${devices.tablet} {
     flex-direction: row;
     align-items: center;
-
   }
 
   @media ${devices.laptop} {
     flex-direction: column;
     align-items: center;
-
-
   }
 `;
 export const RoutLink = styled.div`
   width: 97%;
   height: 5rem;
   color: ${(props) => (!props.selected ? props.theme.colors.text : "#fff")};
-  box-shadow : ${(props) => (!props.selected ?  `${props.theme.colors.BoderCard } 0px 0px 0px 1px` : 'none')};
+  box-shadow: ${(props) =>
+    !props.selected
+      ? `${props.theme.colors.BoderCard} 0px 0px 0px 1px`
+      : "none"};
   background-color: ${(props) =>
-    props.selected ? props.theme.colors.primary : props.theme.colors.background.upper};
+    props.selected
+      ? props.theme.colors.primary
+      : props.theme.colors.background.upper};
   position: relative;
 
   text-transform: uppercase;
@@ -120,7 +122,6 @@ export const RoutLink = styled.div`
     cursor: pointer;
   }
   @media ${devices.laptop} {
-    
     height: 6rem;
     max-width: 10rem;
   }
@@ -148,19 +149,35 @@ export const RouterWrapper = styled.div`
   }
 `;
 
+export const Certficates = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media ${devices.tablet} {
+    /*  */
+  }
+
+  @media ${devices.laptop} {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; */
+  }
+`;
+
 export const SkillsConatiner = styled.div`
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   /* padding-top: 1rem; */
-  box-shadow: ${(props) => props.theme.colors.BoderCard}  0px 0px 0px 1px;
+  box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
   background-color: ${(props) => props.theme.colors.background.upper};
   @media ${devices.laptop} {
-    height: 100%; 
-    
-    }
-
+    height: 100%;
+  }
 `;
 
 export const CodingSkills = styled.div`
@@ -211,12 +228,11 @@ export const SkillsWrapper = styled.div`
   row-gap: 40px;
   column-gap: 10px;
 
-
   @media ${devices.tablet} {
-    grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 export const SkillItem = styled.div`
@@ -234,13 +250,4 @@ export const SkillTitle = styled.h3`
   text-transform: uppercase;
 `;
 
-
-
-
 // Mobile design
-
-
-
-
-
-

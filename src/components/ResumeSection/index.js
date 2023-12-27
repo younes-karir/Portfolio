@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Certficates,
   CodingSkills,
   CodingSkillsTitle,
   Container,
@@ -77,16 +78,20 @@ function ResumeSection() {
             Certification
           </RoutLink>
         </RoutersContainer>
-        <RouterWrapper>
-          {DataList.name === "aw"
-            ? DataList.content.map((item) => (
-                <Certificate key={item.id} item={item} />
-              ))
-            : DataList.content.map((item) => (
-                <Modal key={item.id} item={item} name={DataList.name} />
-              ))}
-          {/* <MoreModal /> */}
-        </RouterWrapper>
+
+        {DataList.name === "aw" ? (
+          <Certficates>
+            {DataList.content.map((item) => (
+              <Certificate key={item.id} item={item} />
+            ))}
+          </Certficates>
+        ) : (
+          <RouterWrapper>
+            {DataList.content.map((item) => (
+              <Modal key={item.id} item={item} name={DataList.name} />
+            ))}
+          </RouterWrapper>
+        )}
         <SkillsConatiner>
           <CodingSkills>
             <CodingSkillsTitle>Skills</CodingSkillsTitle>
