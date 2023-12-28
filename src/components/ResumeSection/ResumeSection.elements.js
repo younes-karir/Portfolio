@@ -101,6 +101,7 @@ export const RoutersContainer = styled.div`
 export const RoutLink = styled.div`
   width: 97%;
   height: 5rem;
+  border-radius: 4px;
   color: ${(props) => (!props.selected ? props.theme.colors.text : "#fff")};
   box-shadow: ${(props) =>
     !props.selected

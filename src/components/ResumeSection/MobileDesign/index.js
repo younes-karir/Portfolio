@@ -12,8 +12,8 @@ const MobileDesign = () => {
       <Wrapper>
         <ItemTitle>
           EXPERIENCE
-          <ArowIcon selected={true} />
-          <ArowIconLeft />
+          {/* <ArowIcon selected={true} />*/}
+          <ArowIconLeft /> 
         </ItemTitle>
         <RouterWrapper>
           {Experience.content.map((item) => (
@@ -25,7 +25,6 @@ const MobileDesign = () => {
       <Wrapper>
         <ItemTitle>
           EDUCATION
-          <ArowIcon selected={true} />
           <ArowIconLeft />
         </ItemTitle>
         <RouterWrapper>
@@ -38,7 +37,6 @@ const MobileDesign = () => {
       <Wrapper>
         <ItemTitle>
           CERTIFICATION
-          <ArowIcon selected={true} />
           <ArowIconLeft />
         </ItemTitle>
         <RouterWrapper>
