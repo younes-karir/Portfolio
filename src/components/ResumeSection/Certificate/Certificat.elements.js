@@ -1,49 +1,57 @@
 import styled from "styled-components";
 import devices from "../../../Helpers/Devices";
 
-
-import { TbArrowBadgeRight } from "react-icons/tb";
-
+import { RiLinksLine } from "react-icons/ri";
+import { HiExternalLink } from "react-icons/hi";
+import { BiShowAlt } from "react-icons/bi";
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    #link-show {
+      visibility: visible;
+    }
+  }
 `;
 
-
-export const  Holder = styled.img`
+export const Link = styled.a`
+  visibility: hidden;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+export const LinkIcon = styled(RiLinksLine)`
+  color: inherit;
+  font-size: 1rem;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  
+  align-items: center;
+  justify-content: center;
+`;
 
+export const Holder = styled.div`
+  width: 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 export const DetailsWrapper = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
-  gap: 10px;
+  padding: 0.7rem 0;
 `;
 
-
-export const Year = styled.span`
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: ${(props) => props.theme.colors.primary};
-`;
-
-export const YearContainer = styled.div`
-  padding: 6px 12px;
-  background-color: ${(props) => props.theme.colors.profileCard};
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 export const CardTitleContainer = styled.div`
   width: fit-content;
   display: flex;
@@ -51,6 +59,9 @@ export const CardTitleContainer = styled.div`
   /* gap: 1rem; */
 `;
 export const CardTitle = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -60,48 +71,19 @@ export const CardTitle = styled.h3`
 
 export const CardSub = styled.h5`
   color: ${(props) => props.theme.colors.text};
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
-  opacity: 0.75;
+  opacity: 0.9;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 `;
 
-export const PunktWrapper = styled.div`
-width: 1.5rem;
-`;
-
-export const Punkt = styled(TbArrowBadgeRight)`
-  font-size: 1.2rem;
-  width: fit-content;
-  text-align: center;
-`;
-
-export const TextContainer = styled.div`
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-`;
-
-export const TItem = styled.div`
-  height: fit-content;
-  width: 100%;
+export const TextContainer = styled.p`
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
+  text-transform: capitalize;
+  opacity: 0.7;
   color: ${(props) => props.theme.colors.text};
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
 `;
-
-export const Detail = styled.p`
-width: calc(100% - 1.5rem);
-
-
-`;
-
-

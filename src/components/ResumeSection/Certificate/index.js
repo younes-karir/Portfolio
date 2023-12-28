@@ -1,27 +1,32 @@
 import React from "react";
-import { CardSub, CardTitle, CardTitleContainer, Container, Detail, DetailsWrapper, Holder, Punkt, PunktWrapper, TItem, TextContainer, Year, YearContainer } from "./Certificat.elements";
+import {
+  CardSub,
+  CardTitle,
+  Link,
+  LinkIcon,
+  Container,
+  DetailsWrapper,
+  Holder,
+  TextContainer,
+} from "./Certificat.elements";
 import IbmIcon from "../../../Helpers/Icons/IbmIcon";
+import UdemyIcon from "../../../Helpers/Icons/UdemyIcon";
+import {} from "../../PortfolioSection/PortfolioItem/Item.elements";
 
 const Certificate = (props) => {
   return (
     <Container>
-      {/* <Holder  src={props.item.img}/> */}
-      <IbmIcon/>
+      <Holder>{props.item.sub === "IBM" ? <IbmIcon /> : <UdemyIcon />}</Holder>
       <DetailsWrapper>
-      <CardTitleContainer>
-        <CardTitle>{props.item.title}</CardTitle>
-        <CardSub>
-          {props.item.sub}
-        </CardSub>
-      </CardTitleContainer>
-      <TextContainer>
-          {/* <TItem>
-            <PunktWrapper>
-              <Punkt />
-            </PunktWrapper>
-            <Detail>efwf ewfwef</Detail>
-          </TItem> */}
-      </TextContainer>
+        <CardTitle>
+          {props.item.title}{" "}
+          <Link id="link-show" href="#">
+            <LinkIcon />
+          </Link>
+        </CardTitle>
+        <CardSub>{props.item.sub}</CardSub>
+        <TextContainer>issued {props.item.year}</TextContainer>
+        <TextContainer>Credential ID {props.item.id}</TextContainer>
       </DetailsWrapper>
     </Container>
   );

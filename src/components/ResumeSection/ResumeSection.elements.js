@@ -153,10 +153,10 @@ export const Certficates = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding:.7rem;
+  padding:1rem;
   gap:.7rem;
   background-color: ${(props) => props.theme.colors.background.upper};
-    border-left: 4px solid ${props => props.theme.colors.primary};
+    /* border-left: 4px solid ${props => props.theme.colors.primary}; */
 
   box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
 `;

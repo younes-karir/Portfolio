@@ -80,23 +80,25 @@ function ResumeSection() {
             Certification
           </RoutLink>
         </RoutersContainer>
-        <RouterWrapper>
-          {DataList.name === "aw" ? (
-            <Certficates>
-              {DataList.content.map((item) => (
-                <>
+
+        {DataList.name === "aw" ? (
+          <Certficates>
+            {DataList.content.map((item) => (
+              <>
                 <Certificate key={item.id} item={item} />
                 <Line />
-                </>
-              ))}
-               <MoreModal />
-            </Certficates>
-          ) : (
-            DataList.content.map((item) => (
+              </>
+            ))}
+            <MoreModal />
+          </Certficates>
+        ) : (
+          <RouterWrapper>
+            {DataList.content.map((item) => (
               <Modal key={item.id} item={item} name={DataList.name} />
-            ))
-          )}
-        </RouterWrapper>
+            ))}
+          </RouterWrapper>
+        )}
+
         <SkillsConatiner>
           <CodingSkills>
             <CodingSkillsTitle>Skills</CodingSkillsTitle>
