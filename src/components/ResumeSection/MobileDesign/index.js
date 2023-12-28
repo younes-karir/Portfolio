@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, ItemTitle, Wrapper } from "./MobileDesign.elements";
-import { RouterWrapper } from "../ResumeSection.elements";
+import { Certficates, Line, RouterWrapper } from "../ResumeSection.elements";
 import { Awards, Education, Experience } from "../Data";
 import Modal from "../Modals";
 import ArowIcon from "../../../Helpers/Icons/ArowIcon";
 import ArowIconLeft from "../../../Helpers/Icons/ArowIconLeft";
+import Certificate from "../Certificate";
+import MoreModal from "../MoreModal";
 
 const MobileDesign = () => {
   return (
@@ -39,12 +41,15 @@ const MobileDesign = () => {
           CERTIFICATION
           <ArowIconLeft />
         </ItemTitle>
-        <RouterWrapper>
-          {Awards.content.map((item) => (
-            <Modal key={item.id} item={item} />
-          ))}
-          {/* <MoreModal /> */}
-        </RouterWrapper>
+        <Certficates>
+            {Awards.content.map((item) => (
+              <>
+                <Certificate key={item.id} item={item} />
+                <Line />
+              </>
+            ))}
+            <MoreModal />
+          </Certficates>
       </Wrapper>
     </Container>
   );
