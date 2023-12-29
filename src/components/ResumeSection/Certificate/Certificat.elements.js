@@ -10,18 +10,35 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.75rem;
 
   &:hover {
     cursor: pointer;
     #link-show {
-      visibility: visible;
+      display: inline-block;
     }
+  }
+
+  @media ${devices.laptop} {
+    gap: 1.5rem;
+  }
+`;
+
+export const Holder = styled.div`
+  width: 4.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media ${devices.laptop} {
+    width: 6rem;
   }
 `;
 
 export const Link = styled.a`
-  visibility: hidden;
+  display: none;
   text-decoration: none;
   color: inherit;
   &:hover {
@@ -36,20 +53,16 @@ export const LinkIcon = styled(RiLinksLine)`
   justify-content: center;
 `;
 
-export const Holder = styled.div`
-  width: 8rem;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-`;
 export const DetailsWrapper = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0.7rem 0;
+  padding: 0.5rem 0;
+  @media ${devices.laptop} {
+    padding: 0.7rem 0;
+  }
+
 `;
 
 export const CardTitleContainer = styled.div`
@@ -62,22 +75,30 @@ export const CardTitle = styled.h3`
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.text};
+
+  @media ${devices.laptop} {
+    font-size: 1.1rem;
+  }
 `;
 
 export const CardSub = styled.h5`
   color: ${(props) => props.theme.colors.text};
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   opacity: 0.9;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+
+  @media ${devices.laptop} {
+    font-size: 0.9rem;
+  }
 `;
 
 export const TextContainer = styled.p`

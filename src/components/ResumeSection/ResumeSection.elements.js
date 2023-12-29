@@ -154,21 +154,19 @@ export const Certficates = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding:1rem;
-  gap:.7rem;
+  padding: 1rem;
+  gap: 0.7rem;
   background-color: ${(props) => props.theme.colors.background.upper};
-    /* border-left: 4px solid ${props => props.theme.colors.primary}; */
 
   box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
 `;
 
-
 export const Line = styled.span`
   width: 100%;
   height: fit-content;
-  border: .7px solid ${(props) => props.theme.colors.BoderCard};
-
-
+  border-bottom: ${(props) =>
+    props.$break ? "none" : `1px solid ${props.theme.colors.BoderCard}`};
+  margin-bottom: ${(props) => (props.$break ? ".5rem" : "0")};
 `;
 
 export const SkillsConatiner = styled.div`
@@ -176,7 +174,6 @@ export const SkillsConatiner = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  /* padding-top: 1rem; */
   box-shadow: ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
   background-color: ${(props) => props.theme.colors.background.upper};
   @media ${devices.laptop} {
@@ -228,7 +225,7 @@ export const DesignSkills = styled.div`
 
 export const SkillsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 10px;
 

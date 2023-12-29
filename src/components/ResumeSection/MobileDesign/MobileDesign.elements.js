@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* align-items: center; */
   gap: 1rem;
 `;
 
@@ -41,4 +42,31 @@ export const ItemTitle = styled.div`
   align-items: center;
   /* justify-content: center; */
   font-weight: 500;
+`;
+
+
+
+export const CertTitle = styled.h3`
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: .5rem;
+  text-transform: capitalize;
+
+  color: ${(props) => props.theme.colors.text};
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    background-color: #4d63dd;
+    content: "";
+    width: 50px;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
 `;

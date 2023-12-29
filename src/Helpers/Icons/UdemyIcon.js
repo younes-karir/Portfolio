@@ -1,11 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const IbmIcon = () => {
+const IbmIcon = (props) => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: "1.5rem",
+    width: props.isMobile ? '1.2rem' : '1.4rem',
   };
   return (
     <svg

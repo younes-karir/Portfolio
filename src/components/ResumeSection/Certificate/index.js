@@ -16,7 +16,7 @@ import {} from "../../PortfolioSection/PortfolioItem/Item.elements";
 const Certificate = (props) => {
   return (
     <Container>
-      <Holder>{props.item.sub === "IBM" ? <IbmIcon /> : <UdemyIcon />}</Holder>
+      <Holder>{props.item.sub === "IBM" ? <IbmIcon isMobile={props.isMobile}/> : <UdemyIcon isMobile={props.isMobile}/>}</Holder>
       <DetailsWrapper>
         <CardTitle>
           {props.item.title}{" "}
