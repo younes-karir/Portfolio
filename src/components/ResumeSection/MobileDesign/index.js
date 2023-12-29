@@ -17,7 +17,7 @@ import Skills from "../Skills";
 const MobileDesign = () => {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper id="ex">
         <ItemTitle>
           EXPERIENCE
           {/* <ArowIcon selected={true} />*/}
@@ -25,31 +25,31 @@ const MobileDesign = () => {
         </ItemTitle>
         <RouterWrapper>
           {Experience.content.map((item) => (
-            <Modal key={item.id} item={item} />
+            <Modal key={'experience'+item.id} item={item} />
           ))}
           {/* <MoreModal /> */}
         </RouterWrapper>
       </Wrapper>
-      <Wrapper>
+      <Wrapper id="ed">
         <ItemTitle>
           EDUCATION
           <ArowIconLeft />
         </ItemTitle>
         <RouterWrapper>
           {Education.content.map((item) => (
-            <Modal key={item.id} item={item} />
+            <Modal key={'education'+item.id} item={item} />
           ))}
           {/* <MoreModal /> */}
         </RouterWrapper>
       </Wrapper>
-      <Wrapper>
+      <Wrapper id="ce">
         <Certficates>
           <CertTitle>CERTIFICATION</CertTitle>
-          <Line $break = {true}/>
+          <Line id = "break" $break={true} />
           {Awards.content.map((item) => (
-            <>
-              <Certificate key={item.id} item={item} isMobile={true} />
-              <Line />
+            < >
+              <Certificate key={'certificate'+item.id} item={item} isMobile={true} />
+              <Line key={'line'+item.id} />
             </>
           ))}
           <MoreModal />

@@ -6,7 +6,7 @@ import devices from "../../Helpers/Devices";
 
 export const Container = styled.section`
   width: 100%;
-  background-color: ${props => props.theme.colors.background.middle};
+  background-color: ${(props) => props.theme.colors.background.middle};
   height: fit-content;
   background-position: top left;
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-
 
   padding: 6rem 1rem 0rem 1rem;
 
@@ -83,12 +82,10 @@ export const SectionContainer = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 3rem;
-    
   }
 
   @media ${devices.laptop} {
     flex-direction: row;
-    /* justify-content: space-around; */
     align-items: flex-start;
     padding-bottom: 5rem;
   }
@@ -98,7 +95,7 @@ export const ProfileWrapper = styled.div`
   padding: 1rem;
   display: flex;
   justify-content: center;
-  background-color: ${props => props.theme.colors.profile};
+  background-color: ${(props) => props.theme.colors.profile};
   max-width: 25rem;
 
   @media ${devices.tablet} {
@@ -113,8 +110,6 @@ export const ProfileWrapper = styled.div`
 export const Holder = styled.img`
   width: 100%;
   max-width: 30rem;
-
-  
 `;
 export const InfosWrapper = styled.div`
   width: 100%;
@@ -134,7 +129,6 @@ export const InfosWrapper = styled.div`
     padding: 0;
     width: 60%;
     max-width: calc(100% - 30rem);
-    
   }
 `;
 
@@ -165,7 +159,6 @@ export const Details = styled.span`
 `;
 
 export const ContactContainer = styled.div`
-  /* padding-top: 2rem; */
   width: 100%;
   max-width: 40rem;
   height: fit-content;
@@ -174,8 +167,7 @@ export const ContactContainer = styled.div`
   grid-template-rows: auto;
   justify-items: center;
   column-gap: 1rem;
-  row-gap: .6rem;
-
+  row-gap: 0.6rem;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -185,14 +177,12 @@ export const ContactContainer = styled.div`
   @media ${devices.laptop} {
     row-gap: 1rem;
   }
-
 `;
 export const ContactWrapper = styled.div`
-
   height: 5rem;
   width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
@@ -209,21 +199,16 @@ export const ContactTitle = styled.h4`
 export const ContactContent = styled.p`
   font-size: 1rem;
   font-weight: 300;
-  /* line-height: 1.88rem; */
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
-
-
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 `;
 
-
 export const LocationIcon = styled(HiLocationMarker)`
   font-size: 1.3rem;
   padding-bottom: 3px;
-  color: ${props => props.theme.colors.text};
-
+  color: ${(props) => props.theme.colors.text};
 `;

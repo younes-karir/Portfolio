@@ -6,10 +6,8 @@ import {
   ContactWrapper,
   Container,
   Details,
-  ExperienceText,
   Holder,
   InfosWrapper,
-  LocationIcon,
   ProfileWrapper,
   SectionContainer,
   Sub,
@@ -36,7 +34,6 @@ const AboutSection = () => {
           <AboutText>
            { t('aboutSub')}
           </AboutText>
-          {/* <ExperienceText>{t('aboutExp')}</ExperienceText> */}
           <Details>
            {t('bio_2_1')}
           </Details>  
