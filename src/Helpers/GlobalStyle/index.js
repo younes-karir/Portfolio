@@ -1,11 +1,32 @@
 // globalStyles.js
 import { createGlobalStyle } from "styled-components";
 
+import Store from "../../Store/Store";
+
 const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 16px;
     font-family: "Poppins", sans-serif;    
+
+    &::-webkit-scrollbar {
+    width: .6rem;
+    
+  }
+    &::-webkit-scrollbar-track {
+    }
+
+    /* handle */
+         &::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.colors.primary}; 
+    border-radius: 4px;
+        &:hover {
+          background: ${(props) => props.theme.colors.primary}; 
+          opacity: .8;
+          cursor: pointer;
+         }
+    }
+
   }
 
   *{
@@ -15,7 +36,6 @@ const GlobalStyle = createGlobalStyle`
 
     /* transition: color,background-color 250ms ease-in-out; */
   }
-
 
 
   
