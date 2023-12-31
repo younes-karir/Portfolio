@@ -1,31 +1,14 @@
 // globalStyles.js
 import { createGlobalStyle } from "styled-components";
 
+import Store from "../../Store/Store";
+
 const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 16px;
     font-family: "Poppins", sans-serif;    
-
-    &::-webkit-scrollbar {
-    width: .6rem;
     
-  }
-    &::-webkit-scrollbar-track {
-    }
-
-    /* handle */
-    &::-webkit-scrollbar-thumb {
-    display: ${(props) => (!props.$hide ? "none" : "block")};
-    background: ${(props) => props.theme.colors.primary}; 
-    border-radius: 4px;
-        &:hover {
-          background: ${(props) => props.theme.colors.primary}; 
-          opacity: .8;
-          cursor: pointer;
-         }
-    }
-
   }
 
   *{
@@ -35,6 +18,27 @@ const GlobalStyle = createGlobalStyle`
 
     /* transition: color,background-color 250ms ease-in-out; */
   }
+
+  /* width */
+  body::-webkit-scrollbar {
+  width: .45rem;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: ${(props) => props.theme.colors.primary} ${(props) =>
+  props.theme.colors.background.base};
+}
+body::-webkit-scrollbar-track {
+  background: ${(props) => props.theme.colors.background.base};
+}
+body::-webkit-scrollbar-thumb {
+  background-color:  ${(props) => props.theme.colors.primary} ;
+  border-radius: 5px;
+  border: 1.5px solid ${(props) => props.theme.colors.background.base};
+  border-left: none;
+}
+
+
 
 
   

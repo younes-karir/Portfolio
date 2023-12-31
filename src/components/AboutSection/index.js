@@ -24,7 +24,7 @@ const AboutSection = () => {
     <Container  id="about" >
       <TitleContainer>
         <Title>{t('aboutTitle')}</Title>
-        <Sub>{t('aboutQ_1')}</Sub>
+        <Sub>{t('aboutQ_1')}</Sub>  
       </TitleContainer>
       <SectionContainer>
         <ProfileWrapper>

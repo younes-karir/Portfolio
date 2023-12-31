@@ -135,7 +135,7 @@ export const InfosWrapper = styled.div`
 export const AboutText = styled.h1`
   font-size: 1.8srem;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.title1};
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 export const ExperienceText = styled.h3`
