@@ -32,7 +32,7 @@ function App() {
 
   return (
     <Fragment>
-      <GlobalStyle />
+      <GlobalStyle $hide ={headerShow} />
       <Content />
       {timeLeft > 0 && <Loader />}
     </Fragment>

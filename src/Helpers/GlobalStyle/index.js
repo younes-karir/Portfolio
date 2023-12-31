@@ -1,8 +1,6 @@
 // globalStyles.js
 import { createGlobalStyle } from "styled-components";
 
-import Store from "../../Store/Store";
-
 const GlobalStyle = createGlobalStyle`
 
   body {
@@ -17,7 +15,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     /* handle */
-         &::-webkit-scrollbar-thumb {
+    &::-webkit-scrollbar-thumb {
+    display: ${(props) => (!props.$hide ? "none" : "block")};
     background: ${(props) => props.theme.colors.primary}; 
     border-radius: 4px;
         &:hover {
