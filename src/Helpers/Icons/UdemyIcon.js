@@ -5,7 +5,7 @@ const IbmIcon = (props) => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: props.isMobile ? '1.2rem' : '1.4rem',
+    width: props.isMobile ? '1.6rem' : '1.4rem',
   };
   return (
     <svg
