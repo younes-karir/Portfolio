@@ -5,22 +5,24 @@ import { RiLinksLine } from "react-icons/ri";
 import { HiExternalLink } from "react-icons/hi";
 import { BiShowAlt } from "react-icons/bi";
 
-export const Container = styled.div`
+export const Container = styled.a`
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
 
-  &:hover {
-    cursor: pointer;
-    #link-show {
-      display: inline-block;
-    }
-  }
 
   @media ${devices.laptop} {
     gap: 1.5rem;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      #link-show {
+        display: inline-block;
+      }
+    }
   }
 `;
 
@@ -62,7 +64,6 @@ export const DetailsWrapper = styled.div`
   @media ${devices.laptop} {
     padding: 0.7rem 0;
   }
-
 `;
 
 export const CardTitleContainer = styled.div`
@@ -103,8 +104,11 @@ export const CardSub = styled.h5`
 
 export const TextContainer = styled.p`
   font-size: 0.9rem;
+  height: 1.5rem;
   font-weight: 400;
   text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
   opacity: 0.7;
   color: ${(props) => props.theme.colors.text};
 `;

@@ -67,34 +67,62 @@ export const En = {
       thirdEducationDetails_1 :"Computer Engineering Specialty (Software Engineering Option).",
   
     resumeCertification :"CERTIFICATION",
-      
-      // 1.
+
+      // 1. https://www.udemy.com/certificate/UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94/
       firstCertificateDate : "09.2023",
       firstCertificateTitle :"Express JS - The Complete Guide.",
-      firstCertificateCredentialId :"UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94",
-      
-      // 2.
+      firstCertificateCredentialId :"UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94",  
+
+      // 2. https://www.udemy.com/certificate/UC-5d747795-0b3f-493e-93c6-d06579c7b442/
       secoundCertificateDate : "11.2021",
       secoundCertificateTitle :"Java Web Services and RESTful API.",
       secoundCertificateCredentialId :"UC-5d747795-0b3f-493e-93c6-d06579c7b442",
       
-      // 3.
+      // 3. https://www.udemy.com/certificate/UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8/
       thirdCertificateDate : "11.2021",
       thirdCertificateTitle :"Web Service REST APIs.",
       thirdCertificateCredentialId :"UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8",
       
-      // 4.
+      // 4. https://www.udemy.com/certificate/UC-ef50bcb3-6655-47a5-90be-3d0e5fff88cd/
       fourthCertificateDate : "06.2021",
       fourthCertificateTitle :"Full-Stack JavaScript Course.",
       fourthCertificateCredentialId :"UC-0e3dcf5e-fb81-4f2b-9926-1f78735feeb9",
+
+      // 5. https://www.coursera.org/account/accomplishments/records/7JW8M6MB98EA
+      fifthCertificateDate : "11.2023",
+      fifthCertificateTitle :"Introduction to DevOps.",
+      fifthCertificateCredentialId :"7JW8M6MB98EA",
 
     
     moreTitle: "More licenses & certifications",
     skillsTitle: "Skills",
     toolsTitle : "Tools",
 
+    // ----- portfolio section -----------
 
- 
- 
+    portfolioTitle: "MY PORTFOLIO",
+    portfolioQ_1 : "Recent Works",
+    portfolioVisiteMyRep :"Visite my repositories",
+
+
+    // ----- contact section -----------
+
+    contactTitle: "Contact Me",
+    contactQ_1 : "Feel Free Message OR Call Me",
+    contactObject :"Object",
+    contactEmail :"Email",    
+    contactMessage :"Message",
+    contactBtn:"+Message me",
+    contactDetailsTitleEmail: "E-Mail",
+    contactDetailsTitlePhone: "Phone",
+    contactDetailsTitleAddress :"Address",
+    contactDetailsContentEmail: "youneskarir@gmail.com",
+    contactDetailsContentPhone: "+212660895757",
+    contactDetailsContentAddress :"Beni Mellal, Morroco.",
+
+    // ----- footer section -----------
+
+    copyRights :"Copyright",
+
   },
 };

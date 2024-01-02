@@ -71,10 +71,10 @@ function ResumeSection() {
             {DataList.content.map((item) => (
               <>
                 <Certificate key={item.id} item={item} isMobile={false}/>
-                <Line />
+                {item.id !== 5 && <Line />}
               </>
             ))}
-            <MoreModal />
+            {/* <MoreModal /> */}
           </Certficates>
         ) : (
           <RouterWrapper>

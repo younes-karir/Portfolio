@@ -15,18 +15,17 @@ import {} from "../../PortfolioSection/PortfolioItem/Item.elements";
 
 const Certificate = (props) => {
   return (
-    <Container>
-      <Holder>{props.item.sub === "IBM" ? <IbmIcon isMobile={props.isMobile}/> : <UdemyIcon isMobile={props.isMobile}/>}</Holder>
+    <Container href={props.item.link} target="_blank">
+      <Holder>{props.item.source === "IBM" ? <IbmIcon isMobile={props.isMobile}/> : <UdemyIcon isMobile={props.isMobile}/>}</Holder>
       <DetailsWrapper>
         <CardTitle>
-          {props.item.title}{" "}
-          <Link id="link-show" href="#">
+          {props.item.title}
+          <Link id="link-show">
             <LinkIcon />
           </Link>
         </CardTitle>
-        <CardSub>{props.item.sub}</CardSub>
         <TextContainer>issued {props.item.year}</TextContainer>
-        <TextContainer>Credential ID {props.item.id}</TextContainer>
+        <TextContainer>Credential ID {props.item.CrId}</TextContainer>
       </DetailsWrapper>
     </Container>
   );
