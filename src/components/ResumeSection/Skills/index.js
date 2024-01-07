@@ -10,12 +10,15 @@ import StyledIcon from "../../../Helpers/Icons/StyledIcon";
 import MuiIcon from "../../../Helpers/Icons/MuiIcon";
 import GitIcon from "../../../Helpers/Icons/GitIcon";
 import MongoIcon from "../../../Helpers/Icons/MongoIcon";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const {t} = useTranslation();
+
   return (
     <SkillsConatiner>
       <CodingSkills>
-        <CodingSkillsTitle>Skills</CodingSkillsTitle>
+        <CodingSkillsTitle>{t('skillsTitle')}</CodingSkillsTitle>
         <SkillsWrapper>
           <SkillItem>
             <HtmlIcon />
@@ -52,7 +55,7 @@ const Skills = () => {
         </SkillsWrapper>
       </CodingSkills>
       <CodingSkills>
-        <CodingSkillsTitle>Tools</CodingSkillsTitle>
+        <CodingSkillsTitle>{t('toolsTitle')}</CodingSkillsTitle>
         <SkillsWrapper>
           <SkillItem>
             <GitIcon />

@@ -15,8 +15,9 @@ export const Container = styled.footer`
   background-color: none;
   background-color: ${(props) => props.theme.colors.background.middle};
   padding: 1rem 0.5rem 0rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-    0px 3px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
+
 
   display: grid;
   grid-template-columns: 1fr;

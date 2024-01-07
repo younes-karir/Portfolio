@@ -18,9 +18,11 @@ import { Awards, Education, Experience } from "./Data";
 import Certificate from "./Certificate";
 import MoreModal from "./MoreModal";
 import Skills from "./Skills";
+import { useTranslation } from "react-i18next";
 
 function ResumeSection() {
   const [DataList, setDataList] = useState(Experience);
+  const {t} = useTranslation();
 
   const ExSwitch = () => {
     setDataList(Experience);
@@ -37,8 +39,8 @@ function ResumeSection() {
   return (
     <Container id="resume">
       <TitleContainer>
-        <Title>my resume</Title>
-        <Sub>High Skilled Provide High Quality</Sub>
+        <Title>{t('resumeTitle')}</Title>
+        <Sub>{t('resumeQ_1')}</Sub>
       </TitleContainer>
       <MobileDesign />
       <ResumeWrapper>
@@ -48,21 +50,21 @@ function ResumeSection() {
             onClick={() => ExSwitch()}
           >
             <ArowIcon selected={DataList.name === "ex"} />
-            Experience
+            {t('resumeExperience')}
           </RoutLink>
           <RoutLink
             selected={DataList.name === "ed"}
             onClick={() => EdSwitch()}
           >
             <ArowIcon selected={DataList.name === "ed"} />
-            Education
+            {t('resumeEducation')}
           </RoutLink>
           <RoutLink
             selected={DataList.name === "aw"}
             onClick={() => AwSwitch()}
           >
             <ArowIcon selected={DataList.name === "aw"} />
-            Certification
+            {t('resumeCertification')}
           </RoutLink>
         </RoutersContainer>
 

@@ -15,8 +15,11 @@ import {
   SocialLinks,
   TwitterIcon,
 } from "./FooterSection.elements";
+import { useTranslation } from "react-i18next";
+
 
 const FooterSection = () => {
+  const {t} = useTranslation();
   return (
     <Container>
       <LinksWrapper>
@@ -29,7 +32,7 @@ const FooterSection = () => {
             offset={0}
             duration={500}
           >
-            Home
+            {t('home')}
           </SLink>
           <SLink
             id="2"
@@ -39,7 +42,7 @@ const FooterSection = () => {
             offset={0}
             duration={500}
           >
-            About
+            {t('about')}
           </SLink>
           <SLink
             id="3"
@@ -49,7 +52,7 @@ const FooterSection = () => {
             offset={0}
             duration={500}
           >
-            Resume
+            {t('resume')}
           </SLink>
           <SLink
             id="4"
@@ -59,7 +62,7 @@ const FooterSection = () => {
             offset={0}
             duration={500}
           >
-            Portfolio
+            {t('portfolio')}
           </SLink>
         </InternalLinks>
         <SocialLinks>
@@ -71,7 +74,7 @@ const FooterSection = () => {
         </SocialLinks>
       </LinksWrapper>
       <CopyRightsWrapper>
-        <CopyRightsLabel>Copyright © 2023 KARIR</CopyRightsLabel>
+        <CopyRightsLabel>{t('copyRights')} © 2023 KARIR</CopyRightsLabel>
         <LogoLabel>KARIR</LogoLabel>
       </CopyRightsWrapper>
     </Container>

@@ -16,13 +16,16 @@ import {
   Title,
   TitleContainer,
 } from "./ContactSection.elements";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id="contact">
       <TitleContainer>
-        <Title>contact me</Title>
-        <Sub>Feel Free Message OR Call Me</Sub> 
+        <Title>{t("contactTitle")}</Title>
+        <Sub>{t("contactQ_1")}</Sub>
       </TitleContainer>
       <ConatctWrapper>
         <FormContainer>
@@ -31,7 +34,7 @@ const ContactSection = () => {
               type="text"
               name="name"
               id="name"
-              placeholder="Object"
+              placeholder={t("contactObject")}
             />
           </Eelement>
           <Eelement>
@@ -39,30 +42,34 @@ const ContactSection = () => {
               type="email"
               name="email"
               id="email"
-              placeholder="Type Email Here"
+              placeholder={t("contactEmail")}
             />
           </Eelement>
           <Eelement $fit={true}>
-            <TexteArea placeholder="Message" name="message" id="message" />
+            <TexteArea
+              placeholder={t("contactMessage")}
+              name="message"
+              id="message"
+            />
           </Eelement>
           <Eelement $btn={true}>
-          <Submit>
-              <span>+ Mesage Me</span>
+            <Submit>
+              <span>{t('contactBtn')}</span>
             </Submit>
           </Eelement>
         </FormContainer>
         <InfosContainer>
           <InfoWrapper>
-            <InfoTitle>eMail :</InfoTitle>
-            <InfoContent>example@email.com</InfoContent>
+            <InfoTitle>{t('contactDetailsTitleEmail')}</InfoTitle>
+            <InfoContent>{t('contactDetailsContentEmail')}</InfoContent>
           </InfoWrapper>
           <InfoWrapper>
-            <InfoTitle>Phone :</InfoTitle>
-            <InfoContent>+888- 1234- 5678- 00</InfoContent>
+            <InfoTitle>{t('contactDetailsTitlePhone')}</InfoTitle>
+            <InfoContent>{t('contactDetailsContentPhone')}</InfoContent>
           </InfoWrapper>
           <InfoWrapper>
-            <InfoTitle>Address :</InfoTitle>
-            <InfoContent>201 House Road, Torento Canada</InfoContent>
+            <InfoTitle>{t('contactDetailsTitleAddress')}</InfoTitle>
+            <InfoContent>{t('contactDetailsContentAddress')}</InfoContent>
           </InfoWrapper>
         </InfosContainer>
       </ConatctWrapper>

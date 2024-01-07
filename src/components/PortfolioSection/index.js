@@ -10,16 +10,18 @@ import {
   TitleContainer,
 } from "./PortfolioSection.elements";
 import PortfolioItem from "./PortfolioItem";
+import { useTranslation } from "react-i18next";
 
 
 
 
 const PortfolioSection = () => {
+  const {t} = useTranslation();
   return (
     <Container id="portfolio">
       <TitleContainer>
-        <Title>MY PORTFOLIO</Title>
-        <Sub>Recent Works</Sub>
+        <Title>{t('portfolioTitle')}</Title>
+        <Sub>{t('portfolioQ_1')}</Sub>
       </TitleContainer>
       <ProjectsWrapper>
           <PortfolioItem />
@@ -27,7 +29,7 @@ const PortfolioSection = () => {
           <PortfolioItem />
       </ProjectsWrapper>
       <MoreWrapper href="#">
-        <MoreLink >Visite my repositories</MoreLink>
+        <MoreLink >{t('portfolioVisiteMyRep')}</MoreLink>
         <LinkRow/>
       </MoreWrapper>
     </Container>

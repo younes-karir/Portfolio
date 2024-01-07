@@ -178,7 +178,7 @@ export const Submit = styled.button`
   font-size: 1rem;
   overflow: hidden;
 
-  transition: all 0.3s;
+  transition: width 0.3s;
 
   & span {
     position: relative;
@@ -199,6 +199,8 @@ export const Submit = styled.button`
 
   &:hover {
     cursor: pointer;
+    color: ${props => props.theme.colors.background.header};
+
   }
 
   &:hover:after {

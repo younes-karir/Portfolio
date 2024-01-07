@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* width */
-  body::-webkit-scrollbar {
-  width: .45rem;
+body::-webkit-scrollbar {
+  width: .4rem;
 }
 body {
   scrollbar-width: thin;

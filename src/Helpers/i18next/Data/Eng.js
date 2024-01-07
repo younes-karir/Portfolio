@@ -111,7 +111,7 @@ export const En = {
     contactQ_1 : "Feel Free Message OR Call Me",
     contactObject :"Object",
     contactEmail :"Email",    
-    contactMessage :"Message",
+    contactMessage :"Compose something",
     contactBtn:"+Message me",
     contactDetailsTitleEmail: "E-Mail",
     contactDetailsTitlePhone: "Phone",
@@ -122,7 +122,7 @@ export const En = {
 
     // ----- footer section -----------
 
-    copyRights :"Copyright",
+    copyRights :"CopyRight",
 
   },
 };
