@@ -11,6 +11,7 @@ import MuiIcon from "../../../Helpers/Icons/MuiIcon";
 import GitIcon from "../../../Helpers/Icons/GitIcon";
 import MongoIcon from "../../../Helpers/Icons/MongoIcon";
 import { useTranslation } from "react-i18next";
+import TypeScriptIcon from "../../../Helpers/Icons/TypeScriptIcon";
 
 const Skills = () => {
   const {t} = useTranslation();
@@ -31,6 +32,10 @@ const Skills = () => {
           <SkillItem>
             <JavascriptIcon />
             <SkillTitle>javascript</SkillTitle>
+          </SkillItem>
+          <SkillItem>
+            <TypeScriptIcon />
+            <SkillTitle>TypeScript</SkillTitle>
           </SkillItem>
           <SkillItem>
             <ReactIcon />

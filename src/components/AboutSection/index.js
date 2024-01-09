@@ -24,16 +24,16 @@ const AboutSection = () => {
     <Container  id="about" >
       <TitleContainer>
         <Title>{t('aboutTitle')}</Title>
-        <Sub>{t('aboutQ_1')}</Sub>  
+        <Sub>{t('aboutSub')}</Sub>  
       </TitleContainer>
       <SectionContainer>
         <ProfileWrapper>
           <Holder src={ProfileImg}  />
         </ProfileWrapper>
         <InfosWrapper>
-          <AboutText>
+          {/* <AboutText>
            { t('aboutSub')}
-          </AboutText>
+          </AboutText> */}
           <Details>
            {t('bio_2_1')}
           </Details>  

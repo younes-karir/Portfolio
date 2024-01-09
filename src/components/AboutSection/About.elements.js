@@ -175,7 +175,7 @@ export const ContactContainer = styled.div`
   }
 
   @media ${devices.laptop} {
-    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr ;
   }
 `;
 export const ContactWrapper = styled.div`
