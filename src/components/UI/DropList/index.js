@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import i18n from "../../../Helpers/i18next/i18n";
 import Loader from "../Loader";
-import { ChangeLanguage } from "../../../Store/actions/UI-Actions";
+import { ChangeLanguage, FixLanguage, SwitchToInitial } from "../../../Store/actions/UI-Actions";
 import En from "../../../Helpers/Icons/En";
 import Fr from "../../../Helpers/Icons/Fr";
 import De from "../../../Helpers/Icons/De";
@@ -49,6 +49,8 @@ export default function DropList() {
     setTimeLeft(2);
     i18n.changeLanguage(value);
     dispatch(ChangeLanguage(value));
+    dispatch(SwitchToInitial());
+
   };
 
   return (

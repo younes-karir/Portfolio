@@ -30,3 +30,15 @@ export const DISPAY_LN = 'DISPAY_LN';
 
 
 
+// Resume sections switsh
+
+export const SWITCH_TO_ED = "SWITCH_TO_ED";
+export const SWITCH_TO_EX = "SWITCH_TO_EX";
+export const SWITCH_TO_CE = "SWITCH_TO_CE";
+export const SWITCH_INITIAL = "SWITCH_INITIAL";
+
+
+
+
+
+

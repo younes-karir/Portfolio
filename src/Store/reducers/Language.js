@@ -9,7 +9,7 @@ const Language = function (state = initialState, action) {
     case DISPAY_LN:
       return {
         acteul: action.payload.data,
-      };
+      }; 
     default:
       return state;
   }

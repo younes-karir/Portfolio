@@ -4,11 +4,16 @@ import {
   CHANGE_TO_FR,
   CLOSE_SIDE_MENU,
   DISPAY_LN,
+  FIX_LN,
   HEADER_OFF,
   HEADER_ON,
   OPEN_SIDE_MENU,
   SWITCH_DARK,
+  SWITCH_INITIAL,
   SWITCH_LIGHT,
+  SWITCH_TO_CE,
+  SWITCH_TO_ED,
+  SWITCH_TO_EX,
 } from "./types";
 
 export const ThemeToggleLight = () => (dispatch) => {
@@ -57,3 +62,5 @@ export const ChangeLanguage = (data) => (dispatch) => {
     },
   });
 };
+
+
