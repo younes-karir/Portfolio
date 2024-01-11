@@ -1,128 +1,136 @@
-export const De =  {
+export const De = {
   translation: {
     // ----- Home section -----------
-   home: "Home",
-   about: "About",
-   resume: "Resume",
-   portfolio: "Portfolio",
-   contact: "Contact",
-   downloadCv: "Download CV",
-   theme: "Theme",
-   language: "language",
-   hiThere : "Hi! There",
-   status : "I'm a MERN stack developer",
-   bio_1 : "Explore my digital realm, where a passion cultivated over the years converges with creativity and practicality, and where innovation seamlessly intertwines with design.",
-   
-   // ----- about section -----------
-   aboutTitle :"About Me",
-   aboutQ_1 : "High Skilled Provide High Quality",
-   aboutSub : "Who I Am?",
-   aboutExp : "Who I Am?",
-   bio_2_1: "As a Full Stack web developer based in Morocco, I hold a Bachelor’s Degree in Computer Science. Currently, I adeptly balance dual roles as a MERN stack developer and a computer science professor. In my teaching capacity, I find immense joy in sharing knowledge and instilling a passion for technology in my students.",
-   bio_2_2: "As a developer, I have successfully delivered diverse projects, showcasing my commitment to crafting innovative and efficient solutions. With a proven track record, I am actively seeking a new opportunity to apply my expertise in the MERN stack. My distinctive combination of practical experience and teaching prowess positions me as a valuable asset to any team, and I am eager about the prospect of contributing to new projects and advancing my career in the development field.",
-   phoneTitle : "Phone",
-   emailTitle :"E-Mail",
-   adressTitle: "Adress",
-   adressData: "Beni Mellal, Morroco.",
-   
-   // ----- resume section -----------
-   resumeTitle: "My Resume",
-   resumeQ_1 : "High Skilled Provide High Quality",
-   resumeExperience :"EXPERIENCE",
+    home: "Startseite",
+    about: "Über mich",
+    resume: "Lebenslauf",
+    portfolio: "Portfolio",
+    contact: "Kontakt",
+    downloadCv: "Lebenslauf herunterladen",
+    theme: "Thema",
+    language: "Sprache",
+    hiThere: "Hallo!",
+    status: "Ich bin ein MERN-Stack-Entwickler",
+    bio_1:
+      "Erkunden Sie mein digitales Reich, wo sich über die Jahre kultivierte Leidenschaft mit Kreativität und Praktikabilität vereint und Innovation nahtlos mit Design verflochten ist.",
 
-     // 1. FULL STACK WEB DEVELOPER  
-     firstJobDate : "01.2023 - NOW",
-     firstJobTitle :"FULL STACK WEB DEVELOPER",
-     firstJobSub : "RirakTECH. | Rabat",
-     firstJobDetails_1 :"Analysis of user needs and creation of technical specifications.",
-     firstJobDetails_2 :"Frontend and backend development (React, Redux, Express, MongoDB).",
-     firstJobDetails_3 :"Integration of tests into the development processes for early error detection and continuous improvement.",
-     firstJobDetails_4 :"Maintenance, enhancement, and addition of new modules.",
+    // ----- about section -----------
+    aboutTitle: "Über mich",
+    aboutQ_1: "Hochqualifiziert Bietet Hohe Qualität",
+    aboutSub: "Wer bin ich?",
+    aboutExp: "Wer bin ich?",
+    bio_2_1:
+      "Als Full Stack Webentwickler mit Sitz in Marokko habe ich einen Bachelor-Abschluss in Informatik. Derzeit balanciere ich geschickt zwei Rollen als MERN-Stack-Entwickler und Informatiklehrer. In meiner Lehrtätigkeit finde ich immense Freude darin, Wissen zu teilen und eine Leidenschaft für Technologie in meinen Studenten zu wecken.",
+    bio_2_2:
+      "Als Entwickler habe ich erfolgreich verschiedene Projekte geliefert und damit mein Engagement für die Entwicklung innovativer und effizienter Lösungen unter Beweis gestellt. Mit einer nachgewiesenen Erfolgsbilanz suche ich aktiv nach neuen Möglichkeiten, meine Expertise im MERN-Stack anzuwenden. Meine einzigartige Kombination aus praktischer Erfahrung und Lehrfähigkeiten positioniert mich als wertvolle Bereicherung für jedes Team, und ich freue mich auf die Aussicht, zu neuen Projekten beizutragen und meine Karriere im Entwicklungssektor voranzutreiben.",
+    phoneTitle: "Telefon",
+    emailTitle: "E-Mail",
+    adressTitle: "Adresse",
+    adressData: "Beni Mellal, Marokko.",
 
-     // 2. COMPUTER SCIENCE TEACHER 
-     secoundJobDate : "09.2022 - NOW",
-     secoundJobTitle :"COMPUTER SCIENCE TEACHER",
-     secoundJobSub : "Ministry of National Education. | Béni Mellal",
-     secoundJobDetails_1 :"Teaching various software while adapting to the learners‘ levels.",
-     secoundJobDetails_2 :"Conducting research to assist learners in progressing more quickly.",
+    // ----- resume section -----------
+    resumeTitle: "Mein Lebenslauf",
+    resumeQ_1: "Hochqualifiziert Bietet Hohe Qualität",
+    resumeExperience: "ERFAHRUNG",
 
-   resumeEducation :"EDUCATION",
+    // 1. FULL STACK WEB DEVELOPER
+    firstJobDate: "01.2023 - Jetzt",
+    firstJobTitle: "FULL STACK WEBENTWICKLER",
+    firstJobSub: "RirakTECH. | Rabat",
+    firstJobDetails_1:
+      "Analyse der Benutzeranforderungen und Erstellung technischer Spezifikationen.",
+    firstJobDetails_2:
+      "Frontend- und Backend-Entwicklung (React, Redux, Express, MongoDB).",
+    firstJobDetails_3:
+      "Integration von Tests in die Entwicklungsprozesse zur frühzeitigen Fehlererkennung und kontinuierlichen Verbesserung.",
+    firstJobDetails_4: "Wartung, Verbesserung und Hinzufügen neuer Module.",
 
-     // 1. BASIC TRAINING 
-     firstEducationDate : "2022",
-     firstEducationTitle :"BASIC TRAINING",
-     firstEducationSub : "CRMEF | Rabat",
-     firstEducationDetails_1 :"Teacher Qualification Program.",
+    // 2. COMPUTER SCIENCE TEACHER
+    secoundJobDate: "09.2022 - Jetzt",
+    secoundJobTitle: "INFORMATIKLEHRER",
+    secoundJobSub: "Ministerium für Nationale Bildung. | Béni Mellal",
+    secoundJobDetails_1:
+      "Unterricht in verschiedenen Softwareanwendungen unter Anpassung an die Niveaus der Lernenden.",
+    secoundJobDetails_2:
+      "Durchführung von Forschungen zur Unterstützung der Lernenden bei schnellerem Fortschritt.",
 
-     // 2. PROFESSIONAL BACHELOR‘S DEGREE 
-     secoundEducationDate : "2020 - 2021",
-     secoundEducationTitle :"PROFESSIONAL BACHELOR‘S DEGREE",
-     secoundEducationSub : "Higher School of Technology | Meknes",
-     secoundEducationDetails_1 :"Specialization in Information and Communication Systems Development.",
-     
-     // 3. UNIVERSITY DIPLOMA OF TECHNOLOGY
-     thirdEducationDate : "2018 - 2020",
-     thirdEducationTitle :"UNIVERSITY DIPLOMA OF TECHNOLOGY",
-     thirdEducationSub : "Higher School of Technology | Meknes",
-     thirdEducationDetails_1 :"Computer Engineering Specialty (Software Engineering Option).",
- 
-   resumeCertification :"CERTIFICATION",
+    resumeEducation: "BILDUNG",
 
-     // 1. https://www.udemy.com/certificate/UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94/
-     firstCertificateDate : "09.2023",
-     firstCertificateTitle :"Express JS - The Complete Guide.",
-     firstCertificateCredentialId :"UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94",  
+    // 1. GRUNDLAGENSCHULUNG
+    firstEducationDate: "2022",
+    firstEducationTitle: "GRUNDLAGENSCHULUNG",
+    firstEducationSub: "CRMEF | Rabat",
+    firstEducationDetails_1: "Lehrerqualifikationsprogramm.",
 
-     // 2. https://www.udemy.com/certificate/UC-5d747795-0b3f-493e-93c6-d06579c7b442/
-     secoundCertificateDate : "11.2021",
-     secoundCertificateTitle :"Java Web Services and RESTful API.",
-     secoundCertificateCredentialId :"UC-5d747795-0b3f-493e-93c6-d06579c7b442",
-     
-     // 3. https://www.udemy.com/certificate/UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8/
-     thirdCertificateDate : "11.2021",
-     thirdCertificateTitle :"Web Service REST APIs.",
-     thirdCertificateCredentialId :"UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8",
-     
-     // 4. https://www.udemy.com/certificate/UC-ef50bcb3-6655-47a5-90be-3d0e5fff88cd/
-     fourthCertificateDate : "06.2021",
-     fourthCertificateTitle :"Full-Stack JavaScript Course.",
-     fourthCertificateCredentialId :"UC-0e3dcf5e-fb81-4f2b-9926-1f78735feeb9",
+    // 2. BERUFSBACHELORSTUDIUM
+    secoundEducationDate: "2020 - 2021",
+    secoundEducationTitle: "BERUFSBACHELORSTUDIUM",
+    secoundEducationSub: "Hochschule für Technologie | Meknès",
+    secoundEducationDetails_1:
+      "Spezialisierung in der Entwicklung von Informations- und Kommunikationssystemen.",
 
-     // 5. https://www.coursera.org/account/accomplishments/records/7JW8M6MB98EA
-     fifthCertificateDate : "11.2023",
-     fifthCertificateTitle :"Introduction to DevOps.",
-     fifthCertificateCredentialId :"7JW8M6MB98EA",
+    // 3. UNIVERSITÄTSABSCHLUSS IN TECHNOLOGIE
+    thirdEducationDate: "2018 - 2020",
+    thirdEducationTitle: "UNIVERSITÄTSABSCHLUSS IN TECHNOLOGIE",
+    thirdEducationSub: "Hochschule für Technologie | Meknès",
+    thirdEducationDetails_1:
+      "Fachrichtung Informatik (Schwerpunkt Softwaretechnik).",
 
-   
-   moreTitle: "More licenses & certifications",
-   skillsTitle: "Skills",
-   toolsTitle : "Tools",
+    resumeCertification: "ZERTIFIZIERUNG",
 
-   // ----- portfolio section -----------
+    // 1. https://www.udemy.com/certificate/UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94/
+    firstCertificateDate: "09.2023",
+    firstCertificateTitle: "Express JS - Der komplette Leitfaden.",
+    firstCertificateCredentialId: "UC-83e4dfea-dc8d-4e0a-936f-5f3ddd6a0b94",
 
-   portfolioTitle: "MY PORTFOLIO",
-   portfolioQ_1 : "Recent Works",
-   portfolioVisiteMyRep :"Visite my repositories",
+    // 2. https://www.udemy.com/certificate/UC-5d747795-0b3f-493e-93c6-d06579c7b442/
+    secoundCertificateDate: "11.2021",
+    secoundCertificateTitle: "Java-Webdienste und RESTful-API.",
+    secoundCertificateCredentialId: "UC-5d747795-0b3f-493e-93c6-d06579c7b442",
 
+    // 3. https://www.udemy.com/certificate/UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8/
+    thirdCertificateDate: "11.2021",
+    thirdCertificateTitle: "Webdienste REST-APIs.",
+    thirdCertificateCredentialId: "UC-a23a3f8e-4c8b-40ca-b136-552888cd8ae8",
 
-   // ----- contact section -----------
+    // 4. https://www.udemy.com/certificate/UC-ef50bcb3-6655-47a5-90be-3d0e5fff88cd/
+    fourthCertificateDate: "06.2021",
+    fourthCertificateTitle: "JavaScript Full-Stack-Kurs.",
+    fourthCertificateCredentialId: "UC-0e3dcf5e-fb81-4f2b-9926-1f78735feeb9",
 
-   contactTitle: "Contact Me",
-   contactQ_1 : "Feel Free Message OR Call Me",
-   contactObject :"Object",
-   contactEmail :"Email",    
-   contactMessage :"Compose something",
-   contactBtn:"+Message me",
-   contactDetailsTitleEmail: "E-Mail",
-   contactDetailsTitlePhone: "Phone",
-   contactDetailsTitleAddress :"Address",
-   contactDetailsContentEmail: "youneskarir@gmail.com",
-   contactDetailsContentPhone: "+212660895757",
-   contactDetailsContentAddress :"Beni Mellal, Morroco.",
+    // 5. https://www.coursera.org/account/accomplishments/records/7JW8M6MB98EA
+    fifthCertificateDate: "11.2023",
+    fifthCertificateTitle: "Einführung in DevOps.",
+    fifthCertificateCredentialId: "7JW8M6MB98EA",
 
-   // ----- footer section -----------
+    moreTitle: "Weitere Lizenzen & Zertifizierungen",
+    skillsTitle: "Fähigkeiten",
+    toolsTitle: "Werkzeuge",
 
-   copyRights :"CopyRight",
+    // ----- portfolio section -----------
 
- },
-  }
+    portfolioTitle: "MEIN PORTFOLIO",
+    portfolioQ_1: "Aktuelle Arbeiten",
+    portfolioVisiteMyRep: "Besuche meine Repositories",
+
+    // ----- contact section -----------
+
+    contactTitle: "Kontaktiere mich",
+    contactQ_1:
+      "Fühlen Sie sich frei, mir eine Nachricht zu schreiben oder mich anzurufen",
+    contactObject: "Objekt",
+    contactEmail: "E-Mail",
+    contactMessage: "Etwas verfassen...",
+    contactBtn: "+Nachricht senden",
+    contactDetailsTitleEmail: "E-Mail",
+    contactDetailsTitlePhone: "Telefon",
+    contactDetailsTitleAddress: "Adresse",
+    contactDetailsContentEmail: "youneskarir@gmail.com",
+    contactDetailsContentPhone: "+212660895757",
+    contactDetailsContentAddress: "Beni Mellal, Marokko.",
+
+    // ----- footer section -----------
+
+    copyRights: "Urheberrechte",
+  },
+};

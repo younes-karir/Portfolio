@@ -111,7 +111,7 @@ export const En = {
     contactQ_1 : "Feel Free Message OR Call Me",
     contactObject :"Object",
     contactEmail :"Email",    
-    contactMessage :"Compose something",
+    contactMessage :"Compose something...",
     contactBtn:"+Message me",
     contactDetailsTitleEmail: "E-Mail",
     contactDetailsTitlePhone: "Phone",

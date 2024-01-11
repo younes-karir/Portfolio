@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Certficates,
   Container,
@@ -17,9 +17,12 @@ import MobileDesign from "./MobileDesign";
 import Certificate from "./Certificate";
 import Skills from "./Skills";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 function ResumeSection() {
   const { t } = useTranslation();
+  const acteul = useSelector((state) => state.language.acteul);
+
   
   const Education = {
     name: "ed",
@@ -132,6 +135,10 @@ function ResumeSection() {
     setDataList(Awards);
   };
 
+  
+  useEffect(() => {
+    setDataList(Experience);
+  },[acteul])
   
 
 
