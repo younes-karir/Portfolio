@@ -76,10 +76,11 @@ export const SectionContainer = styled.div`
   align-items: center;
   gap: 2.5rem;
   padding-bottom: 2rem;
+  padding: 0rem 1rem;
 
   @media ${devices.tablet} {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding-bottom: 3rem;
   }
@@ -92,25 +93,36 @@ export const SectionContainer = styled.div`
 `;
 
 export const ProfileWrapper = styled.div`
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
+  /* max-height:30rem; */
   justify-content: center;
   background-color: ${(props) => props.theme.colors.profile};
+  min-width: 15rem;
+  width: 100%;
   max-width: 25rem;
 
   @media ${devices.tablet} {
-    width: 50%;
+    min-width: 18rem;
+    width: 40%;
+    max-width: 22rem;
+    padding: 1.75rem;
   }
 
   @media ${devices.laptop} {
-    width: 27%;
-    padding: 2rem;
+    width: 30%;
+    max-width:18rem;
+    min-width: 8rem;
+    padding: 1rem;
+
   }
 `;
 export const Holder = styled.img`
   width: 100%;
-  max-width: 30rem;
-`;
+ 
+ 
+ 
+ `;
 export const InfosWrapper = styled.div`
   width: 100%;
   max-width: 30rem;
@@ -127,7 +139,7 @@ export const InfosWrapper = styled.div`
 
   @media ${devices.laptop} {
     padding: 0;
-    width: 60%;
+    width: 70%;
     max-width: calc(100% - 30rem);
   }
 `;
@@ -160,27 +172,32 @@ export const Details = styled.span`
 
 export const ContactContainer = styled.div`
   width: 100%;
-  max-width: 40rem;
+  /* max-width: 40rem; */
   height: fit-content;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  justify-items: center;
+  justify-items: start;
   column-gap: 1rem;
   row-gap: 0.6rem;
+  padding-top: 3rem;
 
   @media ${devices.tablet} {
+    display: grid;
+    justify-content: flex-start;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
   }
 
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr ;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
   }
 `;
 export const ContactWrapper = styled.div`
   height: 5rem;
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

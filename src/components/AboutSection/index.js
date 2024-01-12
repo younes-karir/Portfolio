@@ -1,5 +1,4 @@
 import {
-  AboutText,
   ContactContainer,
   ContactContent,
   ContactTitle,

@@ -2,7 +2,7 @@ export const Fr = {
   translation: {
     // ----- Home section -----------
     home: "Accueil",
-    about: "À propos",
+    about: "A propos",
     resume: "CV",
     portfolio: "Portfolio",
     contact: "Contact",
@@ -12,10 +12,10 @@ export const Fr = {
     hiThere: "Salut !",
     status: "Je suis un développeur MERN",
     bio_1:
-      "Explorez mon royaume numérique, où une passion cultivée au fil des ans converge avec la créativité et la praticité, et où l'innovation s'entrelace harmonieusement avec le design.",
+      "Explorez mon curriculum vitae numérique, où ma passion et ma créativité se rencontrent au fil d'années de travail acharné.",
 
     // ----- about section -----------
-    aboutTitle: "À propos de moi",
+    aboutTitle: "A propos de moi",
     aboutQ_1: "Compétent Offrant une Haute Qualité",
     aboutSub: "Qui suis-je ?",
     aboutExp: "Qui suis-je ?",
@@ -55,7 +55,7 @@ export const Fr = {
     secoundJobDetails_2:
       "Conduite de recherches pour aider les apprenants à progresser plus rapidement.",
 
-    resumeEducation: "ÉDUCATION",
+    resumeEducation: "EDUCATION",
 
     // 1. FORMATION DE BASE
     firstEducationDate: "2022",

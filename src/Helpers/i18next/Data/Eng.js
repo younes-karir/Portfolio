@@ -11,7 +11,7 @@ export const En = {
     language: "language",
     hiThere : "Hi! There",
     status : "I'm a MERN stack developer",
-    bio_1 : "Explore my digital realm, where a passion cultivated over the years converges with creativity and practicality, and where innovation seamlessly intertwines with design.",
+    bio_1 : "Explore my digital resume, where my passion and creativity intersect through years of hard work.",
     
     // ----- about section -----------
     aboutTitle :"About Me",

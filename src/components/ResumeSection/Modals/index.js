@@ -24,7 +24,7 @@ const Modal = (props) => {
         <CardTitle>{props.item.title}</CardTitle>
         <CardSub>
           {props.name === 'ed' && <SchoolIcon />}
-          {props.item.sub} | {props.item.place}
+          {props.item.sub} 
         </CardSub>
       </CardTitleContainer>
       <TextContainer>
