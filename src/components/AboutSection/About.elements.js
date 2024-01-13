@@ -76,9 +76,10 @@ export const SectionContainer = styled.div`
   align-items: center;
   gap: 2.5rem;
   padding-bottom: 2rem;
-  padding: 0rem 1rem;
 
   @media ${devices.tablet} {
+    padding: 0rem 1rem;
+
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -86,6 +87,8 @@ export const SectionContainer = styled.div`
   }
 
   @media ${devices.laptop} {
+    padding: 0rem 1rem;
+
     flex-direction: row;
     align-items: flex-start;
     padding-bottom: 5rem;
@@ -113,7 +116,7 @@ export const ProfileWrapper = styled.div`
     width: 30%;
     max-width:18rem;
     min-width: 8rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
   }
 `;
@@ -180,19 +183,23 @@ export const ContactContainer = styled.div`
   justify-items: start;
   column-gap: 1rem;
   row-gap: 0.6rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
 
   @media ${devices.tablet} {
     display: grid;
     justify-content: flex-start;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    padding-top: 2rem;
+
   }
 
   @media ${devices.laptop} {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    padding-top: 3rem;
+
   }
 `;
 export const ContactWrapper = styled.div`

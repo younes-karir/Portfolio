@@ -362,9 +362,9 @@ export const BioContainer = styled.span`
   line-height: 1.9rem;
   color: ${(props) => props.theme.colors.text};
   opacity: 0.8;
-  text-align: justify;
+  text-align: center;
   font-weight: 300;
-  padding: 0rem 0.5rem;
+  padding: 0rem 0.75rem;
   max-width: 30rem;
 
   animation-duration: 1.5s;
@@ -373,8 +373,9 @@ export const BioContainer = styled.span`
   animation-fill-mode: backwards;
 
   @media ${devices.laptop} {
-    padding-left: 0rem;
+    padding: 0rem;
     max-width: 100%;
+    text-align: left;
   }
 `;
 
