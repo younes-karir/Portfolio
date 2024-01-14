@@ -17,7 +17,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  padding: 6rem 1rem 2rem 1rem;
+  padding: 6rem 0.5rem 0rem 0.5rem;
 
   @media ${devices.mobileL} {
     padding: 2rem 0.5rem 0rem 0.5rem;
@@ -28,7 +28,7 @@ export const Container = styled.section`
   }
 
   @media ${devices.laptop} {
-    padding: 7rem 3rem 6rem 3rem;
+    padding: 7rem 3rem 0rem 3rem;
   }
 `;
 
