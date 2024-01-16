@@ -149,10 +149,10 @@ const MobileDesign = () => {
                 item={item}
                 isMobile={true}
               />
-              <Line key={"line" + item.id} />
+              {item.id !== 5 && <Line />}{" "}
             </>
           ))}
-          <MoreModal />
+          {/* <MoreModal /> */}
         </Certficates>
       </Wrapper>
       <Skills />

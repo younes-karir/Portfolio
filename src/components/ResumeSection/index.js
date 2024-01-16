@@ -182,7 +182,6 @@ function ResumeSection() {
                 {item.id !== 5 && <Line />}
               </>
             ))}
-            {/* <MoreModal /> */}
           </Certficates>
         ) : (
           <RouterWrapper>

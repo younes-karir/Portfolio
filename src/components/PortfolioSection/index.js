@@ -27,6 +27,9 @@ const PortfolioSection = () => {
           <PortfolioItem />
           <PortfolioItem />
           <PortfolioItem />
+          <PortfolioItem />
+          <PortfolioItem />
+          <PortfolioItem />
       </ProjectsWrapper>
       <MoreWrapper href="#">
         <MoreLink >{t('portfolioVisiteMyRep')}</MoreLink>

@@ -17,18 +17,18 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  padding: 6rem 0.5rem 0rem 0.5rem;
+  padding: 6rem 0.5rem 2rem 0.5rem;
 
   @media ${devices.mobileL} {
-    padding: 2rem 0.5rem 0rem 0.5rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
   }
 
   @media ${devices.tablet} {
-    padding: 6rem 2rem 0rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
   }
 
   @media ${devices.laptop} {
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 4rem 3rem;
   }
 `;
 
@@ -73,21 +73,25 @@ export const Sub = styled.p`
 export const ProjectsWrapper = styled.div`
   width: 100%;
   height: fit-content;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   padding-top: 4rem;
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1rem;
   grid-template-columns: 1fr;
   
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-bottom: 3rem;
+
   }
 
   @media ${devices.laptop} {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    padding-bottom: 4rem;
+
   }
 `;
 

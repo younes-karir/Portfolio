@@ -199,7 +199,7 @@ export const ContactContainer = styled.div`
     justify-content: space-between;
     gap: 2rem;
     padding-top: 3rem;
-
+    max-width: 50rem;
   }
 `;
 export const ContactWrapper = styled.div`
