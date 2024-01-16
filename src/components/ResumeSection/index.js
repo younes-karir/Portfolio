@@ -179,7 +179,7 @@ function ResumeSection() {
             {DataList.content.map((item) => (
               <>
                 <Certificate key={item.id} item={item} isMobile={false} />
-                {item.id !== 5 && <Line />}
+                {item.id !== 5 && <Line  />}
               </>
             ))}
           </Certficates>

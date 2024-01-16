@@ -39,7 +39,7 @@ export const Holder = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const Link = styled.div`
   display: none;
   text-decoration: none;
   color: inherit;

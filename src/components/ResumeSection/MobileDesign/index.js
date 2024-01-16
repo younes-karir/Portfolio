@@ -11,6 +11,7 @@ import Certificate from "../Certificate";
 import MoreModal from "../MoreModal";
 import Skills from "../Skills";
 import { useTranslation } from "react-i18next";
+import { Fragment } from "react";
 
 const MobileDesign = () => {
   const { t } = useTranslation();
@@ -113,20 +114,18 @@ const MobileDesign = () => {
 
   return (
     <Container>
-      <Wrapper id="ex">
+      <Wrapper id={'ex-01'}>
         <ItemTitle>
           EXPERIENCE
-          {/* <ArowIcon selected={true} />*/}
           <ArowIconLeft />
         </ItemTitle>
         <RouterWrapper>
           {Experience.content.map((item) => (
             <Modal key={"experience" + item.id} item={item} />
           ))}
-          {/* <MoreModal /> */}
         </RouterWrapper>
       </Wrapper>
-      <Wrapper id="ed">
+      <Wrapper id={'ed-01'}>
         <ItemTitle>
           EDUCATION
           <ArowIconLeft />
@@ -138,21 +137,20 @@ const MobileDesign = () => {
           {/* <MoreModal /> */}
         </RouterWrapper>
       </Wrapper>
-      <Wrapper id="ce">
+      <Wrapper id={'ce-01'}>
         <Certficates>
           <CertTitle>CERTIFICATION</CertTitle>
           <Line id="break" $break={true} />
           {Awards.content.map((item) => (
             <>
               <Certificate
-                key={"certificate" + item.id}
+                key={`certificate ${item.id}`}
                 item={item}
                 isMobile={true}
               />
-              {item.id !== 5 && <Line />}{" "}
+              {item.id !== 5 && <Line key={`line ${item.id}`} />}
             </>
           ))}
-          {/* <MoreModal /> */}
         </Certficates>
       </Wrapper>
       <Skills />

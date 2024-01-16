@@ -29,7 +29,7 @@ const Modal = (props) => {
       </CardTitleContainer>
       <TextContainer>
         {props.item.details.map((i) => (
-          <TItem>
+          <TItem key={i}>
             <PunktWrapper>
               <Punkt />
             </PunktWrapper>

@@ -16,7 +16,7 @@ const TypeScriptIcon = () => {
         height="40"
         fill="none"
         stroke={thiming.colors.text}
-        stroke-linejoin="round"
+        strokeLinejoin="round"
         strokeWidth="2"
       />
       <g>

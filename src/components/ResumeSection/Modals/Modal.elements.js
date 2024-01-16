@@ -15,7 +15,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  padding: 1.5rem 1rem;
+  padding: 1.2rem .7rem;
   height: fit-content;
 
 
@@ -24,6 +24,8 @@ export const Container = styled.div`
   }
   @media ${devices.laptop} {
     height: fit-content;
+    padding: 1.5rem 1rem;
+
   }
 `;
 
