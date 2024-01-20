@@ -40,9 +40,6 @@ const Data = (props) => {
       <HeaderWrapper>
         <LogoContainer>
           <LogoIcon $size="2rem" $color={theming.colors.text} />
-          {/* <LogoMobileIcon /> */}
-
-          {/* <Logo>KARIR</Logo> */}
         </LogoContainer>
         <LinksContainer>
           <Nav>
