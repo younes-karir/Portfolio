@@ -5,13 +5,11 @@ import Loader from "./components/UI/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { HeaderOff, HeaderOn } from "./Store/actions/UI-Actions";
 import useScrollPosition from "./Helpers/Hooks/useScrollPosition";
-import DocViewer from "./components/UI/DocViewer";
 
 function App() {
   const headerShow = useSelector((state) => state.UI.headerShow);
 
   const dispatch = useDispatch();
-  const [timeLeft, setTimeLeft] = useState(0);
 
   const scrollPosition = useScrollPosition();
 
@@ -23,18 +21,10 @@ function App() {
     }
   }, [scrollPosition, headerShow, dispatch]);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTimeLeft((t) => t - 1);
-    }, 1000);
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <Fragment>
-      <GlobalStyle $hide ={headerShow} />
+      <GlobalStyle $hide={headerShow} />
       <Content />
-      {timeLeft > 0 && <Loader />}
     </Fragment>
   );
 }
