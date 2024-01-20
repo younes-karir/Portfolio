@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import { HiLocationMarker } from "react-icons/hi";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 import devices from "../../Helpers/Devices";
 
@@ -235,4 +237,15 @@ export const LocationIcon = styled(HiLocationMarker)`
   font-size: 1.3rem;
   padding-bottom: 3px;
   color: ${(props) => props.theme.colors.text};
+`;
+
+
+export const LeftQuote = styled(RiDoubleQuotesL)`
+color:${props => props.theme.colors.text};
+font-size: .7rem;
+
+`;
+export const RightQuote = styled(RiDoubleQuotesR)`
+color:${props => props.theme.colors.text};
+font-size: .7rem;
 `;

@@ -18,6 +18,7 @@ import Certificate from "./Certificate";
 import Skills from "./Skills";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
+import { LeftQuote, RightQuote } from "../AboutSection/About.elements";
 
 function ResumeSection() {
   const { t } = useTranslation();
@@ -146,7 +147,7 @@ function ResumeSection() {
     <Container id="resume">
       <TitleContainer>
         <Title>{t("resumeTitle")}</Title>
-        <Sub>{t("resumeQ_1")}</Sub>
+        <Sub><LeftQuote /> {t("resumeQ_1")} <RightQuote/></Sub>
       </TitleContainer>
       <MobileDesign />
       <ResumeWrapper>

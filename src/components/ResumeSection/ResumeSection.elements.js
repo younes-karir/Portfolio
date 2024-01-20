@@ -66,6 +66,10 @@ export const Sub = styled.p`
   text-transform: capitalize;
   opacity: 0.9;
   color: ${(props) => props.theme.colors.text};
+@media ${devices.laptop} {
+  display: flex;
+  gap: 5px;
+}
 `;
 
 export const ResumeWrapper = styled.div`
