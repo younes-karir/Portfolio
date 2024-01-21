@@ -21,6 +21,7 @@ import { useTranslation } from "react-i18next";
 import DropList from "../UI/DropList";
 
 import DocResume from "../../Helpers/Documents/resume.pdf";
+import { DownloadIcon } from "./MenuBar/MenuBar.elements";
 
 const Data = (props) => {
   const { t } = useTranslation();
@@ -106,7 +107,7 @@ const Data = (props) => {
           <Download>
             {/* <Resume href={DocResume} target="_blank" rel="noreferrer"> */}
             <Resume>
-              <span>+ {t("downloadCv")}</span>
+              <span> + {t("downloadCv")}</span> 
             </Resume>
           </Download>
         </LinksContainer>

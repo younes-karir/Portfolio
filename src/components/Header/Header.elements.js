@@ -6,6 +6,8 @@ import { LuMenu } from "react-icons/lu";
 
 import {Link} from 'react-scroll';
 
+import { RiDownload2Line } from "react-icons/ri";
+
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -106,7 +108,7 @@ export const Resume = styled.a`
   position: relative;
   height: fit-content;
   width: fit-content;
-  padding: 0.8rem .5rem;
+  padding: 0.74rem .9rem;
   border-radius: 3px;
   text-decoration: none;
   background-color: transparent;
@@ -117,7 +119,6 @@ export const Resume = styled.a`
   border-radius: 5px;
   font-size: 1rem;
   overflow: hidden;
-
   transition: all 0.3s;
 
   & span {
@@ -167,6 +168,9 @@ export const Resume = styled.a`
   }
 `;
 
+
+
+
 export const MobileMenu = styled.div`
   height: 100%;
   width: fit-content;
@@ -208,3 +212,5 @@ export const ThemingContainer = styled.div`
   }
 
 `;
+
+
