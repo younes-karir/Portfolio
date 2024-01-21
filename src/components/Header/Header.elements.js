@@ -102,6 +102,7 @@ export const Download = styled.div`
 `;
 
 export const Resume = styled.a`
+  font-family: inherit;
   position: relative;
   height: fit-content;
   width: fit-content;
