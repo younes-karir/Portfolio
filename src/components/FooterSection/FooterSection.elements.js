@@ -18,7 +18,6 @@ export const Container = styled.footer`
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     ${(props) => props.theme.colors.BoderCard} 0px 0px 0px 1px;
 
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -31,7 +30,7 @@ export const Container = styled.footer`
   }
 
   @media ${devices.tablet} {
-    padding: 1rem 3rem 0rem 3rem;
+    padding: 1rem 5rem 0rem 3rem;
   }
 
   @media ${devices.laptop} {
