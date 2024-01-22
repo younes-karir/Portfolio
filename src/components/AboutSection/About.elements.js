@@ -225,6 +225,7 @@ export const ContactTitle = styled.h4`
 export const ContactContent = styled.p`
   font-size: 1rem;
   font-weight: 300;
+  opacity: 0.8;
   color: ${(props) => props.theme.colors.text};
   text-transform: capitalize;
   display: flex;
@@ -241,11 +242,11 @@ export const LocationIcon = styled(HiLocationMarker)`
 
 
 export const LeftQuote = styled(RiDoubleQuotesL)`
-color:${props => props.theme.colors.text};
+color:${props => props.theme.colors.title1};
 font-size: .7rem;
 
 `;
 export const RightQuote = styled(RiDoubleQuotesR)`
-color:${props => props.theme.colors.text};
+color:${props => props.theme.colors.title1};
 font-size: .7rem;
 `;

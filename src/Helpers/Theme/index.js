@@ -10,9 +10,9 @@ export const light = {
       upper: "#ffffff",
       header: "#fff"
     },
-    text: "#333333",
+    text: "#343a40",
     primary: "#4d63dd",
-    title1: "#222222",
+    title1: "#212529",
     header: "#ffffff",
     profile: "#f8f9fe",
     profileCard: "#e8ebff",
@@ -30,9 +30,9 @@ export const dark = {
       upper: "#192336",
       header: "#131924"
     },
-    text: "#f8f9fe",
+    text: "#e8e8e8",
     primary: "#4d63dd",
-    title1: "#b5b5b5",
+    title1: "#f0f0f0",
     header: "#1b2942",
     profile: "#2b3e5e",
     profileCard: "#273c60b5",

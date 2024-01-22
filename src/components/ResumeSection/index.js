@@ -10,6 +10,7 @@ import {
   Sub,
   Title,
   TitleContainer,
+  TitleWrapper,
 } from "./ResumeSection.elements";
 import ArowIcon from "../../Helpers/Icons/ArowIcon";
 import Modal from "./Modals";
@@ -147,7 +148,7 @@ function ResumeSection() {
     <Container id="resume">
       <TitleContainer>
         <Title>{t("resumeTitle")}</Title>
-        <Sub><LeftQuote /> {t("resumeQ_1")} <RightQuote/></Sub>
+        <TitleWrapper><LeftQuote /><Sub> {t("resumeQ_1")} </Sub><RightQuote/></TitleWrapper>
       </TitleContainer>
       <MobileDesign />
       <ResumeWrapper>

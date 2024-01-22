@@ -70,7 +70,7 @@ export const Header = styled.div`
   align-items: center;
   padding: 0.5rem;
   position: relative;
-  
+
   @media ${devices.tablet} {
     padding: 1rem 0rem;
   }
@@ -86,9 +86,7 @@ export const LogoContainer = styled.div`
   align-items: center;
   justify-content: center;
   opacity: 0.9;
-  padding: 0rem .5rem;
-
-
+  padding: 0rem 0.5rem;
 `;
 export const Logo = styled.h2`
   color: ${(props) => props.theme.colors.primary};
@@ -141,10 +139,9 @@ export const SLink = styled(Link)`
   outline: none;
   &:hover {
     cursor: pointer;
-    opacity: .8;
+    opacity: 0.8;
     /* color: ${(props) => props.theme.colors.primary}; */
   }
-
 `;
 
 export const Download = styled.div`
@@ -240,7 +237,6 @@ export const Menu = styled(LuMenu)`
   width: 3rem;
   stroke-width: 2;
 `;
-
 
 // content
 
@@ -460,14 +456,16 @@ export const SocialWrapper = styled.div`
 `;
 export const Plus = styled(BiPlus)`
   font-size: 1.3rem;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.title1};
+  opacity: .9;
 `;
 export const Text = styled.a`
   font-size: 1rem;
   line-height: 1.88rem;
   font-weight: 500;
+  opacity: 0.9;
   text-decoration: none;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.title1};
   text-transform: capitalize;
   outline: none;
   &:hover {
@@ -581,8 +579,4 @@ export const TitleIcon = styled.span`
   color: #888;
 `;
 
-
-export const SmileIcon = styled(PiSmileyDuotone)`
-
-
-`;
+export const SmileIcon = styled(PiSmileyDuotone)``;

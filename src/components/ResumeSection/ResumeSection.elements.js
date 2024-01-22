@@ -66,10 +66,6 @@ export const Sub = styled.p`
   text-transform: capitalize;
   opacity: 0.9;
   color: ${(props) => props.theme.colors.text};
-@media ${devices.laptop} {
-  display: flex;
-  gap: 5px;
-}
 `;
 
 export const ResumeWrapper = styled.div`
@@ -206,7 +202,7 @@ export const CodingSkillsTitle = styled.h3`
   text-align: center;
   position: relative;
   padding-bottom: 10px;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.title1};
 
   &::before {
     position: absolute;
@@ -254,5 +250,12 @@ export const SkillTitle = styled.h3`
   font-weight: 600;
   text-transform: uppercase;
 `;
+
+export const TitleWrapper = styled.div`
+  display: flex;
+  gap: 5px;
+
+`;
+
 
 // Mobile design
