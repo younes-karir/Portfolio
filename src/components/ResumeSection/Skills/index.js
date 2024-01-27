@@ -13,6 +13,7 @@ import MongoIcon from "../../../Helpers/Icons/MongoIcon";
 import { useTranslation } from "react-i18next";
 import TypeScriptIcon from "../../../Helpers/Icons/TypeScriptIcon";
 import JavaIcon from "../../../Helpers/Icons/JavaIcon";
+import SpringBootIcon from "../../../Helpers/Icons/SpringBootIcon";
 
 const Skills = () => {
   const {t} = useTranslation();
@@ -23,24 +24,28 @@ const Skills = () => {
         <CodingSkillsTitle>{t('skillsTitle')}</CodingSkillsTitle>
         <SkillsWrapper>
           <SkillItem>
-            <HtmlIcon />
-            <SkillTitle>Html</SkillTitle>
+            <JavaIcon />
+            <SkillTitle>java</SkillTitle>
           </SkillItem>
           <SkillItem>
-            <CssIcon />
-            <SkillTitle>Css</SkillTitle>
+            <SpringBootIcon />
+            <SkillTitle>Spring Boot</SkillTitle>
+          </SkillItem>
+          <SkillItem>
+            <TypeScriptIcon />
+            <SkillTitle>TypeScript</SkillTitle>
           </SkillItem>
           <SkillItem>
             <JavascriptIcon />
             <SkillTitle>javascript</SkillTitle>
           </SkillItem>
           <SkillItem>
-            <JavaIcon />
-            <SkillTitle>java</SkillTitle>
+            <HtmlIcon />
+            <SkillTitle>Html</SkillTitle>
           </SkillItem>
           <SkillItem>
-            <TypeScriptIcon />
-            <SkillTitle>TypeScript</SkillTitle>
+            <CssIcon />
+            <SkillTitle>Css</SkillTitle>
           </SkillItem>
           <SkillItem>
             <ReactIcon />
