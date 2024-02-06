@@ -4,7 +4,7 @@ const SpringBootIcon = (props) => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: props.isMobile ? "3rem" : "2.25rem",
+    width: props.isMobile ? "3rem" : "2rem",
   };
   return (
     <svg style={styles} viewBox="0 0 24 21.55">

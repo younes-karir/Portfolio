@@ -5,7 +5,7 @@ const ReduxIcon = () => {
     const thiming = useSelector((state) => state.theme.Theme);
 
     const styles = {
-        width: "2.2rem",
+        width: "2.1rem",
     }
   return (
     <svg

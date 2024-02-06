@@ -79,7 +79,7 @@ export const ResumeWrapper = styled.div`
     display: grid;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 1.2fr 4fr 2fr;
   }
 `;
 export const RoutersContainer = styled.div`
@@ -233,7 +233,7 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 `;
 export const SkillItem = styled.div`

@@ -5,7 +5,7 @@ const StyledIcon = () => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: "3.5rem",
+    width: "3.2rem",
   };
   return (
     <svg

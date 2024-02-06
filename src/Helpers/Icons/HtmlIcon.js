@@ -6,7 +6,7 @@ const HtmlIcon = () => {
     const thiming = useSelector((state) => state.theme.Theme);
 
     const styles = {
-        width: "2rem",
+        width: "1.8rem",
     }
   return (
     <svg
