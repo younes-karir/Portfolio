@@ -14,10 +14,6 @@ import { BaseFrame } from "./Content.elements";
 
 const Content = () => {
 
-
-
-
-
   return (
     <BaseFrame>
       <Header />
