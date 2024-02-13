@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import devices from "../../../Helpers/Devices";
 
-import { MdOutlineReadMore } from "react-icons/md";
 import { MdMoreHoriz } from "react-icons/md";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoLink } from "react-icons/io5";
 import { RiLinksLine } from "react-icons/ri";
 
 export const Container = styled.div`

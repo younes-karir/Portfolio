@@ -27,9 +27,7 @@ const PortfolioItem = () => {
           <TechItem >React.js</TechItem>
           <TechItem >redux.js</TechItem>
           <TechItem >styled-components</TechItem>
-
-          {/* <MoreICon /> */}
-        </InfosWrapper>
+       </InfosWrapper>
       </PortfolioDetails>
     </Container>
   );
