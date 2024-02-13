@@ -56,7 +56,7 @@ const ContactSection = () => {
             <Submit>
               <span>{t('contactBtn')}</span>
             </Submit>
-          </Eelement>
+          </Eelement> 
         </FormContainer>
         <InfosContainer>
           <InfoWrapper>
