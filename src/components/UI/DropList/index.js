@@ -56,7 +56,6 @@ export default function DropList() {
         ) : (
           <De size={"1.4rem"} />
         )}
-        {/* <Row $flip={Drop} /> */}
       </Selected>
       {Drop && (
         <Elements onMouseLeave={handleMouseOut}>

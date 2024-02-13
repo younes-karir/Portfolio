@@ -579,4 +579,3 @@ export const TitleIcon = styled.span`
   color: #888;
 `;
 
-export const SmileIcon = styled(PiSmileyDuotone)``;
