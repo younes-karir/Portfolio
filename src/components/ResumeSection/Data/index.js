@@ -1,4 +1,3 @@
-import cr001 from './Data/001.jpg';
 import i18next from '../../../Helpers/i18next/i18n'
 
 export const Education = {

@@ -24,7 +24,6 @@ import { LeftQuote, RightQuote } from "../AboutSection/About.elements";
 function ResumeSection() {
   const { t } = useTranslation();
   const acteul = useSelector((state) => state.language.acteul);
-
   
   const Education = {
     name: "ed",
