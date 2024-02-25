@@ -6,7 +6,7 @@ import Store from "../../Store/Store";
 const GlobalStyle = createGlobalStyle`
 
   body {
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Poppins", sans-serif;    
     
   }
@@ -16,31 +16,24 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
 
-    /* transition: color,background-color 250ms ease-in-out; */
   }
 
-  /* width */
-body::-webkit-scrollbar {
-  width: .4rem;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: ${(props) => props.theme.colors.primary} ${(props) =>
-  props.theme.colors.background.base};
-}
-body::-webkit-scrollbar-track {
-  background: ${(props) => props.theme.colors.background.base};
-}
-body::-webkit-scrollbar-thumb {
-  background-color:  ${(props) => props.theme.colors.primary} ;
-  border-radius: 5px;
-  border: 1.5px solid ${(props) => props.theme.colors.background.base};
-  border-left: none;
-}
 
+   *::-webkit-scrollbar {
+      width: 0.5rem;
+      background-color: ${props => props.theme.colors.background.base};
+    
+      
+    }
+    *::-webkit-scrollbar-track  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.00);
+      
+    }
 
-
-
+    *::-webkit-scrollbar-thumb  {
+      border-right: 2px solid ${props => props.theme.colors.background.base} ;
+      background-color: ${props => props.theme.colors.primary};
+    }
   
 `;
 

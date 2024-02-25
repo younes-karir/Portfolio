@@ -93,7 +93,7 @@ const Data = (props) => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={10}
               duration={500}
               activeStyle={activeStyle}
             >

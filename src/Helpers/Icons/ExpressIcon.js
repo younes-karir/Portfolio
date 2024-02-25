@@ -7,7 +7,7 @@ const ExpressIcon = () => {
     const thiming = useSelector((state) => state.theme.Theme);
 
     const styles = {
-        width: "2.2rem",
+        width: "2.7rem",
     }
 
   return (

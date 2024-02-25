@@ -4,7 +4,7 @@ const JavaIcon = (props) => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: props.isMobile ? "2.75rem" : "1.7rem",
+    width: props.isMobile ? "2.75rem" : "1.9rem",
   };
   return (
     <svg

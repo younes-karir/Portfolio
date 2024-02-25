@@ -30,7 +30,7 @@ export const dark = {
       base: "#181d28",
       middle: "#1d2330ed",
       upper: "#192336",
-      header: "#131924"
+      header: "#090d14"
     },
     text: "#e8e8e8",
     primary: "#4d63dd",

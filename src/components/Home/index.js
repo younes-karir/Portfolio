@@ -80,7 +80,7 @@ const Home = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={5}
               duration={500}
               activeStyle={activeStyle}
 

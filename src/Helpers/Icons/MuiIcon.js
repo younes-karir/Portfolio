@@ -5,7 +5,7 @@ const MuiIcon = () => {
   const thiming = useSelector((state) => state.theme.Theme);
 
   const styles = {
-    width: "1.8rem",
+    width: "2rem",
   };
 
   return (

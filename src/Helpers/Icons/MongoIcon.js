@@ -5,7 +5,7 @@ const MongoIcon = () => {
     const thiming = useSelector((state) => state.theme.Theme);
 
     const styles = {
-      width: ".9rem",
+      width: "1.1rem",
     };
   
   return (
