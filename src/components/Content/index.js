@@ -25,6 +25,7 @@ const Content = () => {
       <FooterSection />
       <MenuBar />
       <ScrollToTop />
+      
     </BaseFrame>
   );
 };

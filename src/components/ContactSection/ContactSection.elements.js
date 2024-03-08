@@ -5,20 +5,15 @@ import bck from "../../Helpers/Images/hero_bg_element.png";
 export const Container = styled.section`
   background-image: url(${bck});
   width: 100%;
-  /* height: fit-content; */
   background-color: ${(props) => props.theme.colors.background};
   background-position: top left;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   position: relative;
   display: flex;
   flex-direction: column;
-
   padding: 0.5rem;
   padding-top: 6rem;
   padding-bottom: 4rem;
-  /* margin-bottom: 3rem; */
-  /* gap: 6rem; */
 
   @media ${devices.mobileL} {
     padding: 2rem 0.5rem 5rem 0.5rem;
@@ -90,7 +85,6 @@ export const ConatctWrapper = styled.div`
 `;
 
 export const FormContainer = styled.form`
-  /* background-color: red; */
   width: 100%;
   height: 35rem;
   display: flex;
@@ -119,13 +113,11 @@ export const Eelement = styled.div`
   ${(props) => {
     if (props.$fit)
       return `@media  ${devices.laptop} , ${devices.tablet} { grid-column-start: 1; grid-column-end:3; height: 100% }  `;
-    }}
+  }}
 
   ${(props) => {
     if (props.$btn) return " grid-column-start: 1; grid-column-end:3; ";
   }};
-
-
 `;
 
 export const TexteField = styled.input`
@@ -144,7 +136,6 @@ export const TexteField = styled.input`
 export const TexteArea = styled.textarea`
   font-size: 1rem;
   font-family: inherit;
-  
   height: 327px;
   width: 100%;
   max-width: 100%;
@@ -171,13 +162,11 @@ export const Submit = styled.button`
   padding: 0.9rem 1rem;
   border-radius: 3px;
   background-color: ${(props) => props.theme.colors.primary};
-  /* color: ${(props) => props.theme.colors.text}; */
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   overflow: hidden;
-
   transition: width 0.3s;
 
   & span {
@@ -199,8 +188,7 @@ export const Submit = styled.button`
 
   &:hover {
     cursor: pointer;
-    color: ${props => props.theme.colors.background.header};
-
+    color: ${(props) => props.theme.colors.background.header};
   }
 
   &:hover:after {
