@@ -6,7 +6,7 @@ const TechItem = ({children}) => {
     <Container>
       <Holder>{children}</Holder>
     </Container>
-  );
+  ); 
 };
 
 export default TechItem;

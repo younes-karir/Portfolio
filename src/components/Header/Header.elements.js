@@ -152,7 +152,6 @@ export const Resume = styled.a`
   &:hover {
     color: #fff;
     cursor: pointer;
-    /* transition: transform 0.1s; */
   }
 
   &:hover:after {
