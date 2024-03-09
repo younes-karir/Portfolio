@@ -55,7 +55,7 @@ const ContactSection = () => {
           <Eelement $btn={true}>
             <Submit>
               <span>{t('contactBtn')}</span>
-            </Submit>
+            </Submit>  
           </Eelement> 
         </FormContainer>
         <InfosContainer>

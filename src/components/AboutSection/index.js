@@ -4,7 +4,7 @@ import {
   ContactTitle,
   ContactWrapper,
   Container,
-  Details,
+  Details,  
   Holder,
   InfosWrapper,
   LeftQuote,
