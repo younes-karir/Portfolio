@@ -37,6 +37,7 @@ export const Container = styled.footer`
     padding: 1rem 5rem 0rem 3rem;
   }
 `;
+  
 
 export const LinksWrapper = styled.div`
   width: 100%;

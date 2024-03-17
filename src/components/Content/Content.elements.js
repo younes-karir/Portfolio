@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import devices from "../../Helpers/Devices";
 
 export const BaseFrame = styled.div`
   width: 100%;

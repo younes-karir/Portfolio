@@ -12,7 +12,7 @@ import {
 import TechItem from "../TechItem";
 
 const PortfolioItem = () => {
-  return (
+  return ( 
     <Container>
       <PortfolioImgWrapper>
       </PortfolioImgWrapper>
